@@ -1,0 +1,15 @@
+{
+  "name": "reactrapid",
+  "version": "1.0.0",
+  "description": "react a care",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "ggwp",
+    "tribe"
+  ],
+  "author": "Prashant Bhattarai17",
+  "license": "ISC"
+}
