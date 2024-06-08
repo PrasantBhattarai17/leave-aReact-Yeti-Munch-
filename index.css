@@ -1,0 +1,115 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+   .hoot{
+    display: flex;
+    flex-wrap: wrap;
+   }
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: blueviolet;
+    border-radius: 8px;
+    border: 1px solid black;
+  }
+  
+  .header img {
+    width: 80px;
+  }
+  
+  .header input {
+    width: 30%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex-shrink: 0; /* Prevent shrinking of input */
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .nav-list li:hover {
+    color: blueviolet;
+    background-color: goldenrod;
+  }
+  
+  /* Card styles */
+  .card {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Grid styles */
+  .restaurant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color:blueviolet;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Additional styles for headings */
+  h2, h3, h4 {
+    margin: 5px 0;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  h3 {
+    color: #666;
+  }
+  
+  h4 {
+    color: #999;
+  }
+  

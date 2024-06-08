@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "react a care",
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "keywords": [
@@ -14,6 +14,11 @@
   "author": "Prashant Bhattarai17",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }
