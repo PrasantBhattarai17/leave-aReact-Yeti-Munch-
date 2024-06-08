@@ -2,8 +2,9 @@
   "name": "reactrapid",
   "version": "1.0.0",
   "description": "react a care",
-  "main": "app.js",
   "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel build index.html",
     "test": "jest"
   },
   "keywords": [
@@ -11,5 +12,8 @@
     "tribe"
   ],
   "author": "Prashant Bhattarai17",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0"
+  }
 }
