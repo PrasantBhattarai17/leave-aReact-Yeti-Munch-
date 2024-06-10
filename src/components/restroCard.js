@@ -1,11 +1,15 @@
-const Restro=()=>{
+const Restro=(props)=>{
+  const {Resdata}=props;
+  const{image,title,category,price_rating}=Resdata?.data; 
+
+
     return (
       <div className="card">
-        <img alt="photo" src="https://media-cdn.tripadvisor.com/media/photo-s/11/44/e8/e9/the-burger-house-and.jpg"/>
+        <img alt="photo" src={image}/>
         <hr/>
-        <h2>Burger House</h2>
-        <h3>Bhaktapur</h3>
-        <h4>4.2 stars</h4>
+        <h2>{title}</h2>
+        <h3>{category}</h3>
+        <h4>{price_rating} stars</h4>
       </div>
     );
   
