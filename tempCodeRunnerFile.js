@@ -1,1 +1,0 @@
-https://allsetnow.com/api/address/v5/?sort_point=29.38385,+-94.9027&limit=100&offset=0
