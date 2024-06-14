@@ -2,9 +2,10 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/header";
-import Restro from "./components/restroCard";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import Body from "./components/body";
+import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import Offer from "./components/navitem.js/offers";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,5 +20,18 @@ const AppLayout = () => {
     </>
   );
 };
+const appRouter =createBrowserRouter([
+  {
+    path:"/",
+    element:<AppLayout/>
+  },
+  {
+    path:"/offers",
+    element:<Offer/>
+  }
+]
+);
 
-root.render(<AppLayout />);
+
+
+root.render(<RouterProvider router={appRouter}/>);

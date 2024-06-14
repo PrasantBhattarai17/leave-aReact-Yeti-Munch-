@@ -1,6 +1,7 @@
 import Restro from "./restroCard";
 import { useState,useEffect } from "react";
-import Shimmer from "./shimmer";
+import Shimmer from "./shimmers/shimmer";
+ import Notfound from "./shimmers/notfound";
 
 const filterData=(searchTxt,listOfRestaurants)=>{
   const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.title?.toLowerCase().includes(searchTxt.toLowerCase()));
@@ -42,13 +43,20 @@ const Body=()=>{
     </div>
     </div>
     <div className="hoot">
-            {filteredList.map((restaurant) => (
-                <Restro key={restaurant.id} Resdata={restaurant} />
-                
-              ))}
-              </div>
+
+    { filteredList.length === 0 ? <Notfound/> :
+  (
+    filteredList.map((restaurant) => (
+      <Restro key={restaurant.id} Resdata={restaurant} />
+    ))
+  )
+}
+</div>
+
               </>
+            
     )
+  
 };
 
 

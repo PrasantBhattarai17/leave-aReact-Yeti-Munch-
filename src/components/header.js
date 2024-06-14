@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from "./gg.png";
+import logo from "./constants/gg.png";
 
 const Header = () => {
   return (
     <div className="header">
       <a href="/"><img alt="logo" src={logo} /></a>
       <ul className="nav-list">
-        <li>Offers</li>
-        <li>Sign In</li>
-        <li>Cart</li>
+        <li><a href='./offers'>Offers</a></li>
+        <li><a href='./'>About Us</a></li>
+        <li><a href='./'>Contact</a></li>
+        <li><a href='./'>Cart</a></li>
         <button>Log in</button>
       </ul>
     </div>
