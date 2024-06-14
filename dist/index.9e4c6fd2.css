@@ -173,6 +173,37 @@ h4 {
   font-size: 1.2rem;
 }
 
+.about {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.about h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.about p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.aboutimg {
+  align-self: center;
+  width: 40%;
+  height: 200px;
+}
+
 .footer {
   color: #fff;
   text-align: center;

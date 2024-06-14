@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import Body from "./components/body";
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import Offer from "./components/navitem.js/offers";
+import About from "./components/navitem.js/about";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -28,6 +29,10 @@ const appRouter =createBrowserRouter([
   {
     path:"/offers",
     element:<Offer/>
+  },
+  {
+    path:"/about",
+    element:<About/>
   }
 ]
 );

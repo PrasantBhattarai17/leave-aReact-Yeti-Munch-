@@ -2967,30 +2967,32 @@ var _bodyDefault = parcelHelpers.interopDefault(_body);
 var _reactRouterDom = require("react-router-dom");
 var _offers = require("./components/navitem.js/offers");
 var _offersDefault = parcelHelpers.interopDefault(_offers);
+var _about = require("./components/navitem.js/about");
+var _aboutDefault = parcelHelpers.interopDefault(_about);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "hoot",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3002,7 +3004,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 26,
+            lineNumber: 27,
             columnNumber: 13
         }, undefined)
     },
@@ -3010,7 +3012,15 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/offers",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offersDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 30,
+            lineNumber: 31,
+            columnNumber: 13
+        }, undefined)
+    },
+    {
+        path: "/about",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+            fileName: "src/app.js",
+            lineNumber: 35,
             columnNumber: 13
         }, undefined)
     }
@@ -3019,7 +3029,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 37,
+    lineNumber: 42,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3030,7 +3040,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/body":"fxbaO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/footer":"bjsug","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/body":"fxbaO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/footer":"bjsug","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY","./components/navitem.js/about":"4vdmF"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27325,7 +27335,7 @@ const Header = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "./",
+                            href: "./about",
                             children: "About Us"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
@@ -35368,6 +35378,136 @@ $RefreshReg$(_c, "Offer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../header":"aorvA","../footer":"bjsug","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequireb17e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../header":"aorvA","../footer":"bjsug","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4vdmF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0a29 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0a29.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _ggPng = require("../constants/gg.png");
+var _ggPngDefault = parcelHelpers.interopDefault(_ggPng);
+var _footer = require("../footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _header = require("../header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+const About = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                fileName: "src/components/navitem.js/about.js",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "about",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "aboutimg",
+                        alt: "Yeti Munch",
+                        src: (0, _ggPngDefault.default)
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 9,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Welcome to Yeti Munch - Your Ultimate Food Delivery Companion"
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 10,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "At Yeti Munch, we believe that great food should be just a few taps away. Whether you're craving comfort food from your favorite local diner or exploring exotic cuisines from top-rated restaurants, Yeti Munch is here to deliver.Our platform combines convenience with a wide array of culinary delights, making dining in as delightful as dining out."
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 11,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Key Features:"
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 17,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "-Wide Selection: Explore a diverse range of restaurants, from cozy cafes to upscale eateries, all available at your fingertips. -Easy Ordering: Effortlessly browse menus, customize your orders, and securely pay online for a seamless experience. -Real-time Tracking: Stay updated with real-time tracking of your order, ensuring you know exactly when to expect your delicious meal. -Exclusive Offers: Enjoy exclusive deals and discounts on select restaurants, making every meal a satisfying deal. -User-friendly Interface: Our intuitive app and website design make navigating through choices and placing orders a breeze. -Customer Support: Need assistance? Our dedicated customer support team is available around the clock to help with any queries or concerns."
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 18,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: " Restaurant Partners:"
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 31,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Yeti Munch partners with a wide network of restaurants renowned for their quality and taste. From local favorites to popular chains, we bring you the best culinary experiences from your neighborhood and beyond."
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 32,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: "Delivery Excellence:"
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 35,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "We pride ourselves on timely deliveries. Serving [mention your service areas here], our efficient logistics ensure your food arrives hot and fresh, just as you like it."
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 36,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: "Get Started:"
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 39,
+                        columnNumber: 1
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Ready to explore Yeti Munch? Download our app on [App Store/Google Play store], or visit our website at [yetimunch.com]. Discover new flavors, rediscover old favorites, and let Yeti Munch bring the joy of good food right to your doorstep."
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/about.js",
+                        lineNumber: 40,
+                        columnNumber: 1
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/navitem.js/about.js",
+                lineNumber: 8,
+                columnNumber: 1
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                fileName: "src/components/navitem.js/about.js",
+                lineNumber: 46,
+                columnNumber: 1
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c = About;
+exports.default = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$0a29.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../constants/gg.png":"5f48m","../footer":"bjsug","../header":"aorvA"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequireb17e")
 
 //# sourceMappingURL=index.0641b553.js.map
