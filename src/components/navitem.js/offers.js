@@ -17,7 +17,7 @@ const Offer = () => {
     <>
     <Header/>
     <div className="offer">
-      <h1>20% Discount on Select Restaurants</h1>
+      <h1>20% Discount on Selected Restaurants</h1>
       <p>Enjoy a 20% discount on the following restaurants:</p>
       <ul>
         {restaurants.map((restaurant, index) => (

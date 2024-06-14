@@ -2969,30 +2969,32 @@ var _offers = require("./components/navitem.js/offers");
 var _offersDefault = parcelHelpers.interopDefault(_offers);
 var _about = require("./components/navitem.js/about");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _error = require("./components/shimmers/error");
+var _errorDefault = parcelHelpers.interopDefault(_error);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "hoot",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 18,
+                    lineNumber: 19,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3004,15 +3006,20 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 27,
+            lineNumber: 28,
             columnNumber: 13
+        }, undefined),
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
+            fileName: "src/app.js",
+            lineNumber: 29,
+            columnNumber: 18
         }, undefined)
     },
     {
         path: "/offers",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offersDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 31,
+            lineNumber: 33,
             columnNumber: 13
         }, undefined)
     },
@@ -3020,7 +3027,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/about",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 35,
+            lineNumber: 37,
             columnNumber: 13
         }, undefined)
     }
@@ -3029,7 +3036,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 42,
+    lineNumber: 44,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3040,7 +3047,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/body":"fxbaO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/footer":"bjsug","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY","./components/navitem.js/about":"4vdmF"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/body":"fxbaO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/footer":"bjsug","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY","./components/navitem.js/about":"4vdmF","./components/shimmers/error":"g7fau"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -28489,7 +28496,7 @@ const Footer = ()=>{
             className: "footer-content",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "\xa9 2024 Prasant Tribe~. All rights reserved."
+                    children: "\xa9 2024 Prasant Bhattarai~All rights reserved."
                 }, void 0, false, {
                     fileName: "src/components/footer.js",
                     lineNumber: 7,
@@ -35318,7 +35325,7 @@ const Offer = ()=>{
                 className: "offer",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "20% Discount on Select Restaurants"
+                        children: "20% Discount on Selected Restaurants"
                     }, void 0, false, {
                         fileName: "src/components/navitem.js/offers.js",
                         lineNumber: 20,
@@ -35436,8 +35443,40 @@ const About = ()=>{
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "-Wide Selection: Explore a diverse range of restaurants, from cozy cafes to upscale eateries, all available at your fingertips. -Easy Ordering: Effortlessly browse menus, customize your orders, and securely pay online for a seamless experience. -Real-time Tracking: Stay updated with real-time tracking of your order, ensuring you know exactly when to expect your delicious meal. -Exclusive Offers: Enjoy exclusive deals and discounts on select restaurants, making every meal a satisfying deal. -User-friendly Interface: Our intuitive app and website design make navigating through choices and placing orders a breeze. -Customer Support: Need assistance? Our dedicated customer support team is available around the clock to help with any queries or concerns."
-                    }, void 0, false, {
+                        children: [
+                            "-Wide Selection: Explore a diverse range of restaurants, from cozy cafes to upscale eateries, all available at your fingertips. ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/navitem.js/about.js",
+                                lineNumber: 19,
+                                columnNumber: 77
+                            }, undefined),
+                            "-Easy Ordering: Effortlessly browse menus, customize your orders, and securely pay online for a seamless experience.",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/navitem.js/about.js",
+                                lineNumber: 21,
+                                columnNumber: 52
+                            }, undefined),
+                            "-Real-time Tracking: Stay updated with real-time tracking of your order, ensuring you know exactly when to expect your delicious meal.",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/navitem.js/about.js",
+                                lineNumber: 23,
+                                columnNumber: 63
+                            }, undefined),
+                            "-Exclusive Offers: Enjoy exclusive deals and discounts on select restaurants, making every meal a satisfying deal.",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/navitem.js/about.js",
+                                lineNumber: 25,
+                                columnNumber: 37
+                            }, undefined),
+                            "-User-friendly Interface: Our intuitive app and website design make navigating through choices and placing orders a breeze.",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/navitem.js/about.js",
+                                lineNumber: 27,
+                                columnNumber: 45
+                            }, undefined),
+                            "-Customer Support: Need assistance? Our dedicated customer support team is available around the clock to help with any queries or concerns."
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/navitem.js/about.js",
                         lineNumber: 18,
                         columnNumber: 1
@@ -35464,7 +35503,7 @@ const About = ()=>{
                         columnNumber: 1
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "We pride ourselves on timely deliveries. Serving [mention your service areas here], our efficient logistics ensure your food arrives hot and fresh, just as you like it."
+                        children: "We pride ourselves on timely deliveries. Serving across Kathmandu Valley and Pokhara, our efficient logistics ensure your food arrives hot and fresh, just as you like it."
                     }, void 0, false, {
                         fileName: "src/components/navitem.js/about.js",
                         lineNumber: 36,
@@ -35478,7 +35517,7 @@ const About = ()=>{
                         columnNumber: 1
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Ready to explore Yeti Munch? Download our app on [App Store/Google Play store], or visit our website at [yetimunch.com]. Discover new flavors, rediscover old favorites, and let Yeti Munch bring the joy of good food right to your doorstep."
+                        children: "Ready to explore Yeti Munch? Download our app on App Store/Google Play store, or visit our website at yetimunch.com. Discover new flavors, rediscover old favorites, and let Yeti Munch bring the joy of good food right to your doorstep."
                     }, void 0, false, {
                         fileName: "src/components/navitem.js/about.js",
                         lineNumber: 40,
@@ -35508,6 +35547,64 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../constants/gg.png":"5f48m","../footer":"bjsug","../header":"aorvA"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequireb17e")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../constants/gg.png":"5f48m","../footer":"bjsug","../header":"aorvA"}],"g7fau":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2ddd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2ddd.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const Error = ()=>{
+    _s();
+    const err = (0, _reactRouterDom.useRouteError)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: [
+                    "Oops!! ",
+                    err.status,
+                    ":",
+                    err.statusText
+                ]
+            }, void 0, true, {
+                fileName: "src/components/shimmers/error.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Something went wrong!!"
+            }, void 0, false, {
+                fileName: "src/components/shimmers/error.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/shimmers/error.js",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_s(Error, "U5GmGaAmh0j0MVy+E8WdBnjlm7s=", false, function() {
+    return [
+        (0, _reactRouterDom.useRouteError)
+    ];
+});
+_c = Error;
+exports.default = Error;
+var _c;
+$RefreshReg$(_c, "Error");
+
+  $parcel$ReactRefreshHelpers$2ddd.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequireb17e")
 
 //# sourceMappingURL=index.0641b553.js.map
