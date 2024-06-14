@@ -8,6 +8,7 @@ import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import Offer from "./components/navitem.js/offers";
 import About from "./components/navitem.js/about";
 import Error from "./components/shimmers/error";
+import { Outlet } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -16,7 +17,7 @@ const AppLayout = () => {
     <>
       <Header />
       <div className="hoot">
-      <Body/>
+      <Outlet/>
       </div>
       <Footer />
     </>
@@ -26,15 +27,21 @@ const appRouter =createBrowserRouter([
   {
     path:"/",
     element:<AppLayout/>,
-    errorElement:<Error/>
-  },
-  {
-    path:"/offers",
-    element:<Offer/>
-  },
-  {
-    path:"/about",
-    element:<About/>
+    errorElement:<Error/>,
+    children:[
+      {
+        path:"/",
+        element:<Body/>
+      },
+      {
+        path:"/offers",
+        element:<Offer/>
+      },
+      {
+        path:"/about",
+        element:<About/>
+      }
+    ]
   }
 ]
 );
