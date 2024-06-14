@@ -40,13 +40,14 @@ body {
   display: flex;
 }
 
-.nav-list li {
+.nav-list li a {
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
   padding: 10px 30px;
   font-family: sans-serif;
   font-size: 1.2em;
+  text-decoration: none;
   transition: color .3s, background-color .3s;
 }
 
@@ -135,5 +136,82 @@ h4 {
 
 .search-box button:hover {
   background-color: #0056b3;
+}
+
+.offer {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.offer h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.offer p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.offer ul {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.offer ul li {
+  color: #444;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.footer-content {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-nav ul li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.footer-nav ul li a:hover {
+  color: #aaa;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
