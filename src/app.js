@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/header";
-import Restro from "./components/RestroCard";
+import Restro from "./components/restroCard";
 import Footer from "./components/Footer";
 import Body from "./components/body";
 

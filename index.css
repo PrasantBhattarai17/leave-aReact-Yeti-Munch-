@@ -41,7 +41,7 @@ body {
   }
   
   .nav-list li {
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 1.2em;
     font-family: sans-serif;
     color: white;
@@ -79,15 +79,6 @@ body {
     transform: scale(1.05);
   }
   
-  /* Grid styles */
-  .restaurant-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 10px;
-  }
-  
   /* Footer styles */
   .footer {
     text-align: center;
@@ -112,5 +103,4 @@ body {
   h4 {
     color: #999;
   }
-  
   

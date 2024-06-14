@@ -1,4 +1,4 @@
-5987
+5989
 84C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\react-dom\package.json133627629992611302 0
 140C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\7-mergeRuleset.js133627629983229833 0
 115C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\csso\node_modules\css-tree\lib\syntax\node\AnPlusB.js133627629993850986 0
@@ -29,7 +29,7 @@
 102C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\runtime-browser-hmr\package.json133627629983674086 0
 86C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\csso\lib\clean\Atrule.js133627629990411748 0
 94C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\postcss-value-parser\lib\walk.js133627629982552099 0
-61C:\Users\V C T U S\Documents\GitHub\leave-aReact\package.json133627631509011846 0
+61C:\Users\V C T U S\Documents\GitHub\leave-aReact\package.json133628056988850432 0
 97C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\workers\lib\web\WebChild.js133627629989474921 0
 81C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\react-dom\server.js133627629992485190 0
 66C:\Users\V C T U S\Documents\GitHub\leave-aReact\package-lock.json133627630007237968 0
@@ -49,7 +49,7 @@
 92C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\lmdb\bin\download-prebuilds.js133627629993850986 0
 96C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@swc\helpers\cjs\_ts_generator.cjs133627629992181462 0
 82C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\json5\lib\unicode.js133627629984031522 0
-53C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist133627631858369086 1
+53C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist133628105489973086 1
 80C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\picocolors\LICENSE133627629980316033 0
 111C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest2.c133627629991775737 0
 78C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\clone\.npmignore133627629980666046 0
@@ -177,9 +177,9 @@
 93C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\svgo\plugins\plugins-types.d.ts133627629991149488 0
 109C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\core\test\fixtures\plugins\node_modules133627629992390551 1
 86C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\utils\test\input133627629990166137 1
-77C:\Users\V C T U S\Documents\GitHub\leave-aReact\src\components\restroCard.js133627238219045525 0
+77C:\Users\V C T U S\Documents\GitHub\leave-aReact\src\components\restroCard.js133628105351415117 0
 93C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\htmlnano\lib\modules\custom.cjs133627629982874750 0
-74C:\Users\V C T U S\Documents\GitHub\leave-aReact\src\components\shimmer.js133626635152014028 0
+74C:\Users\V C T U S\Documents\GitHub\leave-aReact\src\components\shimmer.js133628100860073536 0
 82C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\ordered-binary\.idea133627629985069225 1
 69C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\globals133627629982609785 1
 84C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\parent-module\index.js133627629980625913 0
@@ -1355,7 +1355,7 @@
 80C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\source-map\LICENSE133627629981090179 0
 89C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\css-tree\lib\lexer\units.js133627629996358080 0
 88C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\source-map\source-map.d.ts133627629985443742 0
-75C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.0641b553.js.map133627630486460743 0
+75C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.0641b553.js.map133628104662720371 0
 93C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\css-tree\lib\syntax\node\CDC.js133627629994271837 0
 95C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\core\src\public\Target.js133627629994610748 0
 138C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\config\walker.js133627629993965965 0
@@ -5200,7 +5200,7 @@
 89C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\package-manager\lib133627629990284899 1
 93C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\package-manager\LICENSE133627629980185722 0
 98C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\package-manager\package.json133627629988365363 0
-64C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.html133627631858181002 0
+64C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.html133628105489811912 0
 90C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\package-manager\test133627629988085910 1
 99C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\package-manager\test\fixtures133627629988913347 1
 117C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\@parcel\package-manager\test\NodePackageManager.test.js133627629987161696 0
@@ -5981,8 +5981,10 @@
 75C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\.bin\svgo.ps1133627630003151511 0
 89C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\.bin\update-browserslist-db133627630003151511 0
 93C:\Users\V C T U S\Documents\GitHub\leave-aReact\node_modules\.bin\update-browserslist-db.cmd133627630003151511 0
-71C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.0641b553.js133627630486460743 0
+71C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.0641b553.js133628104662660509 0
 72C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.9e4c6fd2.css133627630485884891 0
 72C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.b05eb6a0.css133627631858181002 0
 71C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.b9d5dc77.js133627631858181002 0
 75C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.b9d5dc77.js.map133627631858369086 0
+71C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.d37cd1b3.js133628105489811912 0
+75C:\Users\V C T U S\Documents\GitHub\leave-aReact\dist\index.d37cd1b3.js.map133628105489973086 0

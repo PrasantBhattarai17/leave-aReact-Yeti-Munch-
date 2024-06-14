@@ -2960,7 +2960,7 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _header = require("./components/header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
-var _restroCard = require("./components/RestroCard");
+var _restroCard = require("./components/restroCard");
 var _restroCardDefault = parcelHelpers.interopDefault(_restroCard);
 var _footer = require("./components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
@@ -3009,7 +3009,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/RestroCard":"chPoT","./components/Footer":"8pPOA","./components/body":"fxbaO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/Footer":"8pPOA","./components/body":"fxbaO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/restroCard":"a9zVv"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27272,7 +27272,7 @@ const Header = ()=>{
                 href: "/",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     alt: "logo",
-                    src: "https://trademarks.justia.com/media/og_image.php?serial=73308054"
+                    src: "Reactrapid/gg.png"
                 }, void 0, false, {
                     fileName: "src/components/header.js",
                     lineNumber: 6,
@@ -27284,7 +27284,7 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                className: "lists",
+                className: "nav-list",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Offers"
@@ -27305,6 +27305,13 @@ const Header = ()=>{
                     }, void 0, false, {
                         fileName: "src/components/header.js",
                         lineNumber: 10,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        children: "Log in"
+                    }, void 0, false, {
+                        fileName: "src/components/header.js",
+                        lineNumber: 11,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -27498,72 +27505,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"chPoT":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$dd8c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$dd8c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Restro = (props)=>{
-    const { Resdata } = props;
-    const { image, title, category, price_rating } = Resdata?.data;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                alt: title,
-                src: image
-            }, void 0, false, {
-                fileName: "src/components/RestroCard.js",
-                lineNumber: 14,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: title
-            }, void 0, false, {
-                fileName: "src/components/RestroCard.js",
-                lineNumber: 15,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: category
-            }, void 0, false, {
-                fileName: "src/components/RestroCard.js",
-                lineNumber: 16,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    price_rating,
-                    " stars"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/RestroCard.js",
-                lineNumber: 17,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/RestroCard.js",
-        lineNumber: 13,
-        columnNumber: 7
-    }, undefined);
-};
-_c = Restro;
-exports.default = Restro;
-var _c;
-$RefreshReg$(_c, "Restro");
-
-  $parcel$ReactRefreshHelpers$dd8c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27705,7 +27647,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Restro = (props)=>{
     const { Resdata } = props;
-    const { image, title, category, price_rating } = Resdata?.data;
+    const { image, title, category, price_rating } = Resdata;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [

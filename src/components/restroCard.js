@@ -6,7 +6,7 @@ const Restro=(props)=>{
         title,
         category,
         price_rating,
-      } = Resdata?.data;
+      } = Resdata;
   
 
     return (

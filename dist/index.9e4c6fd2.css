@@ -44,7 +44,7 @@ body {
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-family: sans-serif;
   font-size: 1.2em;
   transition: color .3s, background-color .3s;
@@ -76,14 +76,6 @@ body {
 
 .card:hover {
   transform: scale(1.05);
-}
-
-.restaurant-grid {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px;
-  display: flex;
 }
 
 .footer {
