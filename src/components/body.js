@@ -29,7 +29,8 @@ const Body=()=>{
 
       return  listOfRestaurants.length===0?<Shimmer/>:(
         <>
-            <div className="Searchh">
+        <div className="search-container">
+            <div className="search-box">
       <input type="text" placeholder="Search..." value={searchTxt}  onChange={(e)=>{
         setSearchTXt(e.target.value);
       }}/>
@@ -38,6 +39,7 @@ const Body=()=>{
         const data = filterData(searchTxt,listOfRestaurants);
         setFilteredList(data);
       }}>Search</button>
+    </div>
     </div>
     <div className="hoot">
             {filteredList.map((restaurant) => (

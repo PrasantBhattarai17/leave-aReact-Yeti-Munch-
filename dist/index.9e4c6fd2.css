@@ -100,4 +100,40 @@ h3 {
 h4 {
   color: #999;
 }
+
+.search-container {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.search-box {
+  width: calc(100% - 40px);
+  display: flex;
+}
+
+.search-box input[type="text"] {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-box button {
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-box button:hover {
+  background-color: #0056b3;
+}
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

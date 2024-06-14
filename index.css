@@ -104,3 +104,42 @@ body {
     color: #999;
   }
   
+
+
+  .search-container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center; /* Center aligns the search box and button */
+  }
+  
+  .search-box {
+    display: flex;
+    width: calc(100% - 40px); /* Adjust width to leave space for the button */
+  }
+  
+  .search-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .search-box button {
+    width: 70px; /* Adjust button width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .search-box button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  
+  

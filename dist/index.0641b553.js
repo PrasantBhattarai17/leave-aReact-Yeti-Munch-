@@ -27264,6 +27264,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _ggPng = require("./gg.png");
+var _ggPngDefault = parcelHelpers.interopDefault(_ggPng);
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
@@ -27272,15 +27274,15 @@ const Header = ()=>{
                 href: "/",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     alt: "logo",
-                    src: "Reactrapid/gg.png"
+                    src: (0, _ggPngDefault.default)
                 }, void 0, false, {
                     fileName: "src/components/header.js",
-                    lineNumber: 6,
+                    lineNumber: 7,
                     columnNumber: 19
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/header.js",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27290,40 +27292,40 @@ const Header = ()=>{
                         children: "Offers"
                     }, void 0, false, {
                         fileName: "src/components/header.js",
-                        lineNumber: 8,
+                        lineNumber: 9,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Sign In"
                     }, void 0, false, {
                         fileName: "src/components/header.js",
-                        lineNumber: 9,
+                        lineNumber: 10,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Cart"
                     }, void 0, false, {
                         fileName: "src/components/header.js",
-                        lineNumber: 10,
+                        lineNumber: 11,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         children: "Log in"
                     }, void 0, false, {
                         fileName: "src/components/header.js",
-                        lineNumber: 11,
+                        lineNumber: 12,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/header.js",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/header.js",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined);
 };
@@ -27337,7 +27339,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./gg.png":"l5gGy"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27505,7 +27507,45 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"8pPOA":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"l5gGy":[function(require,module,exports) {
+module.exports = require("b589d28df13604fe").getBundleURL("lPpKD") + "gg.3f2d4953.png" + "?" + Date.now();
+
+},{"b589d28df13604fe":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27576,36 +27616,43 @@ const Body = ()=>{
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "Searchh",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        placeholder: "Search...",
-                        value: searchTxt,
-                        onChange: (e)=>{
-                            setSearchTXt(e.target.value);
-                        }
-                    }, void 0, false, {
-                        fileName: "src/components/body.js",
-                        lineNumber: 33,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        onClick: ()=>{
-                            const data = filterData(searchTxt, listOfRestaurants);
-                            setFilteredList(data);
-                        },
-                        children: "Search"
-                    }, void 0, false, {
-                        fileName: "src/components/body.js",
-                        lineNumber: 37,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                className: "search-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "search-box",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Search...",
+                            value: searchTxt,
+                            onChange: (e)=>{
+                                setSearchTXt(e.target.value);
+                            }
+                        }, void 0, false, {
+                            fileName: "src/components/body.js",
+                            lineNumber: 34,
+                            columnNumber: 7
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: ()=>{
+                                const data = filterData(searchTxt, listOfRestaurants);
+                                setFilteredList(data);
+                            },
+                            children: "Search"
+                        }, void 0, false, {
+                            fileName: "src/components/body.js",
+                            lineNumber: 38,
+                            columnNumber: 7
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/body.js",
+                    lineNumber: 33,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/components/body.js",
                 lineNumber: 32,
-                columnNumber: 13
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "hoot",
@@ -27613,12 +27660,12 @@ const Body = ()=>{
                         Resdata: restaurant
                     }, restaurant.id, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 44,
+                        lineNumber: 46,
                         columnNumber: 17
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 42,
+                lineNumber: 44,
                 columnNumber: 5
             }, undefined)
         ]
