@@ -1,15 +1,16 @@
 import React from 'react';
 import logo from "./constants/gg.png";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className="header">
       <a href="/"><img alt="logo" src={logo} /></a>
       <ul className="nav-list">
-        <li><a href='./offers'>Offers</a></li>
-        <li><a href='./about'>About Us</a></li>
-        <li><a href='./'>Contact</a></li>
-        <li><a href='./'>Cart</a></li>
+        <li><Link to='./offers'>Offers</Link></li>
+        <li><Link to='./about'>About Us</Link></li>
+        <li><Link to='./'>Contact</Link></li>
+        <li><Link to='./'>Cart</Link></li>
         <button>Log in</button>
       </ul>
     </div>

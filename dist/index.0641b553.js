@@ -2977,24 +2977,24 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "hoot",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 19,
+                    lineNumber: 20,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3006,37 +3006,47 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 28,
+            lineNumber: 29,
             columnNumber: 13
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 29,
+            lineNumber: 30,
             columnNumber: 18
-        }, undefined)
-    },
-    {
-        path: "/offers",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offersDefault.default), {}, void 0, false, {
-            fileName: "src/app.js",
-            lineNumber: 33,
-            columnNumber: 13
-        }, undefined)
-    },
-    {
-        path: "/about",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
-            fileName: "src/app.js",
-            lineNumber: 37,
-            columnNumber: 13
-        }, undefined)
+        }, undefined),
+        children: [
+            {
+                path: "/",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 34,
+                    columnNumber: 17
+                }, undefined)
+            },
+            {
+                path: "/offers",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offersDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 38,
+                    columnNumber: 17
+                }, undefined)
+            },
+            {
+                path: "/about",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 42,
+                    columnNumber: 17
+                }, undefined)
+            }
+        ]
     }
 ]);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
     router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 44,
+    lineNumber: 51,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -27304,6 +27314,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _ggPng = require("./constants/gg.png");
 var _ggPngDefault = parcelHelpers.interopDefault(_ggPng);
+var _reactRouterDom = require("react-router-dom");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
@@ -27315,35 +27326,21 @@ const Header = ()=>{
                     src: (0, _ggPngDefault.default)
                 }, void 0, false, {
                     fileName: "src/components/header.js",
-                    lineNumber: 7,
+                    lineNumber: 8,
                     columnNumber: 19
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/header.js",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 className: "nav-list",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "./offers",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "./offers",
                             children: "Offers"
-                        }, void 0, false, {
-                            fileName: "src/components/header.js",
-                            lineNumber: 9,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/header.js",
-                        lineNumber: 9,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "./about",
-                            children: "About Us"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 10,
@@ -27355,9 +27352,9 @@ const Header = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "./",
-                            children: "Contact"
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "./about",
+                            children: "About Us"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 11,
@@ -27369,9 +27366,9 @@ const Header = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "./",
-                            children: "Cart"
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "./",
+                            children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 12,
@@ -27382,23 +27379,37 @@ const Header = ()=>{
                         lineNumber: 12,
                         columnNumber: 9
                     }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "./",
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/header.js",
+                            lineNumber: 13,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/header.js",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         children: "Log in"
                     }, void 0, false, {
                         fileName: "src/components/header.js",
-                        lineNumber: 13,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/header.js",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/header.js",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -27412,7 +27423,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./constants/gg.png":"5f48m"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./constants/gg.png":"5f48m","react-router-dom":"9xmpe"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27618,984 +27629,7 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"fxbaO":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$3ad2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$3ad2.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _restroCard = require("./restroCard");
-var _restroCardDefault = parcelHelpers.interopDefault(_restroCard);
-var _react = require("react");
-var _shimmer = require("./shimmers/shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _notfound = require("./shimmers/notfound");
-var _notfoundDefault = parcelHelpers.interopDefault(_notfound);
-var _s = $RefreshSig$();
-const filterData = (searchTxt, listOfRestaurants)=>{
-    const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.title?.toLowerCase().includes(searchTxt.toLowerCase()));
-    return filterData;
-};
-const Body = ()=>{
-    _s();
-    const [searchTxt, setSearchTXt] = (0, _react.useState)("craving anything specific?");
-    const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
-    const [filteredList, setFilteredList] = (0, _react.useState)([]);
-    const Fetchy = async ()=>{
-        const response = await fetch(" https://allsetnow.com/api/address/v5/?sort_point=29.38385,+-94.9027&limit=100&offset=0");
-        const json = await response.json();
-        console.log(json);
-        setListOfRestaurants(json?.data);
-        setFilteredList(json?.data);
-    };
-    (0, _react.useEffect)(()=>{
-        Fetchy();
-    }, []);
-    return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-        fileName: "src/components/body.js",
-        lineNumber: 31,
-        columnNumber: 44
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "search-box",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Search...",
-                            value: searchTxt,
-                            onChange: (e)=>{
-                                setSearchTXt(e.target.value);
-                            }
-                        }, void 0, false, {
-                            fileName: "src/components/body.js",
-                            lineNumber: 35,
-                            columnNumber: 7
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            onClick: ()=>{
-                                const data = filterData(searchTxt, listOfRestaurants);
-                                setFilteredList(data);
-                            },
-                            children: "Search"
-                        }, void 0, false, {
-                            fileName: "src/components/body.js",
-                            lineNumber: 39,
-                            columnNumber: 7
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/body.js",
-                    lineNumber: 34,
-                    columnNumber: 13
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/body.js",
-                lineNumber: 33,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "hoot",
-                children: filteredList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notfoundDefault.default), {}, void 0, false, {
-                    fileName: "src/components/body.js",
-                    lineNumber: 47,
-                    columnNumber: 35
-                }, undefined) : filteredList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardDefault.default), {
-                        Resdata: restaurant
-                    }, restaurant.id, false, {
-                        fileName: "src/components/body.js",
-                        lineNumber: 50,
-                        columnNumber: 7
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/body.js",
-                lineNumber: 45,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true);
-};
-_s(Body, "FDB+I8w878dCneLRtsT8CiIQR/o=");
-_c = Body;
-exports.default = Body;
-var _c;
-$RefreshReg$(_c, "Body");
-
-  $parcel$ReactRefreshHelpers$3ad2.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./restroCard":"a9zVv","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./shimmers/shimmer":"7uMHb","./shimmers/notfound":"byJwy"}],"a9zVv":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5396 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5396.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Restro = (props)=>{
-    const { Resdata } = props;
-    const { image, title, category, price_rating } = Resdata;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                alt: title,
-                src: image
-            }, void 0, false, {
-                fileName: "src/components/restroCard.js",
-                lineNumber: 14,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: title
-            }, void 0, false, {
-                fileName: "src/components/restroCard.js",
-                lineNumber: 15,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: category
-            }, void 0, false, {
-                fileName: "src/components/restroCard.js",
-                lineNumber: 16,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    price_rating,
-                    " stars"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/restroCard.js",
-                lineNumber: 17,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/restroCard.js",
-        lineNumber: 13,
-        columnNumber: 7
-    }, undefined);
-};
-_c = Restro;
-exports.default = Restro;
-var _c;
-$RefreshReg$(_c, "Restro");
-
-  $parcel$ReactRefreshHelpers$5396.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7uMHb":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ff34 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ff34.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 4,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 4,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 5,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 5,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 6,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 7,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 7,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 8,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 8,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 9,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 9,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 10,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 10,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 11,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 12,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 12,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 13,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 13,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 14,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 15,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 15,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 16,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 16,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 17,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 17,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 18,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 18,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 19,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 19,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 20,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 20,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 21,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 21,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 22,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 23,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 23,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 24,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 25,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 25,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 26,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 26,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 27,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 27,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 28,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 28,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 29,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 30,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 31,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 31,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 32,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 32,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 33,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 33,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 34,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 34,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 35,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 35,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 36,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 36,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 37,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 37,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 38,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 38,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 39,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 39,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 40,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 40,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 41,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 41,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 42,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 42,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 43,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 43,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 44,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 44,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 45,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 45,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 46,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 46,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "\u2003\u2003\u2003\u2003\u2003"
-                }, void 0, false, {
-                    fileName: "src/components/shimmers/shimmer.js",
-                    lineNumber: 47,
-                    columnNumber: 29
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/shimmers/shimmer.js",
-                lineNumber: 47,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true);
-};
-_c = Shimmer;
-exports.default = Shimmer;
-var _c;
-$RefreshReg$(_c, "Shimmer");
-
-  $parcel$ReactRefreshHelpers$ff34.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"byJwy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$845d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$845d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const Notfound = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-            children: "Oops!The item or Restaurant not found!!"
-        }, void 0, false, {
-            fileName: "src/components/shimmers/notfound.js",
-            lineNumber: 6,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/shimmers/notfound.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Notfound;
-exports.default = Notfound;
-var _c;
-$RefreshReg$(_c, "Notfound");
-
-  $parcel$ReactRefreshHelpers$845d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bjsug":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f161 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f161.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
-        className: "footer",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "footer-content",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "\xa9 2024 Prasant Bhattarai~All rights reserved."
-                }, void 0, false, {
-                    fileName: "src/components/footer.js",
-                    lineNumber: 7,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                    className: "footer-nav",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "#",
-                                    children: "Home"
-                                }, void 0, false, {
-                                    fileName: "src/components/footer.js",
-                                    lineNumber: 10,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/footer.js",
-                                lineNumber: 10,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "#",
-                                    children: "About Us"
-                                }, void 0, false, {
-                                    fileName: "src/components/footer.js",
-                                    lineNumber: 11,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/footer.js",
-                                lineNumber: 11,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "#",
-                                    children: "Services"
-                                }, void 0, false, {
-                                    fileName: "src/components/footer.js",
-                                    lineNumber: 12,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/footer.js",
-                                lineNumber: 12,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "#",
-                                    children: "Contact"
-                                }, void 0, false, {
-                                    fileName: "src/components/footer.js",
-                                    lineNumber: 13,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/footer.js",
-                                lineNumber: 13,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/footer.js",
-                        lineNumber: 9,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/footer.js",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/footer.js",
-            lineNumber: 6,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/footer.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Footer;
-exports.default = Footer;
-var _c;
-$RefreshReg$(_c, "Footer");
-
-  $parcel$ReactRefreshHelpers$f161.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.23.1
  *
@@ -35288,7 +34322,984 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iM0SY":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fxbaO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3ad2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3ad2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _restroCard = require("./restroCard");
+var _restroCardDefault = parcelHelpers.interopDefault(_restroCard);
+var _react = require("react");
+var _shimmer = require("./shimmers/shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _notfound = require("./shimmers/notfound");
+var _notfoundDefault = parcelHelpers.interopDefault(_notfound);
+var _s = $RefreshSig$();
+const filterData = (searchTxt, listOfRestaurants)=>{
+    const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.title?.toLowerCase().includes(searchTxt.toLowerCase()));
+    return filterData;
+};
+const Body = ()=>{
+    _s();
+    const [searchTxt, setSearchTXt] = (0, _react.useState)("craving anything specific?");
+    const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
+    const [filteredList, setFilteredList] = (0, _react.useState)([]);
+    const Fetchy = async ()=>{
+        const response = await fetch(" https://allsetnow.com/api/address/v5/?sort_point=29.38385,+-94.9027&limit=100&offset=0");
+        const json = await response.json();
+        console.log(json);
+        setListOfRestaurants(json?.data);
+        setFilteredList(json?.data);
+    };
+    (0, _react.useEffect)(()=>{
+        Fetchy();
+    }, []);
+    return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/body.js",
+        lineNumber: 31,
+        columnNumber: 44
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "search-box",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Search...",
+                            value: searchTxt,
+                            onChange: (e)=>{
+                                setSearchTXt(e.target.value);
+                            }
+                        }, void 0, false, {
+                            fileName: "src/components/body.js",
+                            lineNumber: 35,
+                            columnNumber: 7
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: ()=>{
+                                const data = filterData(searchTxt, listOfRestaurants);
+                                setFilteredList(data);
+                            },
+                            children: "Search"
+                        }, void 0, false, {
+                            fileName: "src/components/body.js",
+                            lineNumber: 39,
+                            columnNumber: 7
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/body.js",
+                    lineNumber: 34,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/body.js",
+                lineNumber: 33,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "hoot",
+                children: filteredList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notfoundDefault.default), {}, void 0, false, {
+                    fileName: "src/components/body.js",
+                    lineNumber: 47,
+                    columnNumber: 35
+                }, undefined) : filteredList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardDefault.default), {
+                        Resdata: restaurant
+                    }, restaurant.id, false, {
+                        fileName: "src/components/body.js",
+                        lineNumber: 50,
+                        columnNumber: 7
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/body.js",
+                lineNumber: 45,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_s(Body, "FDB+I8w878dCneLRtsT8CiIQR/o=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$3ad2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./restroCard":"a9zVv","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./shimmers/shimmer":"7uMHb","./shimmers/notfound":"byJwy"}],"a9zVv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5396 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5396.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Restro = (props)=>{
+    const { Resdata } = props;
+    const { image, title, category, price_rating } = Resdata;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                alt: title,
+                src: image
+            }, void 0, false, {
+                fileName: "src/components/restroCard.js",
+                lineNumber: 14,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: title
+            }, void 0, false, {
+                fileName: "src/components/restroCard.js",
+                lineNumber: 15,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: category
+            }, void 0, false, {
+                fileName: "src/components/restroCard.js",
+                lineNumber: 16,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    price_rating,
+                    " stars"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/restroCard.js",
+                lineNumber: 17,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/restroCard.js",
+        lineNumber: 13,
+        columnNumber: 7
+    }, undefined);
+};
+_c = Restro;
+exports.default = Restro;
+var _c;
+$RefreshReg$(_c, "Restro");
+
+  $parcel$ReactRefreshHelpers$5396.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7uMHb":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ff34 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ff34.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 4,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 4,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 5,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 5,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 6,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 6,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 7,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 8,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 9,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 10,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 11,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 12,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 13,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 14,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 15,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 16,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 17,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 18,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 19,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 20,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 21,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 21,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 22,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 22,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 23,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 24,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 25,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 25,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 26,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 26,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 27,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 28,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 29,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 29,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 30,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 31,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 32,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 33,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 33,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 34,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 34,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 35,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 35,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 36,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 37,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 37,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 38,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 38,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 39,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 40,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 40,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 41,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 42,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 43,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 44,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 44,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 45,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 45,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 46,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 46,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "\u2003\u2003\u2003\u2003\u2003"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/shimmer.js",
+                    lineNumber: 47,
+                    columnNumber: 29
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shimmers/shimmer.js",
+                lineNumber: 47,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$ff34.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"byJwy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$845d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$845d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Notfound = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            children: "Oops!The item or Restaurant not found!!"
+        }, void 0, false, {
+            fileName: "src/components/shimmers/notfound.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/shimmers/notfound.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Notfound;
+exports.default = Notfound;
+var _c;
+$RefreshReg$(_c, "Notfound");
+
+  $parcel$ReactRefreshHelpers$845d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bjsug":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f161 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f161.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+        className: "footer",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "footer-content",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "\xa9 2024 Prasant Bhattarai~All rights reserved."
+                }, void 0, false, {
+                    fileName: "src/components/footer.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                    className: "footer-nav",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "#",
+                                    children: "Home"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer.js",
+                                    lineNumber: 10,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/footer.js",
+                                lineNumber: 10,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "#",
+                                    children: "About Us"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer.js",
+                                    lineNumber: 11,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/footer.js",
+                                lineNumber: 11,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "#",
+                                    children: "Services"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer.js",
+                                    lineNumber: 12,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/footer.js",
+                                lineNumber: 12,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "#",
+                                    children: "Contact"
+                                }, void 0, false, {
+                                    fileName: "src/components/footer.js",
+                                    lineNumber: 13,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/footer.js",
+                                lineNumber: 13,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/footer.js",
+                        lineNumber: 9,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/footer.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/footer.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/footer.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$f161.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iM0SY":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$73c6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35300,10 +35311,6 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _header = require("../header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-var _footer = require("../footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
 const Offer = ()=>{
     const restaurants = [
         "Fishermans Wharf",
@@ -35315,65 +35322,53 @@ const Offer = ()=>{
         "Brick House - Galveston"
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/components/navitem.js/offers.js",
-                lineNumber: 18,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "offer",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "20% Discount on Selected Restaurants"
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/offers.js",
-                        lineNumber: 20,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Enjoy a 20% discount on the following restaurants:"
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/offers.js",
-                        lineNumber: 21,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        children: restaurants.map((restaurant, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: [
-                                    "-",
-                                    restaurant
-                                ]
-                            }, index, true, {
-                                fileName: "src/components/navitem.js/offers.js",
-                                lineNumber: 24,
-                                columnNumber: 11
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/offers.js",
-                        lineNumber: 22,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Contact the restaurant directly for more information."
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/offers.js",
-                        lineNumber: 27,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/navitem.js/offers.js",
-                lineNumber: 19,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "src/components/navitem.js/offers.js",
-                lineNumber: 29,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true);
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "offer",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "20% Discount on Selected Restaurants"
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/offers.js",
+                    lineNumber: 17,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "Enjoy a 20% discount on the following restaurants:"
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/offers.js",
+                    lineNumber: 18,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: restaurants.map((restaurant, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: [
+                                "-",
+                                restaurant
+                            ]
+                        }, index, true, {
+                            fileName: "src/components/navitem.js/offers.js",
+                            lineNumber: 21,
+                            columnNumber: 11
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/offers.js",
+                    lineNumber: 19,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "Contact the restaurant directly for more information."
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/offers.js",
+                    lineNumber: 24,
+                    columnNumber: 7
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/navitem.js/offers.js",
+            lineNumber: 16,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false);
 };
 _c = Offer;
 exports.default = Offer;
@@ -35385,7 +35380,7 @@ $RefreshReg$(_c, "Offer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../header":"aorvA","../footer":"bjsug","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4vdmF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4vdmF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0a29 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35397,145 +35392,129 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _ggPng = require("../constants/gg.png");
 var _ggPngDefault = parcelHelpers.interopDefault(_ggPng);
-var _footer = require("../footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _header = require("../header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/components/navitem.js/about.js",
-                lineNumber: 7,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "about",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "aboutimg",
-                        alt: "Yeti Munch",
-                        src: (0, _ggPngDefault.default)
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 9,
-                        columnNumber: 1
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Welcome to Yeti Munch - Your Ultimate Food Delivery Companion"
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 10,
-                        columnNumber: 1
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "At Yeti Munch, we believe that great food should be just a few taps away. Whether you're craving comfort food from your favorite local diner or exploring exotic cuisines from top-rated restaurants, Yeti Munch is here to deliver.Our platform combines convenience with a wide array of culinary delights, making dining in as delightful as dining out."
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 11,
-                        columnNumber: 1
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: "Key Features:"
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 17,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            "-Wide Selection: Explore a diverse range of restaurants, from cozy cafes to upscale eateries, all available at your fingertips. ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/navitem.js/about.js",
-                                lineNumber: 19,
-                                columnNumber: 77
-                            }, undefined),
-                            "-Easy Ordering: Effortlessly browse menus, customize your orders, and securely pay online for a seamless experience.",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/navitem.js/about.js",
-                                lineNumber: 21,
-                                columnNumber: 52
-                            }, undefined),
-                            "-Real-time Tracking: Stay updated with real-time tracking of your order, ensuring you know exactly when to expect your delicious meal.",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/navitem.js/about.js",
-                                lineNumber: 23,
-                                columnNumber: 63
-                            }, undefined),
-                            "-Exclusive Offers: Enjoy exclusive deals and discounts on select restaurants, making every meal a satisfying deal.",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/navitem.js/about.js",
-                                lineNumber: 25,
-                                columnNumber: 37
-                            }, undefined),
-                            "-User-friendly Interface: Our intuitive app and website design make navigating through choices and placing orders a breeze.",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/navitem.js/about.js",
-                                lineNumber: 27,
-                                columnNumber: 45
-                            }, undefined),
-                            "-Customer Support: Need assistance? Our dedicated customer support team is available around the clock to help with any queries or concerns."
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 18,
-                        columnNumber: 1
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: " Restaurant Partners:"
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 31,
-                        columnNumber: 1
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Yeti Munch partners with a wide network of restaurants renowned for their quality and taste. From local favorites to popular chains, we bring you the best culinary experiences from your neighborhood and beyond."
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 32,
-                        columnNumber: 1
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "Delivery Excellence:"
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 35,
-                        columnNumber: 1
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "We pride ourselves on timely deliveries. Serving across Kathmandu Valley and Pokhara, our efficient logistics ensure your food arrives hot and fresh, just as you like it."
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 36,
-                        columnNumber: 1
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "Get Started:"
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 39,
-                        columnNumber: 1
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Ready to explore Yeti Munch? Download our app on App Store/Google Play store, or visit our website at yetimunch.com. Discover new flavors, rediscover old favorites, and let Yeti Munch bring the joy of good food right to your doorstep."
-                    }, void 0, false, {
-                        fileName: "src/components/navitem.js/about.js",
-                        lineNumber: 40,
-                        columnNumber: 1
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/navitem.js/about.js",
-                lineNumber: 8,
-                columnNumber: 1
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "src/components/navitem.js/about.js",
-                lineNumber: 46,
-                columnNumber: 1
-            }, undefined)
-        ]
-    }, void 0, true);
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "about",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "aboutimg",
+                    alt: "Yeti Munch",
+                    src: (0, _ggPngDefault.default)
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 6,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Welcome to Yeti Munch - Your Ultimate Food Delivery Companion"
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 7,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "At Yeti Munch, we believe that great food should be just a few taps away. Whether you're craving comfort food from your favorite local diner or exploring exotic cuisines from top-rated restaurants, Yeti Munch is here to deliver.Our platform combines convenience with a wide array of culinary delights, making dining in as delightful as dining out."
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 8,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "Key Features:"
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 14,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: [
+                        "-Wide Selection: Explore a diverse range of restaurants, from cozy cafes to upscale eateries, all available at your fingertips. ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            fileName: "src/components/navitem.js/about.js",
+                            lineNumber: 16,
+                            columnNumber: 77
+                        }, undefined),
+                        "-Easy Ordering: Effortlessly browse menus, customize your orders, and securely pay online for a seamless experience.",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            fileName: "src/components/navitem.js/about.js",
+                            lineNumber: 18,
+                            columnNumber: 52
+                        }, undefined),
+                        "-Real-time Tracking: Stay updated with real-time tracking of your order, ensuring you know exactly when to expect your delicious meal.",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            fileName: "src/components/navitem.js/about.js",
+                            lineNumber: 20,
+                            columnNumber: 63
+                        }, undefined),
+                        "-Exclusive Offers: Enjoy exclusive deals and discounts on select restaurants, making every meal a satisfying deal.",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            fileName: "src/components/navitem.js/about.js",
+                            lineNumber: 22,
+                            columnNumber: 37
+                        }, undefined),
+                        "-User-friendly Interface: Our intuitive app and website design make navigating through choices and placing orders a breeze.",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            fileName: "src/components/navitem.js/about.js",
+                            lineNumber: 24,
+                            columnNumber: 45
+                        }, undefined),
+                        "-Customer Support: Need assistance? Our dedicated customer support team is available around the clock to help with any queries or concerns."
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 15,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: " Restaurant Partners:"
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 28,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "Yeti Munch partners with a wide network of restaurants renowned for their quality and taste. From local favorites to popular chains, we bring you the best culinary experiences from your neighborhood and beyond."
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 29,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: "Delivery Excellence:"
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 32,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "We pride ourselves on timely deliveries. Serving across Kathmandu Valley and Pokhara, our efficient logistics ensure your food arrives hot and fresh, just as you like it."
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 33,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: "Get Started:"
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 36,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "Ready to explore Yeti Munch? Download our app on App Store/Google Play store, or visit our website at yetimunch.com. Discover new flavors, rediscover old favorites, and let Yeti Munch bring the joy of good food right to your doorstep."
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/about.js",
+                    lineNumber: 37,
+                    columnNumber: 1
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/navitem.js/about.js",
+            lineNumber: 5,
+            columnNumber: 1
+        }, undefined)
+    }, void 0, false);
 };
 _c = About;
 exports.default = About;
@@ -35547,7 +35526,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../constants/gg.png":"5f48m","../footer":"bjsug","../header":"aorvA"}],"g7fau":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../constants/gg.png":"5f48m"}],"g7fau":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2ddd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

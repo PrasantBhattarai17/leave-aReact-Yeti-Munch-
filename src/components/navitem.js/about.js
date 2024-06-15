@@ -1,10 +1,7 @@
 import logo from "../constants/gg.png";
-import Footer from "../footer";
-import Header from "../header";
 const About=()=>{
 return(
     <>
-    <Header/>
 <div className="about">
 <img  className="aboutimg" alt="Yeti Munch" src={logo}/>
 <h1>Welcome to Yeti Munch - Your Ultimate Food Delivery Companion</h1>
@@ -42,8 +39,6 @@ through choices and placing orders a breeze.<br/>
   good food right to your doorstep.</p>
 
 </div>
-
-<Footer/>
 </>
 );
 }

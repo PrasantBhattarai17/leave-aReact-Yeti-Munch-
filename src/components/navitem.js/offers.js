@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../header";
-import Footer from "../footer";
 
 const Offer = () => {
   const restaurants = [
@@ -15,7 +13,6 @@ const Offer = () => {
 
   return (
     <>
-    <Header/>
     <div className="offer">
       <h1>20% Discount on Selected Restaurants</h1>
       <p>Enjoy a 20% discount on the following restaurants:</p>
@@ -26,7 +23,6 @@ const Offer = () => {
       </ul>
       <p>Contact the restaurant directly for more information.</p>
     </div>
-    <Footer/>
     </>
   );
 };
