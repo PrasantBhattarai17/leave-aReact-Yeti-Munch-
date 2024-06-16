@@ -15,13 +15,22 @@ const Body=()=>{
     const [filteredList,setFilteredList]=useState([]);
 
     const Fetchy = async () => {
-        const response = await fetch(" https://allsetnow.com/api/address/v5/?sort_point=29.38385,+-94.9027&limit=100&offset=0");
-        const json = await response.json();
-
-           console.log(json);
-               setListOfRestaurants(json?.data);
-               setFilteredList(json?.data);
-      };
+      try {
+          const response = await fetch("https://allsetnow.com/api/address/v5/?sort_point=29.38385,+-94.9027&limit=100&offset=0");
+          
+          if (!response.ok) {
+              throw new Error("error!");
+          }
+  
+          const json = await response.json();
+  
+          console.log(json);
+          setListOfRestaurants(json?.data);
+          setFilteredList(json?.data);
+      } catch (error) {
+          console.error('Error fetching data:', error);
+      }
+  };
 
       useEffect(() => {
         Fetchy();

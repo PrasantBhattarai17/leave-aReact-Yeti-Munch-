@@ -34350,18 +34350,23 @@ const Body = ()=>{
     const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
     const [filteredList, setFilteredList] = (0, _react.useState)([]);
     const Fetchy = async ()=>{
-        const response = await fetch(" https://allsetnow.com/api/address/v5/?sort_point=29.38385,+-94.9027&limit=100&offset=0");
-        const json = await response.json();
-        console.log(json);
-        setListOfRestaurants(json?.data);
-        setFilteredList(json?.data);
+        try {
+            const response = await fetch("https://allsetnow.com/api/address/v5/?sort_point=29.38385,+-94.9027&limit=100&offset=0");
+            if (!response.ok) throw new Error("error!");
+            const json = await response.json();
+            console.log(json);
+            setListOfRestaurants(json?.data);
+            setFilteredList(json?.data);
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
     };
     (0, _react.useEffect)(()=>{
         Fetchy();
     }, []);
     return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/body.js",
-        lineNumber: 31,
+        lineNumber: 40,
         columnNumber: 44
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -34379,7 +34384,7 @@ const Body = ()=>{
                             }
                         }, void 0, false, {
                             fileName: "src/components/body.js",
-                            lineNumber: 35,
+                            lineNumber: 44,
                             columnNumber: 7
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34390,36 +34395,36 @@ const Body = ()=>{
                             children: "Search"
                         }, void 0, false, {
                             fileName: "src/components/body.js",
-                            lineNumber: 39,
+                            lineNumber: 48,
                             columnNumber: 7
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/body.js",
-                    lineNumber: 34,
+                    lineNumber: 43,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 33,
+                lineNumber: 42,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "hoot",
                 children: filteredList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notfoundDefault.default), {}, void 0, false, {
                     fileName: "src/components/body.js",
-                    lineNumber: 47,
+                    lineNumber: 56,
                     columnNumber: 35
                 }, undefined) : filteredList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardDefault.default), {
                         Resdata: restaurant
                     }, restaurant.id, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 50,
+                        lineNumber: 59,
                         columnNumber: 7
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 45,
+                lineNumber: 54,
                 columnNumber: 5
             }, undefined)
         ]
