@@ -9,6 +9,7 @@ import Offer from "./components/navitem.js/offers";
 import About from "./components/navitem.js/about";
 import Error from "./components/shimmers/error";
 import { Outlet } from "react-router-dom";
+import Franchisee from "./components/navitem.js/franchiseClass";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -40,6 +41,10 @@ const appRouter =createBrowserRouter([
       {
         path:"/about",
         element:<About/>
+      },
+      {
+        path:"/services",
+        element:<Franchisee/>
       }
     ]
   }
