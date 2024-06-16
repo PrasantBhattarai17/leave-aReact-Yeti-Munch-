@@ -9,8 +9,7 @@ import Offer from "./components/navitem.js/offers";
 import About from "./components/navitem.js/about";
 import Error from "./components/shimmers/error";
 import { Outlet } from "react-router-dom";
-import Franchisee from "./components/navitem.js/franchiseClass";
-
+import Services from "./components/navitem.js/service";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const AppLayout = () => {
@@ -44,7 +43,7 @@ const appRouter =createBrowserRouter([
       },
       {
         path:"/services",
-        element:<Franchisee/>
+        element:<Services/>
       }
     ]
   }

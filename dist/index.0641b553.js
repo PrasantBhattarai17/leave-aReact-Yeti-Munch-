@@ -2971,32 +2971,32 @@ var _about = require("./components/navitem.js/about");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
 var _error = require("./components/shimmers/error");
 var _errorDefault = parcelHelpers.interopDefault(_error);
-var _franchiseClass = require("./components/navitem.js/franchiseClass");
-var _franchiseClassDefault = parcelHelpers.interopDefault(_franchiseClass);
+var _service = require("./components/navitem.js/service");
+var _serviceDefault = parcelHelpers.interopDefault(_service);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "hoot",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 21,
+                    lineNumber: 20,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 20,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 23,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3008,12 +3008,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 30,
+            lineNumber: 29,
             columnNumber: 13
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 31,
+            lineNumber: 30,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3021,7 +3021,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 35,
+                    lineNumber: 34,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3029,7 +3029,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/offers",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offersDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 39,
+                    lineNumber: 38,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3037,15 +3037,15 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 43,
+                    lineNumber: 42,
                     columnNumber: 17
                 }, undefined)
             },
             {
                 path: "/services",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _franchiseClassDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _serviceDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 47,
+                    lineNumber: 46,
                     columnNumber: 17
                 }, undefined)
             }
@@ -3056,7 +3056,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 56,
+    lineNumber: 55,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3067,7 +3067,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/body":"fxbaO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/footer":"bjsug","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY","./components/navitem.js/about":"4vdmF","./components/shimmers/error":"g7fau","./components/navitem.js/franchiseClass":"5MUWa"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/body":"fxbaO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/footer":"bjsug","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY","./components/navitem.js/about":"4vdmF","./components/shimmers/error":"g7fau","./components/navitem.js/service":"kcqOW"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -35613,7 +35613,49 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"5MUWa":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"kcqOW":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e744 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e744.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _franchiseClass = require("./franchiseClass");
+var _franchiseClassDefault = parcelHelpers.interopDefault(_franchiseClass);
+class Services extends (0, _reactDefault.default).Component {
+    async componentDidMount() {
+        const response = await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=12.9715987&lng=77.5945627");
+        const json = await response.json();
+        console.log(json);
+        console.log(json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
+        const resList = json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants;
+        this.setState({
+            name: resList[1].info.name
+        });
+    }
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _franchiseClassDefault.default), {
+            props: this.name
+        }, void 0, false, {
+            fileName: "src/components/navitem.js/service.js",
+            lineNumber: 20,
+            columnNumber: 12
+        }, this);
+    }
+}
+exports.default = Services;
+
+  $parcel$ReactRefreshHelpers$e744.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./franchiseClass":"5MUWa","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5MUWa":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7f42 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35627,6 +35669,12 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class Franchisee extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            name: "hotel heaven"
+        };
+    }
     render() {
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "services",
@@ -35635,20 +35683,30 @@ class Franchisee extends (0, _reactDefault.default).Component {
                     children: "Our services"
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 10,
+                    lineNumber: 18,
                     columnNumber: 2
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                     children: "The franchisees connected to us :"
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 11,
+                    lineNumber: 19,
+                    columnNumber: 2
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: [
+                        "name:",
+                        this.props.name
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/navitem.js/franchiseClass.js",
+                    lineNumber: 20,
                     columnNumber: 2
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/navitem.js/franchiseClass.js",
-            lineNumber: 9,
+            lineNumber: 16,
             columnNumber: 5
         }, this);
     }
