@@ -27349,8 +27349,8 @@ const Header = ()=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./offers",
-                            children: "Offers"
+                            to: "./",
+                            children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 10,
@@ -27363,8 +27363,8 @@ const Header = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./about",
-                            children: "About Us"
+                            to: "./offers",
+                            children: "Offers"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 11,
@@ -27377,8 +27377,8 @@ const Header = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./services",
-                            children: "Services"
+                            to: "./about",
+                            children: "About Us"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 12,
@@ -27391,8 +27391,8 @@ const Header = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./",
-                            children: "Cart"
+                            to: "./services",
+                            children: "Services"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 13,
@@ -27403,11 +27403,25 @@ const Header = ()=>{
                         lineNumber: 13,
                         columnNumber: 9
                     }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "./",
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/header.js",
+                            lineNumber: 14,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/header.js",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         children: "Log in"
                     }, void 0, false, {
                         fileName: "src/components/header.js",
-                        lineNumber: 14,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -35614,12 +35628,28 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class Franchisee extends (0, _reactDefault.default).Component {
     render() {
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Our services"
-        }, void 0, false, {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "services",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Our services"
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/franchiseClass.js",
+                    lineNumber: 10,
+                    columnNumber: 2
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: "The franchisees connected to us :"
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/franchiseClass.js",
+                    lineNumber: 11,
+                    columnNumber: 2
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "src/components/navitem.js/franchiseClass.js",
-            lineNumber: 8,
-            columnNumber: 12
+            lineNumber: 9,
+            columnNumber: 5
         }, this);
     }
 }

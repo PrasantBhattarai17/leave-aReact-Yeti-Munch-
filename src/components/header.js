@@ -7,6 +7,7 @@ const Header = () => {
     <div className="header">
       <a href="/"><img alt="logo" src={logo} /></a>
       <ul className="nav-list">
+        <li><Link to='./'>Home</Link></li>
         <li><Link to='./offers'>Offers</Link></li>
         <li><Link to='./about'>About Us</Link></li>
         <li><Link to='./services'>Services</Link></li>
