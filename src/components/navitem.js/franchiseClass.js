@@ -1,6 +1,6 @@
 //Created using class based component
 import React from "react";
-import { CDN } from "../constants/constants";
+import { CDN } from "../utils/constants";
  
 class Franchisee extends React.Component{
 
@@ -12,7 +12,7 @@ class Franchisee extends React.Component{
         
  <h1>Our services</h1>
  <h3>The franchisees connected to us :</h3>
- <img src={CDN+cloudinaryImgId}></img>
+ <img className="aboutimg"src={CDN+cloudinaryImgId}></img>
  <h4>Name:{name}</h4>
  <h4>Location:{location}</h4>
  <h4>Rating:{rating} stars</h4>

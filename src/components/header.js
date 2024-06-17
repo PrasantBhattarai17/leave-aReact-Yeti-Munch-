@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "./constants/gg.png";
+import logo from "./utils/gg.png";
 import { Link } from 'react-router-dom';
 
 const Header = () => {

@@ -1,4 +1,4 @@
-import logo from "../constants/gg.png";
+import logo from "../utils/gg.png";
 const About=()=>{
 return(
     <>

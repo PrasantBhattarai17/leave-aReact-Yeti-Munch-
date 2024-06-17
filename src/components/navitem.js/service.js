@@ -1,7 +1,6 @@
 import React from "react";
 import Franchisee from "./franchiseClass";
 
-
 class Services extends React.Component{
     constructor(props){
         super(props);
@@ -16,19 +15,20 @@ class Services extends React.Component{
     };
 
     async componentDidMount(){ 
-        const response = await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=12.9715987&lng=77.5945627");
+        const response = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId=10575&catalog_qa=undefined&submitAction=ENTER");
          const json = await response.json();
         //  console.log(json);
-         console.log(json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
-         const resList=json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants;
+         console.log(json?.data?.cards[2]?.card?.card);
+         const resList=json?.data?.cards[2]?.card?.card;
+         console.log(resList.info);
 
          this.setState({
-            cloudinaryImgId:resList[0].info.cloudinaryImageId,
-            name:resList[0].info.name,
-            location:resList[0].info.areaName+","+resList[0].info.locality,
-            rating:resList[0].info.avgRating,
-            cuisines:resList[0].info.cuisines.join(","),
-            cost42:resList[0].info.costForTwo
+            cloudinaryImgId:resList.info.cloudinaryImageId,
+            name:resList.info.name,
+            location:resList.info.areaName+","+resList.info.locality+" ,"+resList.info.city,
+            rating:resList.info.avgRating,
+            cuisines:resList.info.cuisines.join(","),
+            cost42:resList.info.costForTwo
 
          });
      };
