@@ -35628,22 +35628,38 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _franchiseClass = require("./franchiseClass");
 var _franchiseClassDefault = parcelHelpers.interopDefault(_franchiseClass);
 class Services extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            cloudinaryImgId: "",
+            name: "",
+            location: "",
+            rating: 0,
+            cuisines: "",
+            cost42: ""
+        };
+    }
     async componentDidMount() {
         const response = await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=12.9715987&lng=77.5945627");
         const json = await response.json();
-        console.log(json);
+        //  console.log(json);
         console.log(json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
         const resList = json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants;
         this.setState({
-            name: resList[1].info.name
+            cloudinaryImgId: resList[0].info.cloudinaryImageId,
+            name: resList[0].info.name,
+            location: resList[0].info.areaName + "," + resList[0].info.locality,
+            rating: resList[0].info.avgRating,
+            cuisines: resList[0].info.cuisines.join(","),
+            cost42: resList[0].info.costForTwo
         });
     }
     render() {
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _franchiseClassDefault.default), {
-            props: this.name
+            ...this.state
         }, void 0, false, {
             fileName: "src/components/navitem.js/service.js",
-            lineNumber: 20,
+            lineNumber: 37,
             columnNumber: 12
         }, this);
     }
@@ -35668,14 +35684,10 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _constants = require("../constants/constants");
 class Franchisee extends (0, _reactDefault.default).Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            name: "hotel heaven"
-        };
-    }
     render() {
+        const { name, location, rating, cuisines, cost42, cloudinaryImgId } = this.props;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "services",
             children: [
@@ -35683,20 +35695,68 @@ class Franchisee extends (0, _reactDefault.default).Component {
                     children: "Our services"
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 18,
+                    lineNumber: 13,
                     columnNumber: 2
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                     children: "The franchisees connected to us :"
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/franchiseClass.js",
+                    lineNumber: 14,
+                    columnNumber: 2
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _constants.CDN) + cloudinaryImgId
+                }, void 0, false, {
+                    fileName: "src/components/navitem.js/franchiseClass.js",
+                    lineNumber: 15,
+                    columnNumber: 2
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: [
+                        "Name:",
+                        name
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/navitem.js/franchiseClass.js",
+                    lineNumber: 16,
+                    columnNumber: 2
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: [
+                        "Location:",
+                        location
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/navitem.js/franchiseClass.js",
+                    lineNumber: 17,
+                    columnNumber: 2
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: [
+                        "Rating:",
+                        rating,
+                        " stars"
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/navitem.js/franchiseClass.js",
+                    lineNumber: 18,
+                    columnNumber: 2
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: [
+                        "Cuisines:",
+                        cuisines
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/navitem.js/franchiseClass.js",
                     lineNumber: 19,
                     columnNumber: 2
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                     children: [
-                        "name:",
-                        this.props.name
+                        "cost For Two:",
+                        cost42
                     ]
                 }, void 0, true, {
                     fileName: "src/components/navitem.js/franchiseClass.js",
@@ -35706,7 +35766,7 @@ class Franchisee extends (0, _reactDefault.default).Component {
             ]
         }, void 0, true, {
             fileName: "src/components/navitem.js/franchiseClass.js",
-            lineNumber: 16,
+            lineNumber: 11,
             columnNumber: 5
         }, this);
     }
@@ -35718,6 +35778,12 @@ exports.default = Franchisee;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequireb17e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../constants/constants":"kN3oh"}],"kN3oh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CDN", ()=>CDN);
+const CDN = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequireb17e")
 
 //# sourceMappingURL=index.0641b553.js.map
