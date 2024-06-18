@@ -1,12 +1,15 @@
 //Created using class based component
 import React from "react";
 import { CDN } from "../utils/constants";
+import Shimmer from "../shimmers/shimmer";
  
 class Franchisee extends React.Component{
 
 
   render(){
    const {name,location,rating,cuisines,cost42,cloudinaryImgId}=this.props;
+
+   if(rating===0)return <Shimmer/>;
  return   ( 
     <div className="services">
         

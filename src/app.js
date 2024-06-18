@@ -1,5 +1,5 @@
 // index.js or AppLayout.js
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -9,8 +9,10 @@ import Offer from "./components/navitem.js/offers";
 import About from "./components/navitem.js/about";
 import Error from "./components/shimmers/error";
 import { Outlet } from "react-router-dom";
-import Services from "./components/navitem.js/service";
+import { lazy ,Suspense} from "react";
+import Shimmer from "./components/shimmers/shimmer";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const Services =lazy(()=>import("./components/navitem.js/service"));
 
 const AppLayout = () => {
   return (
@@ -43,7 +45,7 @@ const appRouter =createBrowserRouter([
       },
       {
         path:"/services",
-        element:<Services/>
+        element:<Suspense  fallback={<Shimmer/>} ><Services/></Suspense>
       }
     ]
   }
