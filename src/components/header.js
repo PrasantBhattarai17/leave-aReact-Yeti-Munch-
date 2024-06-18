@@ -1,12 +1,16 @@
 import React from 'react';
 import logo from "./utils/gg.png";
 import { Link } from 'react-router-dom';
+import useOnlineStatus from './utils/useOnlineStatus';
 
 const Header = () => {
+ const Status=useOnlineStatus();
+
   return (
     <div className="header">
       <a href="/"><img alt="logo" src={logo} /></a>
       <ul className="nav-list">
+        <li>Status:{Status?"ON":"OFF"}</li>
         <li><Link to='./'>Home</Link></li>
         <li><Link to='./offers'>Offers</Link></li>
         <li><Link to='./about'>About Us</Link></li>

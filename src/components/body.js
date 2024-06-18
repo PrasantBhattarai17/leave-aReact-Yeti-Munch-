@@ -2,6 +2,7 @@ import Restro from "./restroCard";
 import { useState,useEffect } from "react";
 import Shimmer from "./shimmers/shimmer";
  import Notfound from "./shimmers/notfound";
+import useOnlineStatus from "./utils/useOnlineStatus";
 
 const filterData=(searchTxt,listOfRestaurants)=>{
   const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.title?.toLowerCase().includes(searchTxt.toLowerCase()));
@@ -35,6 +36,13 @@ const Body=()=>{
       useEffect(() => {
         Fetchy();
     }, []);
+
+    const onlineStatus=useOnlineStatus();
+    if(onlineStatus===false){
+      return(
+        <h1>Sorry,you are Offline!!Please check your internet connection!!</h1>
+      )
+    }
 
 
       return  listOfRestaurants.length===0?<Shimmer/>:(
