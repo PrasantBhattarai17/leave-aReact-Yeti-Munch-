@@ -778,12 +778,6 @@ exports.default = Franchisee;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"c6vll","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../shimmers/shimmer":"7uMHb"}],"c6vll":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CDN", ()=>CDN);
-const CDN = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["fDftC","1xC6H"], null, "parcelRequireb17e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"c6vll","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../shimmers/shimmer":"7uMHb"}]},["fDftC","1xC6H"], null, "parcelRequireb17e")
 
 //# sourceMappingURL=service.d3d3853b.js.map

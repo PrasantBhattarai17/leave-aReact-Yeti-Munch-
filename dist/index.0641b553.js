@@ -34427,6 +34427,7 @@ var _notfound = require("./shimmers/notfound");
 var _notfoundDefault = parcelHelpers.interopDefault(_notfound);
 var _useOnlineStatus = require("./utils/useOnlineStatus");
 var _useOnlineStatusDefault = parcelHelpers.interopDefault(_useOnlineStatus);
+var _constants = require("./utils/constants");
 var _s = $RefreshSig$();
 const filterData = (searchTxt, listOfRestaurants)=>{
     const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.title?.toLowerCase().includes(searchTxt.toLowerCase()));
@@ -34439,12 +34440,12 @@ const Body = ()=>{
     const [filteredList, setFilteredList] = (0, _react.useState)([]);
     const Fetchy = async ()=>{
         try {
-            const response = await fetch("https://allsetnow.com/api/address/v5/?sort_point=29.38385,+-94.9027&limit=100&offset=0");
+            const response = await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=28.4594965&lng=77.0266383");
             if (!response.ok) throw new Error("error!");
             const json = await response.json();
             console.log(json);
-            setListOfRestaurants(json?.data);
-            setFilteredList(json?.data);
+            setListOfRestaurants(json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
+            setFilteredList(json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
         } catch (error) {
             console.error("Error fetching data:", error);
         }
@@ -34457,12 +34458,12 @@ const Body = ()=>{
         children: "Sorry,you are Offline!!Please check your internet connection!!"
     }, void 0, false, {
         fileName: "src/components/body.js",
-        lineNumber: 43,
+        lineNumber: 44,
         columnNumber: 9
     }, undefined);
     return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/body.js",
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 44
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -34480,7 +34481,7 @@ const Body = ()=>{
                             }
                         }, void 0, false, {
                             fileName: "src/components/body.js",
-                            lineNumber: 52,
+                            lineNumber: 53,
                             columnNumber: 7
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34491,36 +34492,36 @@ const Body = ()=>{
                             children: "Search"
                         }, void 0, false, {
                             fileName: "src/components/body.js",
-                            lineNumber: 56,
+                            lineNumber: 57,
                             columnNumber: 7
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/body.js",
-                    lineNumber: 51,
+                    lineNumber: 52,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 50,
+                lineNumber: 51,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "hoot",
                 children: filteredList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notfoundDefault.default), {}, void 0, false, {
                     fileName: "src/components/body.js",
-                    lineNumber: 64,
+                    lineNumber: 65,
                     columnNumber: 35
                 }, undefined) : filteredList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardDefault.default), {
                         Resdata: restaurant
-                    }, restaurant.id, false, {
+                    }, restaurant.info.id, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 7
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 62,
+                lineNumber: 63,
                 columnNumber: 5
             }, undefined)
         ]
@@ -34541,7 +34542,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./restroCard":"a9zVv","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./shimmers/shimmer":"7uMHb","./shimmers/notfound":"byJwy","./utils/useOnlineStatus":"v6UYe"}],"a9zVv":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./restroCard":"a9zVv","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./shimmers/shimmer":"7uMHb","./shimmers/notfound":"byJwy","./utils/useOnlineStatus":"v6UYe","./utils/constants":"c6vll"}],"a9zVv":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5396 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34551,48 +34552,56 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("./utils/constants");
 const Restro = (props)=>{
     const { Resdata } = props;
-    const { image, title, category, price_rating } = Resdata;
+    const { cloudinaryImageId, name, cuisines, avgRating, locality } = Resdata.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                alt: title,
-                src: image
+                alt: name,
+                src: (0, _constants.CDN) + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/restroCard.js",
-                lineNumber: 14,
+                lineNumber: 17,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: title
+                children: name
             }, void 0, false, {
                 fileName: "src/components/restroCard.js",
-                lineNumber: 15,
+                lineNumber: 18,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: category
+                children: locality
             }, void 0, false, {
                 fileName: "src/components/restroCard.js",
-                lineNumber: 16,
+                lineNumber: 19,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                children: cuisines.join(",")
+            }, void 0, false, {
+                fileName: "src/components/restroCard.js",
+                lineNumber: 20,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
-                    price_rating,
+                    avgRating,
                     " stars"
                 ]
             }, void 0, true, {
                 fileName: "src/components/restroCard.js",
-                lineNumber: 17,
+                lineNumber: 21,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/restroCard.js",
-        lineNumber: 13,
+        lineNumber: 16,
         columnNumber: 7
     }, undefined);
 };
@@ -34606,7 +34615,17 @@ $RefreshReg$(_c, "Restro");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7uMHb":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/constants":"c6vll"}],"c6vll":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CDN", ()=>CDN);
+parcelHelpers.export(exports, "MENU_API", ()=>MENU_API);
+parcelHelpers.export(exports, "RESTRO_API", ()=>RESTRO_API);
+const CDN = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId=10575&catalog_qa=undefined&submitAction=ENTER";
+const RESTRO_API = "https://www.swiggy.com/mapi/homepage/getCards?lat=28.4594965&lng=77.0266383";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7uMHb":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ff34 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

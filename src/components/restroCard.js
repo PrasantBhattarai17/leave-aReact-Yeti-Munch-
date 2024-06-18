@@ -1,20 +1,24 @@
+import { CDN } from "./utils/constants";
+
 const Restro=(props)=>{
     const { Resdata } = props;
   
     const {
-      image,
-        title,
-        category,
-        price_rating,
-      } = Resdata;
+      cloudinaryImageId,
+        name,
+        cuisines,
+        avgRating,
+        locality
+      } = Resdata.info;
   
 
     return (
       <div className="card">
-        <img alt={title} src={image}/>
-        <h2>{title}</h2>
-        <h3>{category}</h3>
-        <h4>{price_rating} stars</h4>
+        <img alt={name} src={CDN+cloudinaryImageId}/>
+        <h2>{name}</h2>
+        <h3>{locality}</h3>
+        <h5>{cuisines.join(",")}</h5>
+        <h4>{avgRating} stars</h4>
     </div>
     );
   
