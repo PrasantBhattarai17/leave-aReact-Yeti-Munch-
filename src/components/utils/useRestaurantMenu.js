@@ -1,12 +1,10 @@
 import { useState,useEffect } from "react";
 import { MENU_API } from "./constants";
 
-const[resInfo,setResInfo]=useState(null);
-useEffect(()=>{
-    fetchData();}
-    ,[]);
 
-const UseRestaurantList=(resId)=>{
+
+const useRestaurantList=(resId)=>{
+    const[resInfo,setResInfo]=useState({});
     
    const fetchData=async ()=>{
     const response =await fetch(MENU_API+resId);
@@ -14,9 +12,13 @@ const UseRestaurantList=(resId)=>{
     setResInfo(json.data);
    }
 
+   useEffect(()=>{
+    fetchData();}
+    ,[]);
+
 
 
     return resInfo;
 };
 
-export default UseRestaurantList;
+export default useRestaurantList;

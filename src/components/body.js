@@ -4,6 +4,7 @@ import Shimmer from "./shimmers/shimmer";
  import Notfound from "./shimmers/notfound";
 import useOnlineStatus from "./utils/useOnlineStatus";
 import { RESTRO_API } from "./utils/constants";
+import { Link } from "react-router-dom";
 
 const filterData=(searchTxt,listOfRestaurants)=>{
   const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.title?.toLowerCase().includes(searchTxt.toLowerCase()));
@@ -18,7 +19,7 @@ const Body=()=>{
 
     const Fetchy = async () => {
       try {
-          const response = await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=28.4594965&lng=77.0266383");
+          const response = await fetch(RESTRO_API);
           
           if (!response.ok) {
               throw new Error("error!");
@@ -65,7 +66,10 @@ const Body=()=>{
     { filteredList.length === 0 ? <Notfound/> :
   (
     filteredList.map((restaurant) => (
-      <Restro key={restaurant.info.id} Resdata={restaurant} />
+      <Link to={"/restaurant/"+restaurant.info.id} key={restaurant.info.id}>
+        {console.log(restaurant.info)}
+      <Restro  Resdata={restaurant} />
+      </Link>
     ))
   )
 }

@@ -11,6 +11,7 @@ import Error from "./components/shimmers/error";
 import { Outlet } from "react-router-dom";
 import { lazy ,Suspense} from "react";
 import Shimmer from "./components/shimmers/shimmer";
+import RestaurantMenu from "./components/restaurantMenu";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Services =lazy(()=>import("./components/navitem.js/service"));
 
@@ -46,6 +47,10 @@ const appRouter =createBrowserRouter([
       {
         path:"/services",
         element:<Suspense  fallback={<Shimmer/>} ><Services/></Suspense>
+      },
+      {
+        path:"restaurant/:resId",
+        elemment:<RestaurantMenu />
       }
     ]
   }

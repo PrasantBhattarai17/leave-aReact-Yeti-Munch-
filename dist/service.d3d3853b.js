@@ -778,6 +778,6 @@ exports.default = Franchisee;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"c6vll","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../shimmers/shimmer":"7uMHb"}]},["fDftC","1xC6H"], null, "parcelRequireb17e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"c6vll","../shimmers/shimmer":"7uMHb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["fDftC","1xC6H"], null, "parcelRequireb17e")
 
 //# sourceMappingURL=service.d3d3853b.js.map

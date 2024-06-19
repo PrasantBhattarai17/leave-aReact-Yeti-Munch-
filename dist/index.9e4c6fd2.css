@@ -65,6 +65,7 @@ body {
   width: 200px;
   margin: 10px;
   padding: 10px;
+  text-decoration: none;
   transition: transform .3s;
   display: flex;
   box-shadow: 0 2px 5px #0000001a;
