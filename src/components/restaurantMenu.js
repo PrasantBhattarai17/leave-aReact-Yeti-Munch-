@@ -7,17 +7,19 @@ const RestaurantMenu=()=>{
 
     const {resId} = useParams();
     const resInfo=useRestaurantList(resId);
-    const {cloudinaryImageId,name,cuisines,avgrating,location}=resInfo?.cards[2]?.card?.card?.info;
+    console.log('Restaurant ID:', resId);
+  console.log('Restaurant Info:', resInfo);
+    const {cloudinaryImageId,name,costForTwo,avgRating,areaName}=resInfo;
     // const {itemCards}=resInfo?.data?.cards;
 
 
     return resInfo===0?<Shimmer/>:(
     <div className="restmenu">
-        <img alt="name"  src={CDN+cloudinaryImageId}/>
+        <img className="aboutimg" alt="name"  src={CDN+cloudinaryImageId}/>
         <h1>{name}</h1>
-        <h2>{location}</h2>
-        <h3>{cuisines.join(",")}</h3>
-        <h3>{avgrating} stars</h3>
+        <h2>{areaName}</h2>
+        <h3>cost for two:{costForTwo}</h3>
+        <h3>{avgRating} stars</h3>
     </div>
 
     );

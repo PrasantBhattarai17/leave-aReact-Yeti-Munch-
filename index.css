@@ -217,6 +217,9 @@ body {
   align-self: center;
 }
 
+.nodecors{
+  text-decoration: none;
+}
 
 
 /* For Footer */

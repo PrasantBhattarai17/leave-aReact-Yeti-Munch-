@@ -3066,10 +3066,10 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
             },
             {
                 path: "restaurant/:resId",
-                elemment: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
                     lineNumber: 53,
-                    columnNumber: 18
+                    columnNumber: 17
                 }, undefined)
             }
         ]
@@ -34559,7 +34559,7 @@ var _constants = require("./utils/constants");
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const filterData = (searchTxt, listOfRestaurants)=>{
-    const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.title?.toLowerCase().includes(searchTxt.toLowerCase()));
+    const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.info?.name?.toLowerCase().includes(searchTxt.toLowerCase()));
     return filterData;
 };
 const Body = ()=>{
@@ -34570,11 +34570,11 @@ const Body = ()=>{
     const Fetchy = async ()=>{
         try {
             const response = await fetch((0, _constants.RESTRO_API));
-            if (!response.ok) throw new Error("error!");
+            if (!response.ok) throw new Error(`Error: ${response.status} - ${response.statusText}`);
             const json = await response.json();
             console.log(json);
-            setListOfRestaurants(json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
-            setFilteredList(json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
+            setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+            setFilteredList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         } catch (error) {
             console.error("Error fetching data:", error);
         }
@@ -34642,9 +34642,10 @@ const Body = ()=>{
                     lineNumber: 66,
                     columnNumber: 35
                 }, undefined) : filteredList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        className: "nodecors",
                         to: "/restaurant/" + restaurant.info.id,
                         children: [
-                            console.log(restaurant.info),
+                            console.log(restaurant.info.id),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardDefault.default), {
                                 Resdata: restaurant
                             }, void 0, false, {
@@ -34720,7 +34721,7 @@ const Restro = (props)=>{
                 lineNumber: 19,
                 columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
                 children: cuisines.join(",")
             }, void 0, false, {
                 fileName: "src/components/restroCard.js",
@@ -34762,7 +34763,7 @@ parcelHelpers.export(exports, "MENU_API", ()=>MENU_API);
 parcelHelpers.export(exports, "RESTRO_API", ()=>RESTRO_API);
 const CDN = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId=";
-const RESTRO_API = "https://www.swiggy.com/mapi/homepage/getCards?lat=28.4594965&lng=77.0266383";
+const RESTRO_API = "https://food-ordering-app-server.vercel.app/api/proxy/swiggy/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7uMHb":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ff34 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -35750,58 +35751,64 @@ const RestaurantMenu = ()=>{
     _s();
     const { resId } = (0, _reactRouterDom.useParams)();
     const resInfo = (0, _useRestaurantMenuDefault.default)(resId);
-    const { cloudinaryImageId, name, cuisines, avgrating, location } = resInfo?.cards[2]?.card?.card?.info;
+    console.log("Restaurant ID:", resId);
+    console.log("Restaurant Info:", resInfo);
+    const { cloudinaryImageId, name, costForTwo, avgRating, areaName } = resInfo;
     // const {itemCards}=resInfo?.data?.cards;
     return resInfo === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/restaurantMenu.js",
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 24
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "restmenu",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "aboutimg",
                 alt: "name",
                 src: (0, _constants.CDN) + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 16,
+                lineNumber: 18,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: name
             }, void 0, false, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: location
+                children: areaName
             }, void 0, false, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 18,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: cuisines.join(",")
-            }, void 0, false, {
-                fileName: "src/components/restaurantMenu.js",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: [
-                    avgrating,
+                    "cost for two:",
+                    costForTwo
+                ]
+            }, void 0, true, {
+                fileName: "src/components/restaurantMenu.js",
+                lineNumber: 21,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: [
+                    avgRating,
                     " stars"
                 ]
             }, void 0, true, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 20,
+                lineNumber: 22,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/restaurantMenu.js",
-        lineNumber: 15,
+        lineNumber: 17,
         columnNumber: 5
     }, undefined);
 };
@@ -35821,7 +35828,7 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","./utils/useRestaurantMenu":"fMI4H","./utils/constants":"c6vll","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./shimmers/shimmer":"7uMHb"}],"fMI4H":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./utils/useRestaurantMenu":"fMI4H","./utils/constants":"c6vll","./shimmers/shimmer":"7uMHb"}],"fMI4H":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b7c7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35839,7 +35846,7 @@ const useRestaurantList = (resId)=>{
     const fetchData = async ()=>{
         const response = await fetch((0, _constants.MENU_API) + resId);
         json = await response.json();
-        setResInfo(json.data);
+        setResInfo(json?.data?.cards[2]?.card?.card?.info);
     };
     (0, _react.useEffect)(()=>{
         fetchData();

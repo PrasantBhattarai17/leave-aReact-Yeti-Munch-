@@ -17,7 +17,7 @@ const Restro=(props)=>{
         <img alt={name} src={CDN+cloudinaryImageId}/>
         <h2>{name}</h2>
         <h3>{locality}</h3>
-        <h5>{cuisines.join(",")}</h5>
+        <h6>{cuisines.join(",")}</h6>
         <h4>{avgRating} stars</h4>
     </div>
     );
