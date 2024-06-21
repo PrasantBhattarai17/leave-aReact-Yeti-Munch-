@@ -35751,15 +35751,13 @@ const RestaurantMenu = ()=>{
     _s();
     const { resId } = (0, _reactRouterDom.useParams)();
     const resInfo = (0, _useRestaurantMenuDefault.default)(resId);
-    console.log("Restaurant ID:", resId);
-    console.log("Restaurant Info:", resInfo);
     const { cloudinaryImageId, name, costForTwo, avgRating, areaName } = resInfo;
-    // const {itemCards}=resInfo?.data?.cards;
-    return resInfo === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    if (resInfo === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/restaurantMenu.js",
-        lineNumber: 16,
-        columnNumber: 24
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        lineNumber: 13,
+        columnNumber: 29
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "restmenu",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -35768,21 +35766,21 @@ const RestaurantMenu = ()=>{
                 src: (0, _constants.CDN) + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 18,
+                lineNumber: 17,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: name
             }, void 0, false, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: areaName
             }, void 0, false, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 20,
+                lineNumber: 19,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35792,23 +35790,24 @@ const RestaurantMenu = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 21,
+                lineNumber: 20,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: [
+                    "Rating:",
                     avgRating,
                     " stars"
                 ]
             }, void 0, true, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 22,
+                lineNumber: 21,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/restaurantMenu.js",
-        lineNumber: 17,
+        lineNumber: 16,
         columnNumber: 5
     }, undefined);
 };
