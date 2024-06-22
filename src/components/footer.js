@@ -1,18 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from "./utils/gg.png";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <p>&copy; 2024 Yeti Munch~All rights reserved!</p>
-        <nav className="footer-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+      <div className=" flex flex-col items-center p-2 mx-1 text-gray-100 shadow-lg bg-[blueviolet] ">
+          <ul className='flex items-center gap-20 text-xl font-[sans-serif]'>
+          <a href="/"><img className="w-24" alt="logo" src={logo} /></a>
+            <li className=' colorOnHover '><Link to="/">Home</Link></li>
+            <li  className='colorOnHover '><Link to="/about">About Us</Link></li>
+            <li  className='colorOnHover '><Link to="/services">Services</Link></li>
+            <li  className='colorOnHover '><Link to="/contact">Contact</Link></li>
+            
           </ul>
-        </nav>
+        <p className='text-amber-200 '>&copy; 2024 Yeti Munch:Taste of Himalayas~All rights reserved!</p>
       </div>
     </footer>
   );

@@ -8,14 +8,14 @@ const Header = () => {
 
   return (
     <div className="flex p-1 m-1 justify-between bg-[blueviolet] shadow-lg">
-      <ul className="flex items-center space-x-12 text-white">
+      <ul className="flex items-center space-x-12 text-white text-lg">
       <a href="/"><img className="w-24" alt="logo" src={logo} /></a>
-        <li><Link to='./'>Home</Link></li>
-        <li><Link to='./offers'>Offers</Link></li>
-        <li><Link to='./about'>About Us</Link></li>
-        <li><Link to='./services'>Services</Link></li>
+        <li className='colorOnHover'><Link to="/">Home</Link></li>
+        <li  className='colorOnHover'><Link to='./offers'>Offers</Link></li>
+            <li  className='colorOnHover'><Link to="/about">About Us</Link></li>
+            <li  className=' colorOnHover'><Link to="/services">Services</Link></li>
       </ul>
-      <ul className="flex items-center space-x-12 text-white">
+      <ul className="flex items-center space-x-12 text-white text-lg">
         <li>Status:{Status?"ON":"OFF"}</li>
         <li><Link to='./'>Cart</Link></li>
         <button>Log in</button>

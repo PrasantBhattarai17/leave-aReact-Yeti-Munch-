@@ -27359,7 +27359,7 @@ const Header = ()=>{
         className: "flex p-1 m-1 justify-between bg-[blueviolet] shadow-lg",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                className: "flex items-center space-x-12 text-white",
+                className: "flex items-center space-x-12 text-white text-lg",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "/",
@@ -27378,13 +27378,14 @@ const Header = ()=>{
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "colorOnHover",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./",
+                            to: "/",
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 13,
-                            columnNumber: 13
+                            columnNumber: 38
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/header.js",
@@ -27392,13 +27393,14 @@ const Header = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "colorOnHover",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "./offers",
                             children: "Offers"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 14,
-                            columnNumber: 13
+                            columnNumber: 39
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/header.js",
@@ -27406,32 +27408,34 @@ const Header = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "colorOnHover",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./about",
+                            to: "/about",
                             children: "About Us"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 15,
-                            columnNumber: 13
+                            columnNumber: 43
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/header.js",
                         lineNumber: 15,
-                        columnNumber: 9
+                        columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: " colorOnHover",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./services",
+                            to: "/services",
                             children: "Services"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 16,
-                            columnNumber: 13
+                            columnNumber: 44
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/header.js",
                         lineNumber: 16,
-                        columnNumber: 9
+                        columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
@@ -27440,7 +27444,7 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                className: "flex items-center space-x-12 text-white",
+                className: "flex items-center space-x-12 text-white text-lg",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: [
@@ -34440,99 +34444,117 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _ggPng = require("./utils/gg.png");
+var _ggPngDefault = parcelHelpers.interopDefault(_ggPng);
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
         className: "footer",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "footer-content",
+            className: " flex flex-col items-center p-2 mx-1 text-gray-100 shadow-lg bg-[blueviolet] ",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "\xa9 2024 Yeti Munch~All rights reserved!"
-                }, void 0, false, {
-                    fileName: "src/components/footer.js",
-                    lineNumber: 7,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                    className: "footer-nav",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "#",
-                                    children: "Home"
-                                }, void 0, false, {
-                                    fileName: "src/components/footer.js",
-                                    lineNumber: 10,
-                                    columnNumber: 17
-                                }, undefined)
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "flex items-center gap-20 text-xl font-[sans-serif]",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "/",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "w-24",
+                                alt: "logo",
+                                src: (0, _ggPngDefault.default)
                             }, void 0, false, {
                                 fileName: "src/components/footer.js",
                                 lineNumber: 10,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "#",
-                                    children: "About Us"
-                                }, void 0, false, {
-                                    fileName: "src/components/footer.js",
-                                    lineNumber: 11,
-                                    columnNumber: 17
-                                }, undefined)
+                                columnNumber: 23
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/footer.js",
+                            lineNumber: 10,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: " colorOnHover ",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/",
+                                children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/footer.js",
                                 lineNumber: 11,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "#",
-                                    children: "Services"
-                                }, void 0, false, {
-                                    fileName: "src/components/footer.js",
-                                    lineNumber: 12,
-                                    columnNumber: 17
-                                }, undefined)
+                                columnNumber: 44
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/footer.js",
+                            lineNumber: 11,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "colorOnHover ",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/about",
+                                children: "About Us"
                             }, void 0, false, {
                                 fileName: "src/components/footer.js",
                                 lineNumber: 12,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "#",
-                                    children: "Contact"
-                                }, void 0, false, {
-                                    fileName: "src/components/footer.js",
-                                    lineNumber: 13,
-                                    columnNumber: 17
-                                }, undefined)
+                                columnNumber: 44
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/footer.js",
+                            lineNumber: 12,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "colorOnHover ",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/services",
+                                children: "Services"
                             }, void 0, false, {
                                 fileName: "src/components/footer.js",
                                 lineNumber: 13,
-                                columnNumber: 13
+                                columnNumber: 44
                             }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/footer.js",
-                        lineNumber: 9,
-                        columnNumber: 11
-                    }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/footer.js",
+                            lineNumber: 13,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "colorOnHover ",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/contact",
+                                children: "Contact"
+                            }, void 0, false, {
+                                fileName: "src/components/footer.js",
+                                lineNumber: 14,
+                                columnNumber: 44
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/footer.js",
+                            lineNumber: 14,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/footer.js",
+                    lineNumber: 9,
+                    columnNumber: 11
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-amber-200 ",
+                    children: "\xa9 2024 Yeti Munch:Taste of Himalayas~All rights reserved!"
                 }, void 0, false, {
                     fileName: "src/components/footer.js",
-                    lineNumber: 8,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/footer.js",
-            lineNumber: 6,
+            lineNumber: 8,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/footer.js",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -34546,7 +34568,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fxbaO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./utils/gg.png":"bOGml"}],"fxbaO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3ad2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

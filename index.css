@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.colorOnHover {
+   @apply hover:text-amber-200;
+}
