@@ -49,19 +49,17 @@ const Body=()=>{
 
       return  listOfRestaurants.length===0?<Shimmer/>:(
         <>
-        <div className="search-container">
-            <div className="search-box">
-      <input type="text" placeholder="Search..." value={searchTxt}  onChange={(e)=>{
+        <div className="m-1 p-1 flex justify-center  space-x-2">
+      <input  className=" border-2 border-black w-1/2 h-[50px] rounded-md p-2" type="text" placeholder="Search..." value={searchTxt}  onChange={(e)=>{
         setSearchTXt(e.target.value);
       }}/>
 
-      <button onClick={()=>{
+      <button   className=" border-2 border-black bg-violet-600 text-gray-50 w-20 rounded-md hover:bg-violet-800 text-lg shadow-md" onClick={()=>{
         const data = filterData(searchTxt,listOfRestaurants);
         setFilteredList(data);
       }}>Search</button>
     </div>
-    </div>
-    <div className="flex flex-wrap justify-start gap-12">
+    <div className="flex m-1 p-1 flex-wrap justify-start gap-12">
 
     { filteredList.length === 0 ? <Notfound/> :
   (

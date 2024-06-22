@@ -34607,49 +34607,44 @@ const Body = ()=>{
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "search-box",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Search...",
-                            value: searchTxt,
-                            onChange: (e)=>{
-                                setSearchTXt(e.target.value);
-                            }
-                        }, void 0, false, {
-                            fileName: "src/components/body.js",
-                            lineNumber: 54,
-                            columnNumber: 7
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            onClick: ()=>{
-                                const data = filterData(searchTxt, listOfRestaurants);
-                                setFilteredList(data);
-                            },
-                            children: "Search"
-                        }, void 0, false, {
-                            fileName: "src/components/body.js",
-                            lineNumber: 58,
-                            columnNumber: 7
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/body.js",
-                    lineNumber: 53,
-                    columnNumber: 13
-                }, undefined)
-            }, void 0, false, {
+                className: "m-1 p-1 flex justify-center  space-x-2",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: " border-2 border-black w-1/2 h-[50px] rounded-md p-2",
+                        type: "text",
+                        placeholder: "Search...",
+                        value: searchTxt,
+                        onChange: (e)=>{
+                            setSearchTXt(e.target.value);
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/body.js",
+                        lineNumber: 53,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: " border-2 border-black bg-violet-600 text-gray-50 w-20 rounded-md hover:bg-violet-800 text-lg shadow-md",
+                        onClick: ()=>{
+                            const data = filterData(searchTxt, listOfRestaurants);
+                            setFilteredList(data);
+                        },
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/body.js",
+                        lineNumber: 57,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/body.js",
                 lineNumber: 52,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap justify-start gap-12",
+                className: "flex m-1 p-1 flex-wrap justify-start gap-12",
                 children: filteredList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notfoundDefault.default), {}, void 0, false, {
                     fileName: "src/components/body.js",
-                    lineNumber: 66,
+                    lineNumber: 64,
                     columnNumber: 35
                 }, undefined) : filteredList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         className: "nodecors",
@@ -34660,18 +34655,18 @@ const Body = ()=>{
                                 Resdata: restaurant
                             }, void 0, false, {
                                 fileName: "src/components/body.js",
-                                lineNumber: 71,
+                                lineNumber: 69,
                                 columnNumber: 7
                             }, undefined)
                         ]
                     }, restaurant.info.id, true, {
                         fileName: "src/components/body.js",
-                        lineNumber: 69,
+                        lineNumber: 67,
                         columnNumber: 7
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 64,
+                lineNumber: 62,
                 columnNumber: 5
             }, undefined)
         ]
@@ -34708,10 +34703,10 @@ const Restro = (props)=>{
     const { cloudinaryImageId, name, cuisines, avgRating, locality } = Resdata.info;
     const word = cuisines.join(",");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "p-2 m-1 flex flex-col bg-[#ffff] w-[250px] h-[410px] border-2 items-center shadow-lg hover:bg-slate-200 ",
+        className: "p-2 m-1 flex flex-col bg-[#ffff] w-[250px] h-[410px] border-2 items-center shadow-lg rounded-xl hover:bg-slate-200 hover:scale-105  ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "w-[90%] ",
+                className: "w-[90%]  rounded-xl",
                 alt: name,
                 src: (0, _constants.CDN) + cloudinaryImageId
             }, void 0, false, {
@@ -34720,7 +34715,7 @@ const Restro = (props)=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-2xl",
+                className: "text-3xl",
                 children: name
             }, void 0, false, {
                 fileName: "src/components/restroCard.js",
