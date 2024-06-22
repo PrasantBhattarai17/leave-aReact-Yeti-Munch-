@@ -2987,10 +2987,10 @@ const AppLayout = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "hoot",
+                className: "   flex flex-wrap bg-[#f1efed] p-1 m-1",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
@@ -3000,7 +3000,7 @@ const AppLayout = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/app.js",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3012,12 +3012,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 32,
+            lineNumber: 33,
             columnNumber: 13
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 33,
+            lineNumber: 34,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3025,7 +3025,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 37,
+                    lineNumber: 38,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3033,7 +3033,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/offers",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offersDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3041,7 +3041,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 45,
+                    lineNumber: 46,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3050,17 +3050,17 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 38
                     }, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Services, {}, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 51
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3068,7 +3068,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "restaurant/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 53,
+                    lineNumber: 54,
                     columnNumber: 17
                 }, undefined)
             }
@@ -3079,7 +3079,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 62,
+    lineNumber: 63,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
@@ -27356,40 +27356,45 @@ const Header = ()=>{
     _s();
     const Status = (0, _useOnlineStatusDefault.default)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "flex p-1 m-1 justify-between bg-[blueviolet] shadow-lg",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "/",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    alt: "logo",
-                    src: (0, _ggPngDefault.default)
-                }, void 0, false, {
-                    fileName: "src/components/header.js",
-                    lineNumber: 11,
-                    columnNumber: 19
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/header.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                className: "nav-list",
+                className: "flex items-center space-x-12 text-white",
                 children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "/",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "w-24",
+                            alt: "logo",
+                            src: (0, _ggPngDefault.default)
+                        }, void 0, false, {
+                            fileName: "src/components/header.js",
+                            lineNumber: 12,
+                            columnNumber: 19
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/header.js",
+                        lineNumber: 12,
+                        columnNumber: 7
+                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: [
-                            "Status:",
-                            Status ? "ON" : "OFF"
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "./",
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/components/header.js",
+                            lineNumber: 13,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/components/header.js",
                         lineNumber: 13,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./",
-                            children: "Home"
+                            to: "./offers",
+                            children: "Offers"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 14,
@@ -27402,8 +27407,8 @@ const Header = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./offers",
-                            children: "Offers"
+                            to: "./about",
+                            children: "About Us"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 15,
@@ -27416,8 +27421,8 @@ const Header = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./about",
-                            children: "About Us"
+                            to: "./services",
+                            children: "Services"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
                             lineNumber: 16,
@@ -27427,19 +27432,24 @@ const Header = ()=>{
                         fileName: "src/components/header.js",
                         lineNumber: 16,
                         columnNumber: 9
-                    }, undefined),
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/header.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                className: "flex items-center space-x-12 text-white",
+                children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "./services",
-                            children: "Services"
-                        }, void 0, false, {
-                            fileName: "src/components/header.js",
-                            lineNumber: 17,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
+                        children: [
+                            "Status:",
+                            Status ? "ON" : "OFF"
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/header.js",
-                        lineNumber: 17,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27448,25 +27458,25 @@ const Header = ()=>{
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "src/components/header.js",
-                            lineNumber: 18,
+                            lineNumber: 20,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/header.js",
-                        lineNumber: 18,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         children: "Log in"
                     }, void 0, false, {
                         fileName: "src/components/header.js",
-                        lineNumber: 19,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/header.js",
-                lineNumber: 12,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined)
         ]
