@@ -20,7 +20,7 @@ const AppLayout = () => {
     <>
       <Header />
       <div className="
-     flex flex-wrap bg-[#f1efed] p-1 m-1">
+      bg-[#f1efed] p-1 m-1">
       <Outlet/>
       </div>
       <Footer />

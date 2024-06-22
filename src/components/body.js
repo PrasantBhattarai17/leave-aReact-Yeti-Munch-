@@ -61,7 +61,7 @@ const Body=()=>{
       }}>Search</button>
     </div>
     </div>
-    <div className="hoot">
+    <div className="flex flex-wrap justify-start gap-12">
 
     { filteredList.length === 0 ? <Notfound/> :
   (

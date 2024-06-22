@@ -2987,7 +2987,7 @@ const AppLayout = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "   flex flex-wrap bg-[#f1efed] p-1 m-1",
+                className: "   bg-[#f1efed] p-1 m-1",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/app.js",
                     lineNumber: 24,
@@ -34646,7 +34646,7 @@ const Body = ()=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "hoot",
+                className: "flex flex-wrap justify-start gap-12",
                 children: filteredList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notfoundDefault.default), {}, void 0, false, {
                     fileName: "src/components/body.js",
                     lineNumber: 66,
@@ -34706,10 +34706,12 @@ var _constants = require("./utils/constants");
 const Restro = (props)=>{
     const { Resdata } = props;
     const { cloudinaryImageId, name, cuisines, avgRating, locality } = Resdata.info;
+    const word = cuisines.join(",");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
+        className: "p-2 m-1 flex flex-col bg-[#ffff] w-[250px] h-[410px] border-2 items-center shadow-lg hover:bg-slate-200 ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "w-[90%] ",
                 alt: name,
                 src: (0, _constants.CDN) + cloudinaryImageId
             }, void 0, false, {
@@ -34718,6 +34720,7 @@ const Restro = (props)=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "text-2xl",
                 children: name
             }, void 0, false, {
                 fileName: "src/components/restroCard.js",
@@ -34725,6 +34728,7 @@ const Restro = (props)=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "text-lg",
                 children: locality
             }, void 0, false, {
                 fileName: "src/components/restroCard.js",
@@ -34732,7 +34736,8 @@ const Restro = (props)=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
-                children: cuisines.join(",")
+                className: "text-sm w-full text-center whitespace-normal break-words overflow-hidden ",
+                children: word
             }, void 0, false, {
                 fileName: "src/components/restroCard.js",
                 lineNumber: 20,
