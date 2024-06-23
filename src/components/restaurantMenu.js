@@ -13,12 +13,14 @@ const RestaurantMenu=()=>{
     if (resInfo===0) return <Shimmer/>;
 
     return (
-    <div className="restmenu">
-        <img className="aboutimg" alt="name"  src={CDN+cloudinaryImageId}/>
-        <h1>{name}</h1>
-        <h2>{areaName}</h2>
-        <h3>cost for two:{costForTwo}</h3>
-        <h3>Rating:{avgRating} stars</h3>
+    <div className="flex justify-start gap-4 pl-12 bg-amber-50">
+        <img className="p-1 m-1 w-80 rounded-xl " alt="name"  src={CDN+cloudinaryImageId}/>
+        <div className="flex  flex-col justify-end">
+        <h1 className="text-3xl">{name}</h1>
+        <h2 className="text-2xl">{areaName}</h2>
+        <h3 className="text-lg">cost for two:{costForTwo}</h3>
+        <h3 className="text-lg">Rating:{avgRating} stars</h3>
+        </div>
     </div>
 
     );

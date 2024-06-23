@@ -7,7 +7,7 @@ const Header = () => {
  const Status=useOnlineStatus();
 
   return (
-    <div className="flex p-1 m-1 justify-between bg-[blueviolet] shadow-lg">
+    <div className="flex p-1 m-1 justify-between bg-[blueviolet] shadow-lg rounded-lg">
       <ul className="flex items-center space-x-12 text-white text-lg">
       <a href="/"><img className="w-24" alt="logo" src={logo} /></a>
         <li className='colorOnHover'><Link to="/">Home</Link></li>

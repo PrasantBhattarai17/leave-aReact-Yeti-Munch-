@@ -5,7 +5,7 @@ import logo from "./utils/gg.png";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className=" flex flex-col items-center p-2 mx-1 text-gray-100 shadow-lg bg-[blueviolet] ">
+      <div className=" flex flex-col items-center p-2 mx-1 text-gray-100 shadow-2xl bg-[blueviolet] rounded-lg ">
           <ul className='flex items-center gap-20 text-xl font-[sans-serif]'>
           <a href="/"><img className="w-24" alt="logo" src={logo} /></a>
             <li className=' colorOnHover '><Link to="/">Home</Link></li>

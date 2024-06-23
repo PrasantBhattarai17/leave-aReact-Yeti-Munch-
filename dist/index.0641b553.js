@@ -27356,7 +27356,7 @@ const Header = ()=>{
     _s();
     const Status = (0, _useOnlineStatusDefault.default)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex p-1 m-1 justify-between bg-[blueviolet] shadow-lg",
+        className: "flex p-1 m-1 justify-between bg-[blueviolet] shadow-lg rounded-lg",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 className: "flex items-center space-x-12 text-white text-lg",
@@ -34451,7 +34451,7 @@ const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
         className: "footer",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: " flex flex-col items-center p-2 mx-1 text-gray-100 shadow-lg bg-[blueviolet] ",
+            className: " flex flex-col items-center p-2 mx-1 text-gray-100 shadow-2xl bg-[blueviolet] rounded-lg ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     className: "flex items-center gap-20 text-xl font-[sans-serif]",
@@ -35790,10 +35790,10 @@ const RestaurantMenu = ()=>{
         columnNumber: 29
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restmenu",
+        className: "flex justify-start gap-4 pl-12 bg-amber-50",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "aboutimg",
+                className: "p-1 m-1 w-80 rounded-xl ",
                 alt: "name",
                 src: (0, _constants.CDN) + cloudinaryImageId
             }, void 0, false, {
@@ -35801,39 +35801,52 @@ const RestaurantMenu = ()=>{
                 lineNumber: 17,
                 columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: name
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex  flex-col justify-end",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-3xl",
+                        children: name
+                    }, void 0, false, {
+                        fileName: "src/components/restaurantMenu.js",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "text-2xl",
+                        children: areaName
+                    }, void 0, false, {
+                        fileName: "src/components/restaurantMenu.js",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "text-lg",
+                        children: [
+                            "cost for two:",
+                            costForTwo
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/restaurantMenu.js",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "text-lg",
+                        children: [
+                            "Rating:",
+                            avgRating,
+                            " stars"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/restaurantMenu.js",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/restaurantMenu.js",
                 lineNumber: 18,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: areaName
-            }, void 0, false, {
-                fileName: "src/components/restaurantMenu.js",
-                lineNumber: 19,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: [
-                    "cost for two:",
-                    costForTwo
-                ]
-            }, void 0, true, {
-                fileName: "src/components/restaurantMenu.js",
-                lineNumber: 20,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: [
-                    "Rating:",
-                    avgRating,
-                    " stars"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/restaurantMenu.js",
-                lineNumber: 21,
                 columnNumber: 9
             }, undefined)
         ]
