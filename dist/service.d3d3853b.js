@@ -643,7 +643,7 @@ class Services extends (0, _reactDefault.default).Component {
             location: resList.info.areaName + "," + resList.info.locality + " ," + resList.info.city,
             rating: resList.info.avgRating,
             cuisines: resList.info.cuisines.join(","),
-            cost42: resList.info.costForTwo
+            cost42: parseInt(resList.info.costForTwo) / 100
         });
     }
     render() {
