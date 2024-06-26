@@ -1,10 +1,11 @@
-import Restro from "./restroCard";
+import Restro, { RestaurantPromoted } from "./restroCard";
 import { useState,useEffect } from "react";
 import Shimmer from "./shimmers/shimmer";
  import Notfound from "./shimmers/notfound";
 import useOnlineStatus from "./utils/useOnlineStatus";
 import { RESTRO_API } from "./utils/constants";
 import { Link } from "react-router-dom";
+import { RestaurantPromoted } from "./restroCard";
 
 const filterData=(searchTxt,listOfRestaurants)=>{
   const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.info?.name?.toLowerCase().includes(searchTxt.toLowerCase()));
@@ -66,14 +67,18 @@ const Body=()=>{
     filteredList.map((restaurant) => (
       <Link className="nodecors"to={"/restaurant/"+restaurant.info.id} key={restaurant.info.id}>
         {console.log(restaurant.info.id)}
-      <Restro  Resdata={restaurant} />
+        {restaurant.info.type === "F" ? (
+              <RestaurantPromoted Resdata={restaurant} />
+            ) : (
+              <Restro Resdata={restaurant} />
+            )}
       </Link>
     ))
   )
 }
 </div>
-
               </>
+
             
     )
   

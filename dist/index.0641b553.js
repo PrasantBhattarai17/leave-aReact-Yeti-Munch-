@@ -34619,12 +34619,12 @@ const Body = ()=>{
         children: "Sorry,you are Offline!!Please check your internet connection!!"
     }, void 0, false, {
         fileName: "src/components/body.js",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 9
     }, undefined);
     return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/body.js",
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 44
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -34641,7 +34641,7 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 53,
+                        lineNumber: 54,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34653,42 +34653,48 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 57,
+                        lineNumber: 58,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body.js",
-                lineNumber: 52,
+                lineNumber: 53,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex m-1 p-1 flex-wrap justify-start gap-12",
                 children: filteredList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notfoundDefault.default), {}, void 0, false, {
                     fileName: "src/components/body.js",
-                    lineNumber: 64,
+                    lineNumber: 65,
                     columnNumber: 35
                 }, undefined) : filteredList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         className: "nodecors",
                         to: "/restaurant/" + restaurant.info.id,
                         children: [
                             console.log(restaurant.info.id),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardDefault.default), {
+                            restaurant.info.type === "F" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCard.RestaurantPromoted), {
                                 Resdata: restaurant
                             }, void 0, false, {
                                 fileName: "src/components/body.js",
-                                lineNumber: 69,
-                                columnNumber: 7
+                                lineNumber: 71,
+                                columnNumber: 15
+                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardDefault.default), {
+                                Resdata: restaurant
+                            }, void 0, false, {
+                                fileName: "src/components/body.js",
+                                lineNumber: 73,
+                                columnNumber: 15
                             }, undefined)
                         ]
                     }, restaurant.info.id, true, {
                         fileName: "src/components/body.js",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 7
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 62,
+                lineNumber: 63,
                 columnNumber: 5
             }, undefined)
         ]
@@ -34718,6 +34724,7 @@ $parcel$ReactRefreshHelpers$5396.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "RestaurantPromoted", ()=>RestaurantPromoted);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constants = require("./utils/constants");
 const Restro = (props)=>{
@@ -34778,9 +34785,36 @@ const Restro = (props)=>{
     }, undefined);
 };
 _c = Restro;
+const RestaurantPromoted = (props)=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                className: " absolute bg-black text-white rounded-md opacity-80 ",
+                children: "Promoted"
+            }, void 0, false, {
+                fileName: "src/components/restroCard.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Restro, {
+                Resdata: props.Resdata
+            }, void 0, false, {
+                fileName: "src/components/restroCard.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/restroCard.js",
+        lineNumber: 29,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = RestaurantPromoted;
 exports.default = Restro;
-var _c;
+var _c, _c1;
 $RefreshReg$(_c, "Restro");
+$RefreshReg$(_c1, "RestaurantPromoted");
 
   $parcel$ReactRefreshHelpers$5396.postlude(module);
 } finally {
@@ -34795,7 +34829,7 @@ parcelHelpers.export(exports, "MENU_API", ()=>MENU_API);
 parcelHelpers.export(exports, "RESTRO_API", ()=>RESTRO_API);
 const CDN = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId=";
-const RESTRO_API = "https://food-ordering-app-server.vercel.app/api/proxy/swiggy/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+const RESTRO_API = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4594965&lng=77.0266383&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7uMHb":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ff34 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -35829,7 +35863,7 @@ const RestaurantMenu = ()=>{
                                 className: "text-lg",
                                 children: [
                                     "cost for two:",
-                                    costForTwo
+                                    parseInt(costForTwo / 100)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/restaurantMenu.js",
@@ -35876,7 +35910,7 @@ const RestaurantMenu = ()=>{
                             children: [
                                 "-",
                                 item?.card?.info?.name,
-                                "-",
+                                "-Rs.",
                                 parseInt(item?.card?.info?.price) / 100
                             ]
                         }, item.card.info.id, true, {

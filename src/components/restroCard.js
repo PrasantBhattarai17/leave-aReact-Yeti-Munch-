@@ -23,4 +23,13 @@ const Restro=(props)=>{
     );
   
 };
+
+export const RestaurantPromoted = (props) => {
+  return (
+    <div>
+      <label className=" absolute bg-black text-white rounded-md opacity-80 ">Promoted</label>
+      <Restro Resdata={props.Resdata} />
+    </div>
+  );
+};
  export default Restro;  
