@@ -34744,7 +34744,7 @@ const Restro = (props)=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-3xl",
+                className: "text-2xl font-bold",
                 children: name
             }, void 0, false, {
                 fileName: "src/components/restroCard.js",
@@ -35844,7 +35844,7 @@ const RestaurantMenu = ()=>{
                         className: "flex  flex-col justify-end",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-3xl",
+                                className: "text-3xl font-bold",
                                 children: name
                             }, void 0, false, {
                                 fileName: "src/components/restaurantMenu.js",
@@ -35898,7 +35898,7 @@ const RestaurantMenu = ()=>{
                 className: " pl-12 bg-amber-50",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "text-xl font-[sans-serif]",
+                        className: "text-xl font-[sans-serif] font-bold",
                         children: "The Main courses Items:"
                     }, void 0, false, {
                         fileName: "src/components/restaurantMenu.js",
