@@ -10,7 +10,6 @@ const useRestaurantFood=(resId)=>{
     const response =await fetch(MENU_API+resId);
     json=await response.json();
     setResMenu(json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
-    // console.log(resMenu);
    }
 
    useEffect(()=>{
