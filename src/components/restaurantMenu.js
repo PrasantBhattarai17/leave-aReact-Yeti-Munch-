@@ -9,6 +9,7 @@ const RestaurantMenu=()=>{
     const {resId} = useParams();
     const resInfo=useRestaurantList(resId);
     const resMenu=useRestaurantFood(resId);
+    const categories=resMenu.filter(c=>c?.card?.card?.["@type"]==="type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
 
 
     const {cloudinaryImageId,name,costForTwo,avgRating,areaName}=resInfo;    
@@ -17,6 +18,7 @@ const RestaurantMenu=()=>{
 
     return (
         <>
+        {console.log(categories)}
     <div className="flex justify-start gap-4 pl-12 bg-amber-50">
         {/* {console.log(resMenu[0]?.card?.info?.name)}; */}
         <img className="p-1 m-1 w-80 rounded-xl " alt="name"  src={CDN+cloudinaryImageId}/>
@@ -28,9 +30,7 @@ const RestaurantMenu=()=>{
         </div>
     </div>
         <div  className=" pl-12 bg-amber-50">
-            {console.log(resMenu)}
-            {/* <h1 className="text-xl font-[sans-serif] font-bold">The Main courses Items:</h1>
-           { Object.values(resMenu).map((item)=><h3 key={item.card.info.id} className="text-lg">-{item?.card?.info?.name}-Rs.{parseInt(item?.card?.info?.price)/100}</h3>)} */}
+        {categories.map((item)=><h1 className="text-xl font-[sans-serif] font-bold">{item?.card?.card?.title}</h1>)}
         </div>
         </>
     );

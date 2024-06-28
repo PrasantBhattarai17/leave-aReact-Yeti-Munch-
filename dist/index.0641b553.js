@@ -35820,14 +35820,16 @@ const RestaurantMenu = ()=>{
     const { resId } = (0, _reactRouterDom.useParams)();
     const resInfo = (0, _useRestaurantMenuDefault.default)(resId);
     const resMenu = (0, _useRestaurantFoodDefault.default)(resId);
+    const categories = resMenu.filter((c)=>c?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
     const { cloudinaryImageId, name, costForTwo, avgRating, areaName } = resInfo;
     if (resInfo === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/restaurantMenu.js",
-        lineNumber: 16,
+        lineNumber: 17,
         columnNumber: 29
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
+            console.log(categories),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex justify-start gap-4 pl-12 bg-amber-50",
                 children: [
@@ -35837,7 +35839,7 @@ const RestaurantMenu = ()=>{
                         src: (0, _constants.CDN) + cloudinaryImageId
                     }, void 0, false, {
                         fileName: "src/components/restaurantMenu.js",
-                        lineNumber: 22,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35848,7 +35850,7 @@ const RestaurantMenu = ()=>{
                                 children: name
                             }, void 0, false, {
                                 fileName: "src/components/restaurantMenu.js",
-                                lineNumber: 24,
+                                lineNumber: 26,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -35856,7 +35858,7 @@ const RestaurantMenu = ()=>{
                                 children: areaName
                             }, void 0, false, {
                                 fileName: "src/components/restaurantMenu.js",
-                                lineNumber: 25,
+                                lineNumber: 27,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35867,7 +35869,7 @@ const RestaurantMenu = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/restaurantMenu.js",
-                                lineNumber: 26,
+                                lineNumber: 28,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35879,27 +35881,34 @@ const RestaurantMenu = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/restaurantMenu.js",
-                                lineNumber: 27,
+                                lineNumber: 29,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/restaurantMenu.js",
-                        lineNumber: 23,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 20,
+                lineNumber: 22,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: " pl-12 bg-amber-50",
-                children: console.log(resMenu)
+                children: categories.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-xl font-[sans-serif] font-bold",
+                        children: item?.card?.card?.title
+                    }, void 0, false, {
+                        fileName: "src/components/restaurantMenu.js",
+                        lineNumber: 33,
+                        columnNumber: 33
+                    }, undefined))
             }, void 0, false, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 30,
+                lineNumber: 32,
                 columnNumber: 9
             }, undefined)
         ]
@@ -35974,14 +35983,12 @@ const useRestaurantFood = (resId)=>{
         const response = await fetch((0, _constants.MENU_API) + resId);
         json = await response.json();
         setResMenu(json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
+    // console.log(resMenu);
     };
     (0, _react.useEffect)(()=>{
         fetchData();
-    }, [
-        resId
-    ]);
-    const resList = resMenu.filter((restaurant)=>restaurant?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.Dish");
-    return resList;
+    }, []);
+    return resMenu;
 };
 _s(useRestaurantFood, "rDTbIPOVuYHYL/hYxiNizbCrct4=");
 exports.default = useRestaurantFood;
