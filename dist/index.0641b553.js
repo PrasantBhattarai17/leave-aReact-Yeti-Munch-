@@ -34568,7 +34568,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./utils/gg.png":"bOGml"}],"fxbaO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./utils/gg.png":"bOGml","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fxbaO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3ad2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34715,7 +34715,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./restroCard":"a9zVv","react":"21dqq","./shimmers/shimmer":"7uMHb","./shimmers/notfound":"byJwy","./utils/useOnlineStatus":"v6UYe","./utils/constants":"c6vll","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"a9zVv":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./restroCard":"a9zVv","react":"21dqq","./shimmers/shimmer":"7uMHb","./shimmers/notfound":"byJwy","./utils/useOnlineStatus":"v6UYe","./utils/constants":"c6vll","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"a9zVv":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5396 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35896,30 +35896,8 @@ const RestaurantMenu = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: " pl-12 bg-amber-50",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "text-xl font-[sans-serif] font-bold",
-                        children: "The Main courses Items:"
-                    }, void 0, false, {
-                        fileName: "src/components/restaurantMenu.js",
-                        lineNumber: 31,
-                        columnNumber: 13
-                    }, undefined),
-                    Object.values(resMenu).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                            className: "text-lg",
-                            children: [
-                                "-",
-                                item?.card?.info?.name,
-                                "-Rs.",
-                                parseInt(item?.card?.info?.price) / 100
-                            ]
-                        }, item.card.info.id, true, {
-                            fileName: "src/components/restaurantMenu.js",
-                            lineNumber: 32,
-                            columnNumber: 49
-                        }, undefined))
-                ]
-            }, void 0, true, {
+                children: console.log(resMenu)
+            }, void 0, false, {
                 fileName: "src/components/restaurantMenu.js",
                 lineNumber: 30,
                 columnNumber: 9
@@ -35944,7 +35922,7 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./utils/useRestaurantMenu":"fMI4H","./utils/constants":"c6vll","./shimmers/shimmer":"7uMHb","./utils/useRestaurantFood":"62Wb5"}],"fMI4H":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","./utils/useRestaurantMenu":"fMI4H","./utils/constants":"c6vll","./shimmers/shimmer":"7uMHb","./utils/useRestaurantFood":"62Wb5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fMI4H":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b7c7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35991,18 +35969,21 @@ var _constants = require("./constants");
 var _s = $RefreshSig$();
 const useRestaurantFood = (resId)=>{
     _s();
-    const [resMenu, setResMenu] = (0, _react.useState)({});
+    const [resMenu, setResMenu] = (0, _react.useState)([]);
     const fetchData = async ()=>{
         const response = await fetch((0, _constants.MENU_API) + resId);
         json = await response.json();
-        setResMenu(json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[4]?.card?.card?.itemCards);
+        setResMenu(json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
     };
     (0, _react.useEffect)(()=>{
         fetchData();
-    }, []);
-    return resMenu;
+    }, [
+        resId
+    ]);
+    const resList = resMenu.filter((restaurant)=>restaurant?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.Dish");
+    return resList;
 };
-_s(useRestaurantFood, "UkshyJtt8stHyFZ1htftH1EIRog=");
+_s(useRestaurantFood, "rDTbIPOVuYHYL/hYxiNizbCrct4=");
 exports.default = useRestaurantFood;
 
   $parcel$ReactRefreshHelpers$124c.postlude(module);
