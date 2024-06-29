@@ -36060,7 +36060,7 @@ const RestaurantCategory = ()=>{
                                                     columnNumber: 19
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                    className: "absolute mb-3 left-[33.5%] rounded-lg w-12 bg-black text-[gold]",
+                                                    className: "absolute mb-3 left-[33.5%] rounded-lg w-12 bg-black text-[gold] hover:scale-105",
                                                     children: "Add+"
                                                 }, void 0, false, {
                                                     fileName: "src/components/restaurantCategory.js",
@@ -36072,7 +36072,7 @@ const RestaurantCategory = ()=>{
                                                     children: [
                                                         dish?.card?.info?.name,
                                                         "-Rs.",
-                                                        dish?.card?.info?.defaultPrice / 100
+                                                        dish?.card?.info?.defaultPrice ? dish?.card?.info?.defaultPrice / 100 : dish?.card?.info?.price / 100
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/restaurantCategory.js",
@@ -36094,7 +36094,7 @@ const RestaurantCategory = ()=>{
                                             columnNumber: 18
                                         }, undefined)
                                     ]
-                                }, void 0, true, {
+                                }, dish?.card?.info?.id, true, {
                                     fileName: "src/components/restaurantCategory.js",
                                     lineNumber: 33,
                                     columnNumber: 60
