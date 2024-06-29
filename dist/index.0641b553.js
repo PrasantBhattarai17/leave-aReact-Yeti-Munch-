@@ -35999,6 +35999,7 @@ var _reactRouterDom = require("react-router-dom");
 var _useRestaurantFood = require("./utils/useRestaurantFood");
 var _useRestaurantFoodDefault = parcelHelpers.interopDefault(_useRestaurantFood);
 var _react = require("react");
+var _constants = require("./utils/constants");
 var _s = $RefreshSig$();
 const RestaurantCategory = ()=>{
     _s();
@@ -36010,58 +36011,109 @@ const RestaurantCategory = ()=>{
         setSelectedItem(selectedItem === item ? null : item);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: categories.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-col justify-center items-center",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        onClick: ()=>handleClick(item),
-                        className: "px-12 h-12 w-6/12 bg-[#faf0e5] flex justify-between items-center my-2 shadow-lg cursor-pointer",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "text-xl font-[sans-serif] font-bold",
-                                children: item?.card?.card?.title
-                            }, void 0, false, {
-                                fileName: "src/components/restaurantCategory.js",
-                                lineNumber: 26,
-                                columnNumber: 17
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "text-xl font-[sans-serif] font-bold",
-                                children: "\uD83D\uDD3D"
-                            }, void 0, false, {
-                                fileName: "src/components/restaurantCategory.js",
-                                lineNumber: 27,
-                                columnNumber: 17
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/restaurantCategory.js",
-                        lineNumber: 22,
-                        columnNumber: 15
-                    }, undefined),
-                    selectedItem === item && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "px-12 py-4 w-6/12 bg-amber-50 shadow-lg",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: "Details"
+        children: [
+            console.log(categories),
+            categories.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col justify-center items-center",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            onClick: ()=>handleClick(item),
+                            className: "px-12 h-12 w-6/12 bg-[#faf0e5] flex justify-between items-center my-2 shadow-lg cursor-pointer",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-xl font-[sans-serif] font-bold",
+                                    children: item?.card?.card?.title
+                                }, void 0, false, {
+                                    fileName: "src/components/restaurantCategory.js",
+                                    lineNumber: 28,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-xl font-[sans-serif] font-bold",
+                                    children: "\uD83D\uDD3D"
+                                }, void 0, false, {
+                                    fileName: "src/components/restaurantCategory.js",
+                                    lineNumber: 29,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/restaurantCategory.js",
+                            lineNumber: 24,
+                            columnNumber: 15
+                        }, undefined),
+                        selectedItem === item && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "  px-12 py-4 w-6/12 bg-amber-50",
+                            children: item?.card?.card?.itemCards.map((dish)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex flex-col shadow-lg cursor-pointer ",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-end",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    alt: dish?.card?.info?.name,
+                                                    src: (0, _constants.CDN) + dish?.card?.info?.imageId,
+                                                    className: "p-1 m-1 w-[30%] h-[150px] rounded-md shadow-md"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/restaurantCategory.js",
+                                                    lineNumber: 35,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    className: "absolute mb-3 left-[33.5%] rounded-lg w-12 bg-black text-[gold]",
+                                                    children: "Add+"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/restaurantCategory.js",
+                                                    lineNumber: 36,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "py-2 my-2 text-lg font-[sans-serif] font-bold text-orange-800",
+                                                    children: [
+                                                        dish?.card?.info?.name,
+                                                        "-Rs.",
+                                                        dish?.card?.info?.defaultPrice / 100
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/restaurantCategory.js",
+                                                    lineNumber: 39,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/restaurantCategory.js",
+                                            lineNumber: 34,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "mx-2 px-2 text-sm font-[sans-serif] font-bold",
+                                            children: dish?.card?.info?.description
+                                        }, void 0, false, {
+                                            fileName: "src/components/restaurantCategory.js",
+                                            lineNumber: 41,
+                                            columnNumber: 18
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/restaurantCategory.js",
+                                    lineNumber: 33,
+                                    columnNumber: 60
+                                }, undefined))
                         }, void 0, false, {
                             fileName: "src/components/restaurantCategory.js",
-                            lineNumber: 31,
-                            columnNumber: 19
+                            lineNumber: 32,
+                            columnNumber: 17
                         }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/restaurantCategory.js",
-                        lineNumber: 30,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, item?.card?.card?.title, true, {
-                fileName: "src/components/restaurantCategory.js",
-                lineNumber: 21,
-                columnNumber: 13
-            }, undefined))
-    }, void 0, false, {
+                    ]
+                }, item?.card?.card?.title, true, {
+                    fileName: "src/components/restaurantCategory.js",
+                    lineNumber: 23,
+                    columnNumber: 13
+                }, undefined))
+        ]
+    }, void 0, true, {
         fileName: "src/components/restaurantCategory.js",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 9
     }, undefined);
 };
@@ -36081,7 +36133,7 @@ $RefreshReg$(_c, "RestaurantCategory");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","./utils/useRestaurantFood":"62Wb5","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Tqo9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","./utils/useRestaurantFood":"62Wb5","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/constants":"c6vll"}],"2Tqo9":[function(require,module,exports) {
 module.exports = require("dfc5753827267026")(require("b376609f34e412ea").getBundleURL("lPpKD") + "service.d3d3853b.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
