@@ -36045,7 +36045,7 @@ const RestaurantCategory = ()=>{
                         selectedItem === item && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "  px-12 py-4 w-6/12 bg-amber-50",
                             children: item?.card?.card?.itemCards.map((dish)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "flex flex-col shadow-lg cursor-pointer ",
+                                    className: "flex flex-col shadow-lg border-b-2 cursor-pointer ",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "flex items-end",
@@ -36087,8 +36087,11 @@ const RestaurantCategory = ()=>{
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             className: "mx-2 px-2 text-sm font-[sans-serif] font-bold",
-                                            children: dish?.card?.info?.description
-                                        }, void 0, false, {
+                                            children: [
+                                                "\u27A1\uFE0F  ",
+                                                dish?.card?.info?.description
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "src/components/restaurantCategory.js",
                                             lineNumber: 41,
                                             columnNumber: 18

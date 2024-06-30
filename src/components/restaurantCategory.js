@@ -30,7 +30,7 @@ const RestaurantCategory=()=>{
               </div>
               {selectedItem === item && (
                 <div className="  px-12 py-4 w-6/12 bg-amber-50">
-                 {item?.card?.card?.itemCards.map((dish)=>(<div key={dish?.card?.info?.id} className="flex flex-col shadow-lg cursor-pointer ">
+                 {item?.card?.card?.itemCards.map((dish)=>(<div key={dish?.card?.info?.id} className="flex flex-col shadow-lg border-b-2 cursor-pointer ">
                   <div className="flex items-end">
                   <img alt={dish?.card?.info?.name} src={CDN+dish?.card?.info?.imageId} className="p-1 m-1 w-[30%] h-[150px] rounded-md shadow-md"/>
                     <button className="absolute mb-3 left-[33.5%] rounded-lg w-12 bg-black text-[gold] hover:scale-105">
@@ -38,7 +38,7 @@ const RestaurantCategory=()=>{
                       </button>
                   <span className="py-2 my-2 text-lg font-[sans-serif] font-bold text-orange-800">{dish?.card?.info?.name}-Rs.{(dish?.card?.info?.defaultPrice)?dish?.card?.info?.defaultPrice/100:dish?.card?.info?.price/100}</span>
                   </div>
-                 <span className="mx-2 px-2 text-sm font-[sans-serif] font-bold">{dish?.card?.info?.description}</span>
+                 <span className="mx-2 px-2 text-sm font-[sans-serif] font-bold">➡️  {dish?.card?.info?.description}</span>
                   </div>))
                  }
               </div>
