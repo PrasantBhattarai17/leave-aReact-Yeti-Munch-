@@ -28,7 +28,6 @@ const Body=()=>{
   
           const json = await response.json();
   
-          console.log(json);
           setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
           setFilteredList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
       } catch (error) {
@@ -66,7 +65,6 @@ const Body=()=>{
   (
     filteredList.map((restaurant) => (
       <Link className="nodecors"to={"/restaurant/"+restaurant.info.id} key={restaurant.info.id}>
-        {console.log(restaurant.info.id)}
         {restaurant.info.type === "F" ? (
               <RestaurantPromoted Resdata={restaurant} />
             ) : (

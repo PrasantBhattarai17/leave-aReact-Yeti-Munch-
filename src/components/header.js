@@ -2,9 +2,14 @@ import React from 'react';
 import logo from "./utils/gg.png";
 import { Link } from 'react-router-dom';
 import useOnlineStatus from './utils/useOnlineStatus';
+import cartSlice from './store/cartSlice';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
  const Status=useOnlineStatus();
+
+ const cartItems=useSelector((store)=>store.cart.items);
+ console.log(cartItems);
 
   return (
     <div className="flex  p-1 m-1 justify-between bg-[blueviolet] shadow-lg rounded-lg">
@@ -17,7 +22,7 @@ const Header = () => {
       </ul>
       <ul className="flex items-center space-x-12 text-white text-lg">
         <li>Status:{Status?"ON":"OFF"}</li>
-        <li className="text-2xl "><Link to='./'>🛒</Link></li>
+        <li className="text-xl font-bold"><Link to='./'>🛒-{cartItems.length}</Link></li>
         <button>Log in</button>
       </ul>
     </div>
