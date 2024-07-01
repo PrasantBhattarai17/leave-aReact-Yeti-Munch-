@@ -7,7 +7,7 @@ const Header = () => {
  const Status=useOnlineStatus();
 
   return (
-    <div className="flex p-1 m-1 justify-between bg-[blueviolet] shadow-lg rounded-lg">
+    <div className="flex  p-1 m-1 justify-between bg-[blueviolet] shadow-lg rounded-lg">
       <ul className="flex items-center space-x-12 text-white text-lg">
       <a href="/"><img className="w-24" alt="logo" src={logo} /></a>
         <li className='colorOnHover'><Link to="/">Home</Link></li>
@@ -17,7 +17,7 @@ const Header = () => {
       </ul>
       <ul className="flex items-center space-x-12 text-white text-lg">
         <li>Status:{Status?"ON":"OFF"}</li>
-        <li><Link to='./'>Cart</Link></li>
+        <li className="text-2xl "><Link to='./'>🛒</Link></li>
         <button>Log in</button>
       </ul>
     </div>

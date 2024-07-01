@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import useRestaurantList from "./utils/useRestaurantMenu";
 import { CDN } from "./utils/constants";
 import Shimmer from "./shimmers/shimmer";
-import useRestaurantFood from "./utils/useRestaurantFood";
 import RestaurantCategory from "./restaurantCategory";
 
 const RestaurantMenu=()=>{
