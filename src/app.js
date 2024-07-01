@@ -12,18 +12,22 @@ import { Outlet } from "react-router-dom";
 import { lazy ,Suspense} from "react";
 import Shimmer from "./components/shimmers/shimmer";
 import RestaurantMenu from "./components/restaurantMenu";
+import { Provider } from "react-redux";
+import munchStore from "./components/utils/munchStore";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Services =lazy(()=>import("./components/navitem.js/service"));
+
 
 const AppLayout = () => {
   return (
     <>
-      <Header />
+     <Provider store={munchStore}> <Header />
       <div className="
       bg-[#f1efed] p-1 m-1">
       <Outlet/>
       </div>
       <Footer />
+      </Provider>
     </>
   );
 };
