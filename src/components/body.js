@@ -46,7 +46,6 @@ const Body=()=>{
       )
     }
 
-
       return  listOfRestaurants.length===0?<Shimmer/>:(
         <>
         <div className="m-1 p-1 flex justify-center  space-x-2">

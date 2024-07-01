@@ -3,21 +3,26 @@ import useRestaurantFood from "./utils/useRestaurantFood";
 import { useState } from "react";
 import { CDN } from "./utils/constants";
 import { addItem } from "./store/cartSlice.js";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 
 
 const RestaurantCategory=()=>{
     const [selectedItem, setSelectedItem] = useState(null);
+    const [add, setAdd] = useState("Add+");
     const {resId} = useParams();
     const resMenu=useRestaurantFood(resId);
     const categories=resMenu.filter(c=>c?.card?.card?.["@type"]==="type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
+    const cartItems=useSelector((store)=>store.cart.items);
 
     const handleClick = (item) => {
         setSelectedItem(selectedItem === item ? null : item);
       };
     const dispatch=useDispatch();
     const handleAdditem=(item)=>{
+      setAdd("Added✅");
+      console.log(cartItems);
       dispatch(addItem(item));
 
     };
@@ -40,7 +45,7 @@ const RestaurantCategory=()=>{
                   <div className="flex items-end">
                   <img alt={dish?.card?.info?.name} src={CDN+dish?.card?.info?.imageId} className="p-1 m-1 w-[30%] h-[150px] rounded-md shadow-md"/>
                     <button onClick={()=>handleAdditem(dish)} className="absolute mb-3 left-[33.5%] rounded-lg w-12 bg-black text-[gold] hover:scale-105">
-                      Add+
+                      {cartItems.includes(dish)?add:"Add+"} 
                       </button>
                   <span className="py-2 my-2 text-lg font-[sans-serif] font-bold text-orange-800">{dish?.card?.info?.name}-Rs.{(dish?.card?.info?.defaultPrice)?dish?.card?.info?.defaultPrice/100:dish?.card?.info?.price/100}</span>
                   </div>

@@ -14,6 +14,7 @@ import Shimmer from "./components/shimmers/shimmer";
 import RestaurantMenu from "./components/restaurantMenu";
 import { Provider } from "react-redux";
 import munchStore from "./components/store/munchStore";
+import Cart from "./components/cart";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Services =lazy(()=>import("./components/navitem.js/service"));
 
@@ -56,7 +57,11 @@ const appRouter =createBrowserRouter([
       {
         path:"restaurant/:resId",
         element:<RestaurantMenu />
-      }
+      },
+      {
+        path:"/cart",
+        element:<Cart />
+      },
     ]
   }
 ]
