@@ -15,6 +15,7 @@ const RestaurantCategory=()=>{
     const resMenu=useRestaurantFood(resId);
     const categories=resMenu.filter(c=>c?.card?.card?.["@type"]==="type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
     const cartItems=useSelector((store)=>store.cart.items);
+    
 
     const handleClick = (item) => {
         setSelectedItem(selectedItem === item ? null : item);
@@ -22,7 +23,6 @@ const RestaurantCategory=()=>{
     const dispatch=useDispatch();
     const handleAdditem=(item)=>{
       setAdd("Added✅");
-      console.log(cartItems);
       dispatch(addItem(item));
 
     };
