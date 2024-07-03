@@ -37096,7 +37096,7 @@ const RestaurantCategory = ()=>{
                                 children: item?.card?.card?.title
                             }, void 0, false, {
                                 fileName: "src/components/restaurantCategory.js",
-                                lineNumber: 39,
+                                lineNumber: 38,
                                 columnNumber: 17
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -37104,13 +37104,13 @@ const RestaurantCategory = ()=>{
                                 children: "\uD83D\uDD3D"
                             }, void 0, false, {
                                 fileName: "src/components/restaurantCategory.js",
-                                lineNumber: 40,
+                                lineNumber: 39,
                                 columnNumber: 17
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/restaurantCategory.js",
-                        lineNumber: 35,
+                        lineNumber: 34,
                         columnNumber: 15
                     }, undefined),
                     selectedItem === item && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37127,7 +37127,7 @@ const RestaurantCategory = ()=>{
                                                 className: "p-1 m-1 w-[30%] h-[150px] rounded-md shadow-md"
                                             }, void 0, false, {
                                                 fileName: "src/components/restaurantCategory.js",
-                                                lineNumber: 46,
+                                                lineNumber: 45,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -37136,7 +37136,7 @@ const RestaurantCategory = ()=>{
                                                 children: cartItems.includes(dish) ? add : "Add+"
                                             }, void 0, false, {
                                                 fileName: "src/components/restaurantCategory.js",
-                                                lineNumber: 47,
+                                                lineNumber: 46,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -37148,13 +37148,13 @@ const RestaurantCategory = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/restaurantCategory.js",
-                                                lineNumber: 50,
+                                                lineNumber: 49,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/restaurantCategory.js",
-                                        lineNumber: 45,
+                                        lineNumber: 44,
                                         columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -37165,29 +37165,29 @@ const RestaurantCategory = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/restaurantCategory.js",
-                                        lineNumber: 52,
+                                        lineNumber: 51,
                                         columnNumber: 18
                                     }, undefined)
                                 ]
                             }, dish?.card?.info?.id, true, {
                                 fileName: "src/components/restaurantCategory.js",
-                                lineNumber: 44,
+                                lineNumber: 43,
                                 columnNumber: 60
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/components/restaurantCategory.js",
-                        lineNumber: 43,
+                        lineNumber: 42,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, item?.card?.card?.title, true, {
                 fileName: "src/components/restaurantCategory.js",
-                lineNumber: 34,
+                lineNumber: 33,
                 columnNumber: 13
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/restaurantCategory.js",
-        lineNumber: 32,
+        lineNumber: 31,
         columnNumber: 9
     }, undefined);
 };
@@ -37248,11 +37248,13 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "addItem", ()=>addItem);
 parcelHelpers.export(exports, "removeItem", ()=>removeItem);
 parcelHelpers.export(exports, "clearCart", ()=>clearCart);
+parcelHelpers.export(exports, "moreItem", ()=>moreItem);
 var _toolkit = require("@reduxjs/toolkit");
 const cartSlice = (0, _toolkit.createSlice)({
     name: "cart",
     initialState: {
-        items: []
+        items: [],
+        numItem: 1
     },
     reducers: {
         addItem: (state, action)=>{
@@ -37263,10 +37265,13 @@ const cartSlice = (0, _toolkit.createSlice)({
         },
         clearCart: (state, ation)=>{
             state.items.length = 0;
+        },
+        moreItem: (state)=>{
+            state.numItem += 1;
         }
     }
 });
-const { addItem, removeItem, clearCart } = cartSlice.actions;
+const { addItem, removeItem, clearCart, moreItem } = cartSlice.actions;
 exports.default = cartSlice.reducer;
 
 },{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fuua8":[function(require,module,exports) {
@@ -41344,12 +41349,12 @@ const Cart = ()=>{
                     children: "Clear Cart"
                 }, void 0, false, {
                     fileName: "src/components/cart.js",
-                    lineNumber: 20,
+                    lineNumber: 24,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/cart.js",
-                lineNumber: 19,
+                lineNumber: 23,
                 columnNumber: 13
             }, undefined),
             addedItems == 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -41357,74 +41362,110 @@ const Cart = ()=>{
                 children: "The cart is Empty!! Please add some items."
             }, void 0, false, {
                 fileName: "src/components/cart.js",
-                lineNumber: 23,
+                lineNumber: 27,
                 columnNumber: 36
             }, undefined),
-            addedItems.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: " flex justify-center  bg-amber-50  ",
+            addedItems.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex  shadow-lg m-2 p-2 w-6/12 border-t-2 border-[#f5ebe0]",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: [
-                                    " ",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        alt: item?.card?.info?.name,
-                                        className: "m-1 p-1 border-2 rounded-md shadow-xl w-52",
-                                        src: (0, _constants.CDN) + item?.card?.info?.imageId
+                        className: " flex justify-center  bg-amber-50  ",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex  justify-between shadow-lg m-2 p-2 w-6/12 border-t-2 border-[#f5ebe0]",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            alt: item?.card?.info?.name,
+                                            className: "m-1 p-1 border-2 rounded-md shadow-xl w-52",
+                                            src: (0, _constants.CDN) + item?.card?.info?.imageId
+                                        }, void 0, false, {
+                                            fileName: "src/components/cart.js",
+                                            lineNumber: 32,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                            className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                                            children: item?.card?.info?.name
+                                        }, void 0, false, {
+                                            fileName: "src/components/cart.js",
+                                            lineNumber: 33,
+                                            columnNumber: 13
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                                                    children: "-"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/cart.js",
+                                                    lineNumber: 35,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                                                    children: "1 items"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/cart.js",
+                                                    lineNumber: 36,
+                                                    columnNumber: 15
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                                                    children: "+"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/cart.js",
+                                                    lineNumber: 37,
+                                                    columnNumber: 14
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/cart.js",
+                                            lineNumber: 34,
+                                            columnNumber: 13
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "p-1 m-1text-lg font-bold",
+                                            children: item?.card?.info?.description
+                                        }, void 0, false, {
+                                            fileName: "src/components/cart.js",
+                                            lineNumber: 39,
+                                            columnNumber: 13
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/cart.js",
+                                    lineNumber: 32,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        onClick: ()=>handleRemove(index),
+                                        className: "p-1 m-1 text-2xl text-[blueviolet] font-bold cursor-pointer",
+                                        children: "\u2796"
                                     }, void 0, false, {
                                         fileName: "src/components/cart.js",
-                                        lineNumber: 27,
-                                        columnNumber: 19
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
-                                        children: item?.card?.info?.name
-                                    }, void 0, false, {
-                                        fileName: "src/components/cart.js",
-                                        lineNumber: 28,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "p-1 m-1text-lg font-bold",
-                                        children: item?.card?.info?.description
-                                    }, void 0, false, {
-                                        fileName: "src/components/cart.js",
-                                        lineNumber: 29,
+                                        lineNumber: 42,
                                         columnNumber: 13
                                     }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/cart.js",
-                                lineNumber: 27,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    onClick: ()=>handleRemove(index),
-                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold cursor-pointer",
-                                    children: "\u2796"
                                 }, void 0, false, {
                                     fileName: "src/components/cart.js",
-                                    lineNumber: 31,
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/cart.js",
-                                lineNumber: 30,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/cart.js",
+                            lineNumber: 31,
+                            columnNumber: 13
+                        }, undefined)
+                    }, index, false, {
                         fileName: "src/components/cart.js",
-                        lineNumber: 26,
-                        columnNumber: 13
+                        lineNumber: 30,
+                        columnNumber: 12
                     }, undefined)
-                }, index, false, {
-                    fileName: "src/components/cart.js",
-                    lineNumber: 25,
-                    columnNumber: 12
-                }, undefined))
+                }, void 0, false)),
+            ";"
         ]
     }, void 0, true);
 };

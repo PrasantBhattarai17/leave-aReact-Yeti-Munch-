@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import useRestaurantFood from "./utils/useRestaurantFood";
 import { useState } from "react";
 import { CDN } from "./utils/constants";
-import { addItem } from "./store/cartSlice.js";
+import { addItem ,moreItem} from "./store/cartSlice.js";
 import { useDispatch, useSelector } from "react-redux";
 import { useSelector } from "react-redux";
 
@@ -24,8 +24,7 @@ const RestaurantCategory=()=>{
     const handleAdditem=(item)=>{
       setAdd("Added✅");
       dispatch(addItem(item));
-
-    };
+          };
     
 
     return (

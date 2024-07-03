@@ -6,6 +6,7 @@ import { removeItem } from "./store/cartSlice";
 const Cart=()=>{
     
     const addedItems=useSelector((store)=> store.cart.items);
+
     const dispatch=useDispatch();
 
     const handleRemove=(index)=>{
@@ -14,6 +15,9 @@ const Cart=()=>{
     const handleClearCart=()=>{
     dispatch(clearCart());
     };
+
+   
+   
     return(
         <>  
             <div className="bg-amber-50 flex justify-center">
@@ -22,20 +26,29 @@ const Cart=()=>{
                 
                 {(addedItems==0 && <h1  className="text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold">The cart is Empty!! Please add some items.</h1>)}
            {addedItems.map((item,index)=>
+           <>
            <div className=" flex justify-center  bg-amber-50  " key={index}>
-            <div className="flex  shadow-lg m-2 p-2 w-6/12 border-t-2 border-[#f5ebe0]">
+            <div className="flex  justify-between shadow-lg m-2 p-2 w-6/12 border-t-2 border-[#f5ebe0]">
             <div> <img alt={item?.card?.info?.name} className="m-1 p-1 border-2 rounded-md shadow-xl w-52" src={CDN+item?.card?.info?.imageId}/>
             <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">{item?.card?.info?.name}</h1>
-            <span className="p-1 m-1text-lg font-bold">{item?.card?.info?.description}</span></div>
+            <div className="flex">
+                <button className="p-1 m-1 text-2xl text-[blueviolet] font-bold">-</button>
+              <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">1 items</h1>
+             <button className="p-1 m-1 text-2xl text-[blueviolet] font-bold">+</button>
+            </div>
+            <span className="p-1 m-1text-lg font-bold">{item?.card?.info?.description}</span>
+            </div>
             <div>
             <span onClick={()=>handleRemove(index)} className="p-1 m-1 text-2xl text-[blueviolet] font-bold cursor-pointer">➖</span>
             </div>
            
             </div>
             </div>
+            </>
           
-        )
-        }
+         )
+        
+         };
         </>
     );
 };
