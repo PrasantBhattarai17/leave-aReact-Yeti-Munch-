@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="flex  p-1 m-1 justify-between bg-[blueviolet] shadow-lg rounded-lg">
       <ul className="flex items-center space-x-12 text-white text-lg">
-      <a href="/"><img className="w-24" alt="logo" src={logo} /></a>
+      <a href="/"><img className="w-36 h-32" alt="logo" src={logo} /></a>
         <li className='colorOnHover'><Link to="/">Home</Link></li>
         <li  className='colorOnHover'><Link to='/offers'>Offers</Link></li>
             <li  className='colorOnHover'><Link to="/about">About Us</Link></li>

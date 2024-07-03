@@ -3112,7 +3112,7 @@ $RefreshReg$(_c1, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/footer":"bjsug","./components/body":"fxbaO","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY","./components/navitem.js/about":"4vdmF","./components/shimmers/error":"g7fau","./components/shimmers/shimmer":"7uMHb","./components/restaurantMenu":"1ug3V","534d2ae291da94f6":"2Tqo9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-redux":"62sf7","./components/cart":"97YSD","./components/store/munchStore":"1U16H"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/footer":"bjsug","./components/body":"fxbaO","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY","./components/navitem.js/about":"4vdmF","./components/shimmers/error":"g7fau","./components/shimmers/shimmer":"7uMHb","./components/restaurantMenu":"1ug3V","534d2ae291da94f6":"2Tqo9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-redux":"62sf7","./components/cart":"XPapF","./components/store/munchStore":"1U16H"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27387,7 +27387,7 @@ const Header = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "/",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "w-24",
+                            className: "w-36 h-32",
                             alt: "logo",
                             src: (0, _ggPngDefault.default)
                         }, void 0, false, {
@@ -35562,7 +35562,7 @@ const Footer = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: "/",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "w-24",
+                                className: "w-36 h-32",
                                 alt: "logo",
                                 src: (0, _ggPngDefault.default)
                             }, void 0, false, {
@@ -41315,11 +41315,11 @@ module.exports = function(loader, type) {
     };
 };
 
-},{}],"97YSD":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8253 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"XPapF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0119 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8253.prelude(module);
+$parcel$ReactRefreshHelpers$0119.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -41348,12 +41348,12 @@ const Cart = ()=>{
                     className: "m-2  bg-[blueviolet] rounded-lg w-20 h-9 border-gray-800 border-2 font-san text-white ",
                     children: "Clear Cart"
                 }, void 0, false, {
-                    fileName: "src/components/cart.js",
+                    fileName: "src/components/cart.jsx",
                     lineNumber: 24,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/components/cart.js",
+                fileName: "src/components/cart.jsx",
                 lineNumber: 23,
                 columnNumber: 13
             }, undefined),
@@ -41361,7 +41361,7 @@ const Cart = ()=>{
                 className: "text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold",
                 children: "The cart is Empty!! Please add some items."
             }, void 0, false, {
-                fileName: "src/components/cart.js",
+                fileName: "src/components/cart.jsx",
                 lineNumber: 27,
                 columnNumber: 36
             }, undefined),
@@ -41379,7 +41379,7 @@ const Cart = ()=>{
                                             className: "m-1 p-1 border-2 rounded-md shadow-xl w-52",
                                             src: (0, _constants.CDN) + item?.card?.info?.imageId
                                         }, void 0, false, {
-                                            fileName: "src/components/cart.js",
+                                            fileName: "src/components/cart.jsx",
                                             lineNumber: 32,
                                             columnNumber: 19
                                         }, undefined),
@@ -41387,7 +41387,7 @@ const Cart = ()=>{
                                             className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
                                             children: item?.card?.info?.name
                                         }, void 0, false, {
-                                            fileName: "src/components/cart.js",
+                                            fileName: "src/components/cart.jsx",
                                             lineNumber: 33,
                                             columnNumber: 13
                                         }, undefined),
@@ -41398,7 +41398,7 @@ const Cart = ()=>{
                                                     className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
                                                     children: "-"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/cart.js",
+                                                    fileName: "src/components/cart.jsx",
                                                     lineNumber: 35,
                                                     columnNumber: 17
                                                 }, undefined),
@@ -41406,7 +41406,7 @@ const Cart = ()=>{
                                                     className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
                                                     children: "1 items"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/cart.js",
+                                                    fileName: "src/components/cart.jsx",
                                                     lineNumber: 36,
                                                     columnNumber: 15
                                                 }, undefined),
@@ -41414,13 +41414,13 @@ const Cart = ()=>{
                                                     className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
                                                     children: "+"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/cart.js",
+                                                    fileName: "src/components/cart.jsx",
                                                     lineNumber: 37,
                                                     columnNumber: 14
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "src/components/cart.js",
+                                            fileName: "src/components/cart.jsx",
                                             lineNumber: 34,
                                             columnNumber: 13
                                         }, undefined),
@@ -41428,13 +41428,13 @@ const Cart = ()=>{
                                             className: "p-1 m-1text-lg font-bold",
                                             children: item?.card?.info?.description
                                         }, void 0, false, {
-                                            fileName: "src/components/cart.js",
+                                            fileName: "src/components/cart.jsx",
                                             lineNumber: 39,
                                             columnNumber: 13
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "src/components/cart.js",
+                                    fileName: "src/components/cart.jsx",
                                     lineNumber: 32,
                                     columnNumber: 13
                                 }, undefined),
@@ -41444,23 +41444,23 @@ const Cart = ()=>{
                                         className: "p-1 m-1 text-2xl text-[blueviolet] font-bold cursor-pointer",
                                         children: "\u2796"
                                     }, void 0, false, {
-                                        fileName: "src/components/cart.js",
+                                        fileName: "src/components/cart.jsx",
                                         lineNumber: 42,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
-                                    fileName: "src/components/cart.js",
+                                    fileName: "src/components/cart.jsx",
                                     lineNumber: 41,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/cart.js",
+                            fileName: "src/components/cart.jsx",
                             lineNumber: 31,
                             columnNumber: 13
                         }, undefined)
                     }, index, false, {
-                        fileName: "src/components/cart.js",
+                        fileName: "src/components/cart.jsx",
                         lineNumber: 30,
                         columnNumber: 12
                     }, undefined)
@@ -41480,12 +41480,12 @@ exports.default = Cart;
 var _c;
 $RefreshReg$(_c, "Cart");
 
-  $parcel$ReactRefreshHelpers$8253.postlude(module);
+  $parcel$ReactRefreshHelpers$0119.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/constants":"c6vll","./store/cartSlice":"7LL1L"}],"1U16H":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./utils/constants":"c6vll","./store/cartSlice":"7LL1L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1U16H":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _toolkit = require("@reduxjs/toolkit");
