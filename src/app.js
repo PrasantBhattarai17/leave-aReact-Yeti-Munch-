@@ -13,7 +13,7 @@ import { lazy ,Suspense} from "react";
 import Shimmer from "./components/shimmers/shimmer";
 import RestaurantMenu from "./components/restaurantMenu";
 import { Provider } from "react-redux";
-import munchStore from "./components/store/munchStore";
+import MunchStore from "./components/store/munchStore";
 import Cart from "./components/cart";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Services =lazy(()=>import("./components/navitem.js/service"));
@@ -22,7 +22,8 @@ const Services =lazy(()=>import("./components/navitem.js/service"));
 const AppLayout = () => {
   return (
     <>
-     <Provider store={munchStore}> <Header />
+     <Provider store={MunchStore}>
+       <Header />
       <div className="
       bg-[#f1efed] p-1 m-1">
       <Outlet/>

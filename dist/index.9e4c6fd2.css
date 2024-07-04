@@ -291,6 +291,10 @@ img, video {
   height: 3rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .h-9 {
   height: 2.25rem;
 }
@@ -307,14 +311,6 @@ img, video {
   height: 50px;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -327,8 +323,8 @@ img, video {
   width: 5rem;
 }
 
-.w-24 {
-  width: 6rem;
+.w-36 {
+  width: 9rem;
 }
 
 .w-52 {
@@ -357,26 +353,6 @@ img, video {
 
 .w-full {
   width: 100%;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
-.w-36 {
-  width: 9rem;
 }
 
 .cursor-pointer {

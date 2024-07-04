@@ -21,7 +21,12 @@ const Cart=()=>{
     return(
         <>  
             <div className="bg-amber-50 flex justify-center">
+                <div className="flex justify-end">
+               <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">My Cart-{addedItems.length}items</h1>
+                </div>
+                <div className="flex justify-end">
                 <button onClick={handleClearCart} className="m-2  bg-[blueviolet] rounded-lg w-20 h-9 border-gray-800 border-2 font-san text-white ">Clear Cart</button>
+                </div>
                 </div>
                 
                 {(addedItems==0 && <h1  className="text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold">The cart is Empty!! Please add some items.</h1>)}

@@ -2988,27 +2988,26 @@ const AppLayout = ()=>{
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
             store: (0, _munchStoreDefault.default),
             children: [
-                " ",
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 25,
-                    columnNumber: 36
+                    lineNumber: 26,
+                    columnNumber: 8
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "   bg-[#f1efed] p-1 m-1",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 7
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 26,
+                    lineNumber: 27,
                     columnNumber: 7
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 30,
+                    lineNumber: 31,
                     columnNumber: 7
                 }, undefined)
             ]
@@ -3025,12 +3024,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 38,
+            lineNumber: 39,
             columnNumber: 13
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 39,
+            lineNumber: 40,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3038,7 +3037,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 43,
+                    lineNumber: 44,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3046,7 +3045,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/offers",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offersDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 47,
+                    lineNumber: 48,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3054,7 +3053,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 51,
+                    lineNumber: 52,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3063,17 +3062,17 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 55,
+                        lineNumber: 56,
                         columnNumber: 38
                     }, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Services, {}, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 55,
+                        lineNumber: 56,
                         columnNumber: 51
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 55,
+                    lineNumber: 56,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3081,7 +3080,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "restaurant/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 59,
+                    lineNumber: 60,
                     columnNumber: 17
                 }, undefined)
             },
@@ -3089,7 +3088,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 63,
+                    lineNumber: 64,
                     columnNumber: 17
                 }, undefined)
             }
@@ -3100,7 +3099,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 72,
+    lineNumber: 73,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
@@ -3112,7 +3111,7 @@ $RefreshReg$(_c1, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/footer":"bjsug","./components/body":"fxbaO","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY","./components/navitem.js/about":"4vdmF","./components/shimmers/error":"g7fau","./components/shimmers/shimmer":"7uMHb","./components/restaurantMenu":"1ug3V","534d2ae291da94f6":"2Tqo9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-redux":"62sf7","./components/cart":"XPapF","./components/store/munchStore":"1U16H"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/header":"aorvA","./components/footer":"bjsug","./components/body":"fxbaO","react-router-dom":"9xmpe","./components/navitem.js/offers":"iM0SY","./components/navitem.js/about":"4vdmF","./components/shimmers/error":"g7fau","./components/shimmers/shimmer":"7uMHb","./components/restaurantMenu":"1ug3V","react-redux":"62sf7","./components/store/munchStore":"1U16H","./components/cart":"97YSD","534d2ae291da94f6":"2Tqo9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27533,45 +27532,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./utils/gg.png":"bOGml","react-router-dom":"9xmpe","./utils/useOnlineStatus":"v6UYe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-redux":"62sf7"}],"bOGml":[function(require,module,exports) {
-module.exports = require("fc40af30089fa323").getBundleURL("lPpKD") + "gg.b2df9f3d.png" + "?" + Date.now();
-
-},{"fc40af30089fa323":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./utils/useOnlineStatus":"v6UYe","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/gg.png":"bOGml"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.23.1
  *
@@ -35535,7 +35496,45 @@ module.exports = require("374a059340689e89");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{"8b38fc6c74f16e20":"21dqq"}],"bjsug":[function(require,module,exports) {
+},{"8b38fc6c74f16e20":"21dqq"}],"bOGml":[function(require,module,exports) {
+module.exports = require("fc40af30089fa323").getBundleURL("lPpKD") + "gg.b2df9f3d.png" + "?" + Date.now();
+
+},{"fc40af30089fa323":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"bjsug":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f161 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37033,7 +37032,7 @@ const useRestaurantList = (resId)=>{
     const [resInfo, setResInfo] = (0, _react.useState)({});
     const fetchData = async ()=>{
         const response = await fetch((0, _constants.MENU_API) + resId);
-        json = await response.json();
+        const json = await response.json();
         setResInfo(json?.data?.cards[2]?.card?.card?.info);
     };
     (0, _react.useEffect)(()=>{
@@ -37209,7 +37208,7 @@ $RefreshReg$(_c, "RestaurantCategory");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","./utils/useRestaurantFood":"62Wb5","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/constants":"c6vll","react-redux":"62sf7","./store/cartSlice.js":"7LL1L"}],"62Wb5":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","./utils/useRestaurantFood":"62Wb5","react":"21dqq","./utils/constants":"c6vll","./store/cartSlice.js":"7LL1L","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"62Wb5":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$124c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41247,7 +41246,218 @@ function createThunkMiddleware(extraArgument) {
 var thunk = createThunkMiddleware();
 var withExtraArgument = createThunkMiddleware;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2Tqo9":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1U16H":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _toolkit = require("@reduxjs/toolkit");
+var _cartSliceJs = require("./cartSlice.js");
+var _cartSliceJsDefault = parcelHelpers.interopDefault(_cartSliceJs);
+const MunchStore = (0, _toolkit.configureStore)({
+    reducer: {
+        cart: (0, _cartSliceJsDefault.default)
+    }
+});
+exports.default = MunchStore;
+
+},{"@reduxjs/toolkit":"fuua8","./cartSlice.js":"7LL1L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"97YSD":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8253 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8253.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRedux = require("react-redux");
+var _constants = require("./utils/constants");
+var _cartSlice = require("./store/cartSlice");
+var _s = $RefreshSig$();
+const Cart = ()=>{
+    _s();
+    const addedItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
+    const dispatch = (0, _reactRedux.useDispatch)();
+    const handleRemove = (index)=>{
+        dispatch((0, _cartSlice.removeItem)(index));
+    };
+    const handleClearCart = ()=>{
+        dispatch((0, _cartSlice.clearCart)());
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "bg-amber-50 flex justify-center",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex justify-end",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                            children: [
+                                "My Cart-",
+                                addedItems.length,
+                                "items"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/cart.js",
+                            lineNumber: 25,
+                            columnNumber: 16
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/cart.js",
+                        lineNumber: 24,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex justify-end",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: handleClearCart,
+                            className: "m-2  bg-[blueviolet] rounded-lg w-20 h-9 border-gray-800 border-2 font-san text-white ",
+                            children: "Clear Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/cart.js",
+                            lineNumber: 28,
+                            columnNumber: 17
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/cart.js",
+                        lineNumber: 27,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/cart.js",
+                lineNumber: 23,
+                columnNumber: 13
+            }, undefined),
+            addedItems == 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold",
+                children: "The cart is Empty!! Please add some items."
+            }, void 0, false, {
+                fileName: "src/components/cart.js",
+                lineNumber: 32,
+                columnNumber: 36
+            }, undefined),
+            addedItems.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: " flex justify-center  bg-amber-50  ",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex  justify-between shadow-lg m-2 p-2 w-6/12 border-t-2 border-[#f5ebe0]",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            alt: item?.card?.info?.name,
+                                            className: "m-1 p-1 border-2 rounded-md shadow-xl w-52",
+                                            src: (0, _constants.CDN) + item?.card?.info?.imageId
+                                        }, void 0, false, {
+                                            fileName: "src/components/cart.js",
+                                            lineNumber: 37,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                            className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                                            children: item?.card?.info?.name
+                                        }, void 0, false, {
+                                            fileName: "src/components/cart.js",
+                                            lineNumber: 38,
+                                            columnNumber: 13
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                                                    children: "-"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/cart.js",
+                                                    lineNumber: 40,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                                                    children: "1 items"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/cart.js",
+                                                    lineNumber: 41,
+                                                    columnNumber: 15
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                                                    children: "+"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/cart.js",
+                                                    lineNumber: 42,
+                                                    columnNumber: 14
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/cart.js",
+                                            lineNumber: 39,
+                                            columnNumber: 13
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "p-1 m-1text-lg font-bold",
+                                            children: item?.card?.info?.description
+                                        }, void 0, false, {
+                                            fileName: "src/components/cart.js",
+                                            lineNumber: 44,
+                                            columnNumber: 13
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/cart.js",
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        onClick: ()=>handleRemove(index),
+                                        className: "p-1 m-1 text-2xl text-[blueviolet] font-bold cursor-pointer",
+                                        children: "\u2796"
+                                    }, void 0, false, {
+                                        fileName: "src/components/cart.js",
+                                        lineNumber: 47,
+                                        columnNumber: 13
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/cart.js",
+                                    lineNumber: 46,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/cart.js",
+                            lineNumber: 36,
+                            columnNumber: 13
+                        }, undefined)
+                    }, index, false, {
+                        fileName: "src/components/cart.js",
+                        lineNumber: 35,
+                        columnNumber: 12
+                    }, undefined)
+                }, void 0, false)),
+            ";"
+        ]
+    }, void 0, true);
+};
+_s(Cart, "dNjurOhrgZHv0CN/3KjQz3ZdCaY=", false, function() {
+    return [
+        (0, _reactRedux.useSelector),
+        (0, _reactRedux.useDispatch)
+    ];
+});
+_c = Cart;
+exports.default = Cart;
+var _c;
+$RefreshReg$(_c, "Cart");
+
+  $parcel$ReactRefreshHelpers$8253.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./utils/constants":"c6vll","./store/cartSlice":"7LL1L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Tqo9":[function(require,module,exports) {
 module.exports = require("dfc5753827267026")(require("b376609f34e412ea").getBundleURL("lPpKD") + "service.d3d3853b.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
@@ -41315,189 +41525,6 @@ module.exports = function(loader, type) {
     };
 };
 
-},{}],"XPapF":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0119 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0119.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRedux = require("react-redux");
-var _constants = require("./utils/constants");
-var _cartSlice = require("./store/cartSlice");
-var _s = $RefreshSig$();
-const Cart = ()=>{
-    _s();
-    const addedItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
-    const dispatch = (0, _reactRedux.useDispatch)();
-    const handleRemove = (index)=>{
-        dispatch((0, _cartSlice.removeItem)(index));
-    };
-    const handleClearCart = ()=>{
-        dispatch((0, _cartSlice.clearCart)());
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-amber-50 flex justify-center",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: handleClearCart,
-                    className: "m-2  bg-[blueviolet] rounded-lg w-20 h-9 border-gray-800 border-2 font-san text-white ",
-                    children: "Clear Cart"
-                }, void 0, false, {
-                    fileName: "src/components/cart.jsx",
-                    lineNumber: 24,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/cart.jsx",
-                lineNumber: 23,
-                columnNumber: 13
-            }, undefined),
-            addedItems == 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold",
-                children: "The cart is Empty!! Please add some items."
-            }, void 0, false, {
-                fileName: "src/components/cart.jsx",
-                lineNumber: 27,
-                columnNumber: 36
-            }, undefined),
-            addedItems.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: " flex justify-center  bg-amber-50  ",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex  justify-between shadow-lg m-2 p-2 w-6/12 border-t-2 border-[#f5ebe0]",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    children: [
-                                        " ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            alt: item?.card?.info?.name,
-                                            className: "m-1 p-1 border-2 rounded-md shadow-xl w-52",
-                                            src: (0, _constants.CDN) + item?.card?.info?.imageId
-                                        }, void 0, false, {
-                                            fileName: "src/components/cart.jsx",
-                                            lineNumber: 32,
-                                            columnNumber: 19
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                            className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
-                                            children: item?.card?.info?.name
-                                        }, void 0, false, {
-                                            fileName: "src/components/cart.jsx",
-                                            lineNumber: 33,
-                                            columnNumber: 13
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "flex",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
-                                                    children: "-"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/cart.jsx",
-                                                    lineNumber: 35,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
-                                                    children: "1 items"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/cart.jsx",
-                                                    lineNumber: 36,
-                                                    columnNumber: 15
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                    className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
-                                                    children: "+"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/cart.jsx",
-                                                    lineNumber: 37,
-                                                    columnNumber: 14
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/cart.jsx",
-                                            lineNumber: 34,
-                                            columnNumber: 13
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "p-1 m-1text-lg font-bold",
-                                            children: item?.card?.info?.description
-                                        }, void 0, false, {
-                                            fileName: "src/components/cart.jsx",
-                                            lineNumber: 39,
-                                            columnNumber: 13
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/cart.jsx",
-                                    lineNumber: 32,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        onClick: ()=>handleRemove(index),
-                                        className: "p-1 m-1 text-2xl text-[blueviolet] font-bold cursor-pointer",
-                                        children: "\u2796"
-                                    }, void 0, false, {
-                                        fileName: "src/components/cart.jsx",
-                                        lineNumber: 42,
-                                        columnNumber: 13
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/cart.jsx",
-                                    lineNumber: 41,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/cart.jsx",
-                            lineNumber: 31,
-                            columnNumber: 13
-                        }, undefined)
-                    }, index, false, {
-                        fileName: "src/components/cart.jsx",
-                        lineNumber: 30,
-                        columnNumber: 12
-                    }, undefined)
-                }, void 0, false)),
-            ";"
-        ]
-    }, void 0, true);
-};
-_s(Cart, "dNjurOhrgZHv0CN/3KjQz3ZdCaY=", false, function() {
-    return [
-        (0, _reactRedux.useSelector),
-        (0, _reactRedux.useDispatch)
-    ];
-});
-_c = Cart;
-exports.default = Cart;
-var _c;
-$RefreshReg$(_c, "Cart");
-
-  $parcel$ReactRefreshHelpers$0119.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./utils/constants":"c6vll","./store/cartSlice":"7LL1L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1U16H":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _toolkit = require("@reduxjs/toolkit");
-var _cartSliceJs = require("./cartSlice.js");
-var _cartSliceJsDefault = parcelHelpers.interopDefault(_cartSliceJs);
-const munchStore = (0, _toolkit.configureStore)({
-    reducer: {
-        cart: (0, _cartSliceJsDefault.default)
-    }
-});
-exports.default = munchStore;
-
-},{"@reduxjs/toolkit":"fuua8","./cartSlice.js":"7LL1L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequireb17e")
+},{}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequireb17e")
 
 //# sourceMappingURL=index.0641b553.js.map

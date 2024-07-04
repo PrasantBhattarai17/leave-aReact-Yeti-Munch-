@@ -4,4 +4,4 @@ node_modules
 .parcelrc
 Babel.config.js
 jest.config.js
-
+coverage
