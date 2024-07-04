@@ -1,3 +1,6 @@
+jest.mock('../utils/gg.png', () => 'mocked-image.png');
+
+
 import {render,screen} from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Header from "../header";
