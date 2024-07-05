@@ -39,7 +39,7 @@ it("should contain 2 items for search text Pizza ",async()=>{
       );
       });
       const SearchTXt=screen.getByTestId("searchId");
-    fireEvent.change(SearchTXt,{target:{ value:"pizza"}});
+    fireEvent.change(SearchTXt,{target:{ value:"barbeque"}});
     const searchBtn=screen.getByRole("button",{name:"Search"});
     fireEvent.click(searchBtn);
      const cardItem = screen.getAllByTestId("cardItem");
