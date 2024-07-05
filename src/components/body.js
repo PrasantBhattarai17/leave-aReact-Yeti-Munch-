@@ -52,7 +52,7 @@ const Body=()=>{
     { filteredList.length === 0 ? <Notfound/> :
   (
     filteredList.map((restaurant) => (
-      <Link className="nodecors"to={"/restaurant/"+restaurant.info.id} key={restaurant.info.id}>
+      <Link data-testid="cardItem" className="nodecors"to={"/restaurant/"+restaurant.info.id} key={restaurant.info.id}>
         {restaurant.info.type === "T" ? (
               <RestaurantPromoted Resdata={restaurant} />
             ) : (

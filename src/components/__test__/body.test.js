@@ -16,7 +16,17 @@ it("should contain search button ",async()=>{
      );
      });
 
-     const searchBtn =screen.getByRole("button",{name:'Searchh'});
+     const searchBtn =screen.getByRole("button",{name:'Search'});
 
     expect(searchBtn).toBeInTheDocument();
       } );
+it("should contain 2 items for search text Pizza ",async()=>{
+   await act(async()=>{ render(
+    <BrowserRouter>
+        <Body />
+    </BrowserRouter>
+     );
+     });
+    const cardItem = screen.getAllByTestId("cardItem");
+    expect(cardItem.length).toBe(8);
+} );

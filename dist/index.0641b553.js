@@ -35765,6 +35765,7 @@ const Body = ()=>{
                     lineNumber: 52,
                     columnNumber: 35
                 }, undefined) : filteredList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        "data-testid": "cardItem",
                         className: "nodecors",
                         to: "/restaurant/" + restaurant.info.id,
                         children: restaurant.info.type === "T" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCard.RestaurantPromoted), {
