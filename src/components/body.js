@@ -5,7 +5,6 @@ import Shimmer from "./shimmers/shimmer";
 import useOnlineStatus from "./utils/useOnlineStatus";
 import { RESTRO_API } from "./utils/constants";
 import { Link } from "react-router-dom";
-import { RestaurantPromoted } from "./restroCard";
 
 const filterData=(searchTxt,listOfRestaurants)=>{
   const filterData = listOfRestaurants.filter((restaurant)=>restaurant?.info?.name?.toLowerCase().includes(searchTxt.toLowerCase()));
@@ -19,20 +18,10 @@ const Body=()=>{
     const [filteredList,setFilteredList]=useState([]);
 
     const Fetchy = async () => {
-      try {
           const response = await fetch(RESTRO_API);
-          
-          if (!response.ok) {
-              throw new Error(`Error: ${response.status} - ${response.statusText}`);
-          }
-  
           const json = await response.json();
-  
           setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
           setFilteredList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-      } catch (error) {
-          console.error('Error fetching data:', error);
-      }
   };
 
       useEffect(() => {
@@ -64,7 +53,7 @@ const Body=()=>{
   (
     filteredList.map((restaurant) => (
       <Link className="nodecors"to={"/restaurant/"+restaurant.info.id} key={restaurant.info.id}>
-        {restaurant.info.type === "F" ? (
+        {restaurant.info.type === "T" ? (
               <RestaurantPromoted Resdata={restaurant} />
             ) : (
               <Restro Resdata={restaurant} />

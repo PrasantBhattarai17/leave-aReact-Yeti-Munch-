@@ -35702,15 +35702,10 @@ const Body = ()=>{
     const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
     const [filteredList, setFilteredList] = (0, _react.useState)([]);
     const Fetchy = async ()=>{
-        try {
-            const response = await fetch((0, _constants.RESTRO_API));
-            if (!response.ok) throw new Error(`Error: ${response.status} - ${response.statusText}`);
-            const json = await response.json();
-            setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-            setFilteredList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        } catch (error) {
-            console.error("Error fetching data:", error);
-        }
+        const response = await fetch((0, _constants.RESTRO_API));
+        const json = await response.json();
+        setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
     (0, _react.useEffect)(()=>{
         Fetchy();
@@ -35720,12 +35715,12 @@ const Body = ()=>{
         children: "Sorry,you are Offline!!Please check your internet connection!!"
     }, void 0, false, {
         fileName: "src/components/body.js",
-        lineNumber: 45,
+        lineNumber: 34,
         columnNumber: 9
     }, undefined);
     return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/body.js",
-        lineNumber: 49,
+        lineNumber: 38,
         columnNumber: 44
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -35742,7 +35737,7 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 52,
+                        lineNumber: 41,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35754,45 +35749,45 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 56,
+                        lineNumber: 45,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body.js",
-                lineNumber: 51,
+                lineNumber: 40,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex m-1 p-1 flex-wrap justify-start gap-12",
                 children: filteredList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notfoundDefault.default), {}, void 0, false, {
                     fileName: "src/components/body.js",
-                    lineNumber: 63,
+                    lineNumber: 52,
                     columnNumber: 35
                 }, undefined) : filteredList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         className: "nodecors",
                         to: "/restaurant/" + restaurant.info.id,
-                        children: restaurant.info.type === "F" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCard.RestaurantPromoted), {
+                        children: restaurant.info.type === "T" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCard.RestaurantPromoted), {
                             Resdata: restaurant
                         }, void 0, false, {
                             fileName: "src/components/body.js",
-                            lineNumber: 68,
+                            lineNumber: 57,
                             columnNumber: 15
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restroCardDefault.default), {
                             Resdata: restaurant
                         }, void 0, false, {
                             fileName: "src/components/body.js",
-                            lineNumber: 70,
+                            lineNumber: 59,
                             columnNumber: 15
                         }, undefined)
                     }, restaurant.info.id, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 66,
+                        lineNumber: 55,
                         columnNumber: 7
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 61,
+                lineNumber: 50,
                 columnNumber: 5
             }, undefined)
         ]
