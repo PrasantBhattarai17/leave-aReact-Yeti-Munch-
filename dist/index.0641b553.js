@@ -35730,7 +35730,7 @@ const Body = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         className: " border-2 border-black w-1/2 h-[50px] rounded-md p-2",
                         type: "text",
-                        placeholder: "Search...",
+                        "data-testid": "searchId",
                         value: searchTxt,
                         onChange: (e)=>{
                             setSearchTXt(e.target.value);

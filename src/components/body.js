@@ -38,7 +38,7 @@ const Body=()=>{
       return  listOfRestaurants.length===0?<Shimmer/>:(
         <>
         <div className="m-1 p-1 flex justify-center  space-x-2">
-      <input  className=" border-2 border-black w-1/2 h-[50px] rounded-md p-2" type="text" placeholder="Search..." value={searchTxt}  onChange={(e)=>{
+      <input  className=" border-2 border-black w-1/2 h-[50px] rounded-md p-2" type="text" data-testid="searchId" value={searchTxt}  onChange={(e)=>{
         setSearchTXt(e.target.value);
       }}/>
 
