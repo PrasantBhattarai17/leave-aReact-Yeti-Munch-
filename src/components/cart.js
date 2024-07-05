@@ -27,8 +27,11 @@ const Cart=()=>{
                 </div>
                 </div>
                 
-                {(addedItems==0 && <h1  className="text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold">The cart is Empty!! Please add some items.</h1>)}
-           {addedItems.map((item,index)=>
+                {addedItems==0 ?
+                <div className="">
+               <h1  className="text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold">The cart is Empty!! Please add some items.</h1>
+               </div>
+           :addedItems.map((item,index)=>
            <>
            <div className=" flex justify-center  bg-amber-50  " key={index}>
             <div className="flex  justify-between shadow-lg m-2 p-2 w-6/12 border-t-2 border-[#f5ebe0]">

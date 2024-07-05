@@ -36173,64 +36173,91 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _tagPng = require("../utils/tag.png");
+var _tagPngDefault = parcelHelpers.interopDefault(_tagPng);
+var _reactRouterDom = require("react-router-dom");
 const Offer = ()=>{
-    const restaurants = [
-        "Fishermans Wharf",
-        "Willie G's Seafood & Steaks - Galveston",
-        "Grotto - Galveston",
-        "Landry's - San Luis",
-        "Rainforest Cafe - Galveston",
-        "Joe's Crab Shack - Galveston",
-        "Brick House - Galveston"
-    ];
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-col items-center ",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "offer",
+            className: "mx-2 p-6 w-6/12 flex flex-col bg-amber-50 items-center justify-center shadow-xl rounded-xl border-2  min-h-screen space-y-14 ",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "20% Discount on Selected Restaurants"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "px-2 mx-2 flex flex-col items-center justify-center ",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "w-4/12",
+                        src: (0, _tagPngDefault.default)
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/offers.js",
+                        lineNumber: 13,
+                        columnNumber: 7
+                    }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/offers.js",
-                    lineNumber: 17,
+                    lineNumber: 12,
                     columnNumber: 7
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "Enjoy a 20% discount on the following restaurants:"
-                }, void 0, false, {
-                    fileName: "src/components/navitem.js/offers.js",
-                    lineNumber: 18,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: restaurants.map((restaurant, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: [
-                                "-",
-                                restaurant
-                            ]
-                        }, index, true, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col items-center justify-center space-y-8",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-4xl font-bold text-[blueviolet] font-sans",
+                            children: "No Offers Available!!"
+                        }, void 0, false, {
                             fileName: "src/components/navitem.js/offers.js",
-                            lineNumber: 21,
-                            columnNumber: 11
-                        }, undefined))
+                            lineNumber: 16,
+                            columnNumber: 7
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-lg font-bold text-[blueviolet] font-serif",
+                            children: "We are updating Great Offers!!"
+                        }, void 0, false, {
+                            fileName: "src/components/navitem.js/offers.js",
+                            lineNumber: 17,
+                            columnNumber: 7
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/navitem.js/offers.js",
+                    lineNumber: 15,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: " flex justify-center w-2/6 border-2 bg-[blueviolet] border-black rounded-md ",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: " list-none text-bold text-2xl text-white shadow-xl scale-105",
+                                children: "Return To Shop"
+                            }, void 0, false, {
+                                fileName: "src/components/navitem.js/offers.js",
+                                lineNumber: 20,
+                                columnNumber: 22
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/navitem.js/offers.js",
+                        lineNumber: 20,
+                        columnNumber: 8
+                    }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/offers.js",
                     lineNumber: 19,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "Contact the restaurant directly for more information."
-                }, void 0, false, {
-                    fileName: "src/components/navitem.js/offers.js",
-                    lineNumber: 24,
                     columnNumber: 7
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/navitem.js/offers.js",
-            lineNumber: 16,
+            lineNumber: 11,
             columnNumber: 5
         }, undefined)
-    }, void 0, false);
+    }, void 0, false, {
+        fileName: "src/components/navitem.js/offers.js",
+        lineNumber: 10,
+        columnNumber: 5
+    }, undefined);
 };
 _c = Offer;
 exports.default = Offer;
@@ -36242,7 +36269,10 @@ $RefreshReg$(_c, "Offer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4vdmF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/tag.png":"1HzwF","react-router-dom":"9xmpe"}],"1HzwF":[function(require,module,exports) {
+module.exports = require("fd04eacaeb84c815").getBundleURL("lPpKD") + "tag.243dbc87.png" + "?" + Date.now();
+
+},{"fd04eacaeb84c815":"lgJ39"}],"4vdmF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0a29 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40874,15 +40904,21 @@ const Cart = ()=>{
                 lineNumber: 23,
                 columnNumber: 13
             }, undefined),
-            addedItems == 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold",
-                children: "The cart is Empty!! Please add some items."
+            addedItems == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold",
+                    children: "The cart is Empty!! Please add some items."
+                }, void 0, false, {
+                    fileName: "src/components/cart.js",
+                    lineNumber: 32,
+                    columnNumber: 16
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/components/cart.js",
-                lineNumber: 30,
-                columnNumber: 36
-            }, undefined),
-            addedItems.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                lineNumber: 31,
+                columnNumber: 17
+            }, undefined) : addedItems.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: " flex justify-center  bg-amber-50  ",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40897,7 +40933,7 @@ const Cart = ()=>{
                                             src: (0, _constants.CDN) + item?.card?.info?.imageId
                                         }, void 0, false, {
                                             fileName: "src/components/cart.js",
-                                            lineNumber: 35,
+                                            lineNumber: 38,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40908,7 +40944,7 @@ const Cart = ()=>{
                                                     children: item?.card?.info?.name
                                                 }, void 0, false, {
                                                     fileName: "src/components/cart.js",
-                                                    lineNumber: 37,
+                                                    lineNumber: 40,
                                                     columnNumber: 13
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40919,7 +40955,7 @@ const Cart = ()=>{
                                                             children: "-"
                                                         }, void 0, false, {
                                                             fileName: "src/components/cart.js",
-                                                            lineNumber: 39,
+                                                            lineNumber: 42,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -40927,7 +40963,7 @@ const Cart = ()=>{
                                                             children: "1 items"
                                                         }, void 0, false, {
                                                             fileName: "src/components/cart.js",
-                                                            lineNumber: 40,
+                                                            lineNumber: 43,
                                                             columnNumber: 15
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -40935,19 +40971,19 @@ const Cart = ()=>{
                                                             children: "+"
                                                         }, void 0, false, {
                                                             fileName: "src/components/cart.js",
-                                                            lineNumber: 41,
+                                                            lineNumber: 44,
                                                             columnNumber: 14
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/cart.js",
-                                                    lineNumber: 38,
+                                                    lineNumber: 41,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/cart.js",
-                                            lineNumber: 36,
+                                            lineNumber: 39,
                                             columnNumber: 13
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -40955,13 +40991,13 @@ const Cart = ()=>{
                                             children: item?.card?.info?.description
                                         }, void 0, false, {
                                             fileName: "src/components/cart.js",
-                                            lineNumber: 44,
+                                            lineNumber: 47,
                                             columnNumber: 13
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/cart.js",
-                                    lineNumber: 35,
+                                    lineNumber: 38,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40971,23 +41007,23 @@ const Cart = ()=>{
                                         children: "\u2796"
                                     }, void 0, false, {
                                         fileName: "src/components/cart.js",
-                                        lineNumber: 47,
+                                        lineNumber: 50,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/cart.js",
-                                    lineNumber: 46,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/cart.js",
-                            lineNumber: 34,
+                            lineNumber: 37,
                             columnNumber: 13
                         }, undefined)
                     }, index, false, {
                         fileName: "src/components/cart.js",
-                        lineNumber: 33,
+                        lineNumber: 36,
                         columnNumber: 12
                     }, undefined)
                 }, void 0, false)),
