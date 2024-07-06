@@ -6,7 +6,6 @@ import { useState } from "react";
 
 const Cart=()=>{
     
-    let [numItem,setNumItem]=useState(1);
     const addedItems=useSelector((store)=> store.cart.items);
 
     const dispatch=useDispatch();
@@ -21,20 +20,18 @@ const Cart=()=>{
    
    
     return(
-        <>  
-            <div className="bg-amber-50 flex justify-center ">
+        <div className="bg-amber-50 flex flex-col items-center  min-h-screen">  
             <div className="flex  w-6/12 justify-between ">         
                <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">My Cart - {addedItems.length} items</h1>
                 <button onClick={handleClearCart} className="m-2  bg-[blueviolet] rounded-lg w-20 h-9 border-gray-800 border-2 font-san text-white ">Clear Cart</button>
                 </div>
-                </div>
                 
                 {addedItems==0 ?
-                <div className="">
-               <h1  className="text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold">The cart is Empty!! Please add some items.</h1>
+                <div className=" m-1 p-1 flex flex-col justify-center items-center">
+               <h1   className="text-center px-1 mx-1 text-2xl text-[blueviolet] font-bold">The cart is Empty!! Please add some items.</h1>
                </div>
            :addedItems.map((item,index)=>
-           <>
+            <>
            <div className=" flex justify-center  bg-amber-50  " key={index}>
             <div className="flex  justify-between shadow-lg m-2 p-2 w-6/12 border-t-2 border-[#f5ebe0]">
             <div> <img alt={item?.card?.info?.name} className="m-1 p-1 border-2 rounded-md shadow-xl w-52" src={CDN+item?.card?.info?.imageId}/>
@@ -42,12 +39,10 @@ const Cart=()=>{
             <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">{item?.card?.info?.name}</h1>
                 <div className="flex">
                 <button onClick={()=>{
-                    setNumItem(numItem--)
                 }} className="p-1 m-1 text-2xl text-[blueviolet] font-bold">-</button>
-              <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">{numItem}</h1>
+              <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">1</h1>
              <button onClick={()=>{
-                setNumItem(numItem++)
-             }} className="p-1 m-1 text-2xl text-[blueviolet] font-bold">+</button>
+            }} className="p-1 m-1 text-2xl text-[blueviolet] font-bold">+</button>
              </div>
             </div>
             <span className="p-1 m-1text-lg font-bold">{item?.card?.info?.description}</span>
@@ -57,13 +52,15 @@ const Cart=()=>{
             </div>
            
             </div>
+
             </div>
             </>
           
-         )
+        )
         
-         };
-        </>
+    }
+    {(addedItems!=0&&<button onClick={handleClearCart} className="m-2  bg-[blueviolet] rounded-lg w-20 h-9 border-gray-800 border-2 font-san text-white ">Check Out</button>)}
+        </div>
     );
 };
  export default Cart;

@@ -36262,27 +36262,27 @@ const Offer = ()=>{
                     lineNumber: 15,
                     columnNumber: 7
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: " flex justify-center w-2/6 border-2 bg-[blueviolet] border-black rounded-md ",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/",
-                        children: [
-                            " ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: " list-none text-bold text-2xl text-white shadow-xl scale-105",
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/",
+                    children: [
+                        " ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: " flex justify-center w-full border-2 bg-[blueviolet] border-black rounded-md hover:scale-105",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: " list-none font-bold text-xl text-white shadow-xl ",
                                 children: "Return To Shop"
                             }, void 0, false, {
                                 fileName: "src/components/navitem.js/offers.js",
                                 lineNumber: 20,
-                                columnNumber: 22
+                                columnNumber: 8
                             }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/navitem.js/offers.js",
-                        lineNumber: 20,
-                        columnNumber: 8
-                    }, undefined)
-                }, void 0, false, {
+                        }, void 0, false, {
+                            fileName: "src/components/navitem.js/offers.js",
+                            lineNumber: 19,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
                     fileName: "src/components/navitem.js/offers.js",
                     lineNumber: 19,
                     columnNumber: 7
@@ -40916,7 +40916,6 @@ var _react = require("react");
 var _s = $RefreshSig$();
 const Cart = ()=>{
     _s();
-    let [numItem, setNumItem] = (0, _react.useState)(1);
     const addedItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     const dispatch = (0, _reactRedux.useDispatch)();
     const handleRemove = (index)=>{
@@ -40925,58 +40924,52 @@ const Cart = ()=>{
     const handleClearCart = ()=>{
         dispatch((0, _cartSlice.clearCart)());
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "bg-amber-50 flex flex-col items-center  min-h-screen",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-amber-50 flex justify-center ",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex  w-6/12 justify-between ",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
-                            children: [
-                                "My Cart - ",
-                                addedItems.length,
-                                " items"
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/cart.js",
-                            lineNumber: 27,
-                            columnNumber: 16
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            onClick: handleClearCart,
-                            className: "m-2  bg-[blueviolet] rounded-lg w-20 h-9 border-gray-800 border-2 font-san text-white ",
-                            children: "Clear Cart"
-                        }, void 0, false, {
-                            fileName: "src/components/cart.js",
-                            lineNumber: 28,
-                            columnNumber: 17
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/cart.js",
-                    lineNumber: 26,
-                    columnNumber: 13
-                }, undefined)
-            }, void 0, false, {
+                className: "flex  w-6/12 justify-between ",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
+                        children: [
+                            "My Cart - ",
+                            addedItems.length,
+                            " items"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/cart.js",
+                        lineNumber: 25,
+                        columnNumber: 16
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: handleClearCart,
+                        className: "m-2  bg-[blueviolet] rounded-lg w-20 h-9 border-gray-800 border-2 font-san text-white ",
+                        children: "Clear Cart"
+                    }, void 0, false, {
+                        fileName: "src/components/cart.js",
+                        lineNumber: 26,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/cart.js",
-                lineNumber: 25,
+                lineNumber: 24,
                 columnNumber: 13
             }, undefined),
             addedItems == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "",
+                className: " m-1 p-1 flex flex-col justify-center items-center",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: "text-center px-1 mx-1 text-2xl bg-amber-50 text-[blueviolet] font-bold",
+                    className: "text-center px-1 mx-1 text-2xl text-[blueviolet] font-bold",
                     children: "The cart is Empty!! Please add some items."
                 }, void 0, false, {
                     fileName: "src/components/cart.js",
-                    lineNumber: 34,
+                    lineNumber: 31,
                     columnNumber: 16
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/cart.js",
-                lineNumber: 33,
+                lineNumber: 30,
                 columnNumber: 17
             }, undefined) : addedItems.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40993,7 +40986,7 @@ const Cart = ()=>{
                                             src: (0, _constants.CDN) + item?.card?.info?.imageId
                                         }, void 0, false, {
                                             fileName: "src/components/cart.js",
-                                            lineNumber: 40,
+                                            lineNumber: 37,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41004,52 +40997,48 @@ const Cart = ()=>{
                                                     children: item?.card?.info?.name
                                                 }, void 0, false, {
                                                     fileName: "src/components/cart.js",
-                                                    lineNumber: 42,
+                                                    lineNumber: 39,
                                                     columnNumber: 13
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "flex",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                            onClick: ()=>{
-                                                                setNumItem(numItem--);
-                                                            },
+                                                            onClick: ()=>{},
                                                             className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
                                                             children: "-"
                                                         }, void 0, false, {
                                                             fileName: "src/components/cart.js",
-                                                            lineNumber: 44,
+                                                            lineNumber: 41,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                             className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
-                                                            children: numItem
+                                                            children: "1"
                                                         }, void 0, false, {
                                                             fileName: "src/components/cart.js",
-                                                            lineNumber: 47,
+                                                            lineNumber: 43,
                                                             columnNumber: 15
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                            onClick: ()=>{
-                                                                setNumItem(numItem++);
-                                                            },
+                                                            onClick: ()=>{},
                                                             className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
                                                             children: "+"
                                                         }, void 0, false, {
                                                             fileName: "src/components/cart.js",
-                                                            lineNumber: 48,
+                                                            lineNumber: 44,
                                                             columnNumber: 14
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/cart.js",
-                                                    lineNumber: 43,
+                                                    lineNumber: 40,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/cart.js",
-                                            lineNumber: 41,
+                                            lineNumber: 38,
                                             columnNumber: 13
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -41057,13 +41046,13 @@ const Cart = ()=>{
                                             children: item?.card?.info?.description
                                         }, void 0, false, {
                                             fileName: "src/components/cart.js",
-                                            lineNumber: 53,
+                                            lineNumber: 48,
                                             columnNumber: 13
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/cart.js",
-                                    lineNumber: 40,
+                                    lineNumber: 37,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41073,31 +41062,43 @@ const Cart = ()=>{
                                         children: "\u2796"
                                     }, void 0, false, {
                                         fileName: "src/components/cart.js",
-                                        lineNumber: 56,
+                                        lineNumber: 51,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/cart.js",
-                                    lineNumber: 55,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/cart.js",
-                            lineNumber: 39,
+                            lineNumber: 36,
                             columnNumber: 13
                         }, undefined)
                     }, index, false, {
                         fileName: "src/components/cart.js",
-                        lineNumber: 38,
+                        lineNumber: 35,
                         columnNumber: 12
                     }, undefined)
                 }, void 0, false)),
-            ";"
+            addedItems != 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: handleClearCart,
+                className: "m-2  bg-[blueviolet] rounded-lg w-20 h-9 border-gray-800 border-2 font-san text-white ",
+                children: "Check Out"
+            }, void 0, false, {
+                fileName: "src/components/cart.js",
+                lineNumber: 62,
+                columnNumber: 22
+            }, undefined)
         ]
-    }, void 0, true);
+    }, void 0, true, {
+        fileName: "src/components/cart.js",
+        lineNumber: 23,
+        columnNumber: 9
+    }, undefined);
 };
-_s(Cart, "DJf1M9E6ZS16tvMTmdzO7zJPDsg=", false, function() {
+_s(Cart, "dNjurOhrgZHv0CN/3KjQz3ZdCaY=", false, function() {
     return [
         (0, _reactRedux.useSelector),
         (0, _reactRedux.useDispatch)

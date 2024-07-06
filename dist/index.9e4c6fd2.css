@@ -349,6 +349,18 @@ img, video {
   height: 30px;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -439,6 +451,26 @@ img, video {
 
 .w-\[180px\] {
   width: 180px;
+}
+
+.w-1\/6 {
+  width: 16.6667%;
+}
+
+.w-1 {
+  width: .25rem;
+}
+
+.w-4\/6 {
+  width: 66.6667%;
+}
+
+.w-5\/6 {
+  width: 83.3333%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .scale-105 {

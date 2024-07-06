@@ -16,9 +16,9 @@ const Offer = () => {
       <h1 className="text-4xl font-bold text-[blueviolet] font-sans">No Offers Available!!</h1>
       <h1 className="text-lg font-bold text-[blueviolet] font-serif">We are updating Great Offers!!</h1>
       </div>
-      <div className=" flex justify-center w-2/6 border-2 bg-[blueviolet] border-black rounded-md ">
-       <Link to="/"> <li  className=" list-none text-bold text-2xl text-white shadow-xl scale-105">Return To Shop</li></Link>
-      </div>
+      <Link to="/"> <div className=" flex justify-center w-full border-2 bg-[blueviolet] border-black rounded-md hover:scale-105">
+       <li  className=" list-none font-bold text-xl text-white shadow-xl ">Return To Shop</li>
+      </div></Link>
     </div>
     </div>
   );
