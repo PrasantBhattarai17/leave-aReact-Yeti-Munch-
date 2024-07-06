@@ -1,7 +1,2 @@
 node_modules
 .parcel-cache
-.postcssrc
-.parcelrc
-Babel.config.js
-jest.config.js
-coverage
