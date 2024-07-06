@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import useRestaurantList from "./utils/useRestaurantMenu";
+import useRestaurantMenu from "./utils/useRestaurantMenu";
 import { CDN } from "./utils/constants";
 import Shimmer from "./shimmers/shimmer";
 import RestaurantCategory from "./restaurantCategory";
@@ -7,14 +7,15 @@ import RestaurantCategory from "./restaurantCategory";
 const RestaurantMenu=()=>{
 
     const {resId} = useParams();
-    const resInfo=useRestaurantList(resId);
-  
+    const resInfo=useRestaurantMenu(resId);
+    
+
 
     const {cloudinaryImageId,name,costForTwo,avgRating,areaName}=resInfo;    
 
-    if (resInfo===0) return <Shimmer/>;
+  
 
-    return (
+    return (Object.keys(resInfo).length==0)?<Shimmer/>:(
         <>
     <div className="flex justify-start  rounded-md gap-4 pl-12 shadow-lg bg-[#faf0e5]">
         <img className="p-1 m-1 w-80 rounded-xl " alt="name"  src={CDN+cloudinaryImageId}/>

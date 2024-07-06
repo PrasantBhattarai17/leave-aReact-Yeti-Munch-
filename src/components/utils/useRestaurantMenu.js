@@ -3,7 +3,7 @@ import { MENU_API } from "./constants";
 
 
 
-const useRestaurantList=(resId)=>{
+const useRestaurantMenu=(resId)=>{
     const[resInfo,setResInfo]=useState({});
     
    const fetchData=async ()=>{
@@ -21,4 +21,4 @@ const useRestaurantList=(resId)=>{
     return resInfo;
 };
 
-export default useRestaurantList;
+export default useRestaurantMenu;

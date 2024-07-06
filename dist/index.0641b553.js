@@ -35718,10 +35718,10 @@ const Body = ()=>{
         lineNumber: 34,
         columnNumber: 9
     }, undefined);
-    return filteredList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/body.js",
         lineNumber: 38,
-        columnNumber: 39
+        columnNumber: 44
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36135,15 +36135,52 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _ggggPng = require("../utils/gggg.png");
+var _ggggPngDefault = parcelHelpers.interopDefault(_ggggPng);
 const Notfound = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-            children: "Oops!The item or Restaurant not found!!"
-        }, void 0, false, {
+        className: "m-2 p-2 flex   justify-center  min-h-screen ",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "m-4 p-4 w-6/12 bg-amber-100 flex flex-col  items-center  shadow-xl rounded-xl border-2   space-y-10",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: " p-1 m-1 w-7/12  shadow-lg rounded-3xl",
+                    src: (0, _ggggPngDefault.default)
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/notfound.js",
+                    lineNumber: 7,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-3xl text-center font-bold font-sans text-[blueviolet]",
+                    children: [
+                        "Oops! ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            fileName: "src/components/shimmers/notfound.js",
+                            lineNumber: 8,
+                            columnNumber: 88
+                        }, undefined),
+                        " The item or Restaurant not found!!"
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/shimmers/notfound.js",
+                    lineNumber: 8,
+                    columnNumber: 6
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "./",
+                    className: "w-[180px] h-[30px] rounded-md shadow-xl font-bold text-white hover:scale-105 text-center bg-[blueviolet]",
+                    children: "Return to Home"
+                }, void 0, false, {
+                    fileName: "src/components/shimmers/notfound.js",
+                    lineNumber: 9,
+                    columnNumber: 6
+                }, undefined)
+            ]
+        }, void 0, true, {
             fileName: "src/components/shimmers/notfound.js",
             lineNumber: 6,
-            columnNumber: 7
+            columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/shimmers/notfound.js",
@@ -36161,7 +36198,10 @@ $RefreshReg$(_c, "Notfound");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iM0SY":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/gggg.png":"589ex"}],"589ex":[function(require,module,exports) {
+module.exports = require("238f785026e06bfc").getBundleURL("lPpKD") + "gggg.69c4d0d9.png" + "?" + Date.now();
+
+},{"238f785026e06bfc":"lgJ39"}],"iM0SY":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$73c6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36282,23 +36322,25 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _ggPng = require("../utils/gg.png");
-var _ggPngDefault = parcelHelpers.interopDefault(_ggPng);
+var _gggPng = require("../utils/ggg.png");
+var _gggPngDefault = parcelHelpers.interopDefault(_gggPng);
 const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex justify-center",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "about",
+            className: "mx-2 p-4 w-6/12 flex flex-col bg-amber-50 items-center justify-center shadow-xl rounded-xl border-2  min-h-screen space-y-5 ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "aboutimg",
+                    className: "w-4/12",
                     alt: "Yeti Munch",
-                    src: (0, _ggPngDefault.default)
+                    src: (0, _gggPngDefault.default)
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
                     lineNumber: 6,
                     columnNumber: 1
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "text-2xl  text-[blueviolet] font-sans font-bold text-center ",
                     children: "Welcome to Yeti Munch - Your Ultimate Food Delivery Companion"
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
@@ -36306,6 +36348,7 @@ const About = ()=>{
                     columnNumber: 1
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-lg  font-mono  text-center",
                     children: "At Yeti Munch, we believe that great food should be just a few taps away. Whether you're craving comfort food from your favorite local diner or exploring exotic cuisines from top-rated restaurants, Yeti Munch is here to deliver.Our platform combines convenience with a wide array of culinary delights, making dining in as delightful as dining out."
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
@@ -36313,6 +36356,7 @@ const About = ()=>{
                     columnNumber: 1
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-xl font-serif text-[blueviolet] font-bold",
                     children: "Key Features:"
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
@@ -36320,6 +36364,7 @@ const About = ()=>{
                     columnNumber: 7
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-xl text-start font-mono",
                     children: [
                         "-Wide Selection: Explore a diverse range of restaurants, from cozy cafes to upscale eateries, all available at your fingertips. ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
@@ -36359,6 +36404,7 @@ const About = ()=>{
                     columnNumber: 1
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    className: "text-xl font-bold font-serif text-[blueviolet]",
                     children: " Restaurant Partners:"
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
@@ -36366,6 +36412,7 @@ const About = ()=>{
                     columnNumber: 1
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-xl text-center font-mono",
                     children: "Yeti Munch partners with a wide network of restaurants renowned for their quality and taste. From local favorites to popular chains, we bring you the best culinary experiences from your neighborhood and beyond."
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
@@ -36373,6 +36420,7 @@ const About = ()=>{
                     columnNumber: 1
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    className: "text-xl font-bold font-serif text-[blueviolet]",
                     children: "Delivery Excellence:"
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
@@ -36380,6 +36428,7 @@ const About = ()=>{
                     columnNumber: 1
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-xl text-center font-mono",
                     children: "We pride ourselves on timely deliveries. Serving across Kathmandu Valley and Pokhara, our efficient logistics ensure your food arrives hot and fresh, just as you like it."
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
@@ -36387,6 +36436,7 @@ const About = ()=>{
                     columnNumber: 1
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    className: "text-xl font-bold font-serif text-[blueviolet]",
                     children: "Get Started:"
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
@@ -36394,6 +36444,7 @@ const About = ()=>{
                     columnNumber: 1
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-xl text-center font-mono",
                     children: "Ready to explore Yeti Munch? Download our app on App Store/Google Play store, or visit our website at yetimunch.com. Discover new flavors, rediscover old favorites, and let Yeti Munch bring the joy of good food right to your doorstep."
                 }, void 0, false, {
                     fileName: "src/components/navitem.js/about.js",
@@ -36406,7 +36457,11 @@ const About = ()=>{
             lineNumber: 5,
             columnNumber: 1
         }, undefined)
-    }, void 0, false);
+    }, void 0, false, {
+        fileName: "src/components/navitem.js/about.js",
+        lineNumber: 4,
+        columnNumber: 5
+    }, undefined);
 };
 _c = About;
 exports.default = About;
@@ -36418,7 +36473,10 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/gg.png":"bOGml"}],"g7fau":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/ggg.png":"hQBoP"}],"hQBoP":[function(require,module,exports) {
+module.exports = require("7563d0486ef88768").getBundleURL("lPpKD") + "ggg.303e6007.png" + "?" + Date.now();
+
+},{"7563d0486ef88768":"lgJ39"}],"g7fau":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2ddd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36500,12 +36558,11 @@ const RestaurantMenu = ()=>{
     const { resId } = (0, _reactRouterDom.useParams)();
     const resInfo = (0, _useRestaurantMenuDefault.default)(resId);
     const { cloudinaryImageId, name, costForTwo, avgRating, areaName } = resInfo;
-    if (resInfo === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    return Object.keys(resInfo).length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/restaurantMenu.js",
-        lineNumber: 15,
-        columnNumber: 29
-    }, undefined);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        lineNumber: 18,
+        columnNumber: 45
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex justify-start  rounded-md gap-4 pl-12 shadow-lg bg-[#faf0e5]",
@@ -36516,7 +36573,7 @@ const RestaurantMenu = ()=>{
                         src: (0, _constants.CDN) + cloudinaryImageId
                     }, void 0, false, {
                         fileName: "src/components/restaurantMenu.js",
-                        lineNumber: 20,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36527,7 +36584,7 @@ const RestaurantMenu = ()=>{
                                 children: name
                             }, void 0, false, {
                                 fileName: "src/components/restaurantMenu.js",
-                                lineNumber: 22,
+                                lineNumber: 23,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -36535,7 +36592,7 @@ const RestaurantMenu = ()=>{
                                 children: areaName
                             }, void 0, false, {
                                 fileName: "src/components/restaurantMenu.js",
-                                lineNumber: 23,
+                                lineNumber: 24,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -36546,7 +36603,7 @@ const RestaurantMenu = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/restaurantMenu.js",
-                                lineNumber: 24,
+                                lineNumber: 25,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -36558,30 +36615,30 @@ const RestaurantMenu = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/restaurantMenu.js",
-                                lineNumber: 25,
+                                lineNumber: 26,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/restaurantMenu.js",
-                        lineNumber: 21,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCategoryDefault.default), {}, void 0, false, {
                 fileName: "src/components/restaurantMenu.js",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(RestaurantMenu, "kRBOtvUxkJVNsu/qCoTlUQYTj3Y=", false, function() {
+_s(RestaurantMenu, "8E4Lk0UrbBUXgcENZHvNTlBR/Q4=", false, function() {
     return [
         (0, _reactRouterDom.useParams),
         (0, _useRestaurantMenuDefault.default)
@@ -36609,7 +36666,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _constants = require("./constants");
 var _s = $RefreshSig$();
-const useRestaurantList = (resId)=>{
+const useRestaurantMenu = (resId)=>{
     _s();
     const [resInfo, setResInfo] = (0, _react.useState)({});
     const fetchData = async ()=>{
@@ -36622,8 +36679,8 @@ const useRestaurantList = (resId)=>{
     }, []);
     return resInfo;
 };
-_s(useRestaurantList, "dz4admzX6/6dVyOZZNx+uyCX//g=");
-exports.default = useRestaurantList;
+_s(useRestaurantMenu, "dz4admzX6/6dVyOZZNx+uyCX//g=");
+exports.default = useRestaurantMenu;
 
   $parcel$ReactRefreshHelpers$b7c7.postlude(module);
 } finally {
@@ -36665,6 +36722,7 @@ const RestaurantCategory = ()=>{
         dispatch((0, _cartSliceJs.addItem)(item));
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "",
         children: categories.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex flex-col justify-center items-center",
                 children: [
@@ -40854,9 +40912,11 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRedux = require("react-redux");
 var _constants = require("./utils/constants");
 var _cartSlice = require("./store/cartSlice");
+var _react = require("react");
 var _s = $RefreshSig$();
 const Cart = ()=>{
     _s();
+    let [numItem, setNumItem] = (0, _react.useState)(1);
     const addedItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     const dispatch = (0, _reactRedux.useDispatch)();
     const handleRemove = (index)=>{
@@ -40881,7 +40941,7 @@ const Cart = ()=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/components/cart.js",
-                            lineNumber: 25,
+                            lineNumber: 27,
                             columnNumber: 16
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -40890,18 +40950,18 @@ const Cart = ()=>{
                             children: "Clear Cart"
                         }, void 0, false, {
                             fileName: "src/components/cart.js",
-                            lineNumber: 26,
+                            lineNumber: 28,
                             columnNumber: 17
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/cart.js",
-                    lineNumber: 24,
+                    lineNumber: 26,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/cart.js",
-                lineNumber: 23,
+                lineNumber: 25,
                 columnNumber: 13
             }, undefined),
             addedItems == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40911,12 +40971,12 @@ const Cart = ()=>{
                     children: "The cart is Empty!! Please add some items."
                 }, void 0, false, {
                     fileName: "src/components/cart.js",
-                    lineNumber: 32,
+                    lineNumber: 34,
                     columnNumber: 16
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/cart.js",
-                lineNumber: 31,
+                lineNumber: 33,
                 columnNumber: 17
             }, undefined) : addedItems.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40933,7 +40993,7 @@ const Cart = ()=>{
                                             src: (0, _constants.CDN) + item?.card?.info?.imageId
                                         }, void 0, false, {
                                             fileName: "src/components/cart.js",
-                                            lineNumber: 38,
+                                            lineNumber: 40,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40944,46 +41004,52 @@ const Cart = ()=>{
                                                     children: item?.card?.info?.name
                                                 }, void 0, false, {
                                                     fileName: "src/components/cart.js",
-                                                    lineNumber: 40,
+                                                    lineNumber: 42,
                                                     columnNumber: 13
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "flex",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                            onClick: ()=>{
+                                                                setNumItem(numItem--);
+                                                            },
                                                             className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
                                                             children: "-"
                                                         }, void 0, false, {
                                                             fileName: "src/components/cart.js",
-                                                            lineNumber: 42,
+                                                            lineNumber: 44,
                                                             columnNumber: 17
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                             className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
-                                                            children: "1 items"
+                                                            children: numItem
                                                         }, void 0, false, {
                                                             fileName: "src/components/cart.js",
-                                                            lineNumber: 43,
+                                                            lineNumber: 47,
                                                             columnNumber: 15
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                            onClick: ()=>{
+                                                                setNumItem(numItem++);
+                                                            },
                                                             className: "p-1 m-1 text-2xl text-[blueviolet] font-bold",
                                                             children: "+"
                                                         }, void 0, false, {
                                                             fileName: "src/components/cart.js",
-                                                            lineNumber: 44,
+                                                            lineNumber: 48,
                                                             columnNumber: 14
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/cart.js",
-                                                    lineNumber: 41,
+                                                    lineNumber: 43,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/cart.js",
-                                            lineNumber: 39,
+                                            lineNumber: 41,
                                             columnNumber: 13
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -40991,13 +41057,13 @@ const Cart = ()=>{
                                             children: item?.card?.info?.description
                                         }, void 0, false, {
                                             fileName: "src/components/cart.js",
-                                            lineNumber: 47,
+                                            lineNumber: 53,
                                             columnNumber: 13
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/cart.js",
-                                    lineNumber: 38,
+                                    lineNumber: 40,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41007,23 +41073,23 @@ const Cart = ()=>{
                                         children: "\u2796"
                                     }, void 0, false, {
                                         fileName: "src/components/cart.js",
-                                        lineNumber: 50,
+                                        lineNumber: 56,
                                         columnNumber: 13
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/cart.js",
-                                    lineNumber: 49,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/cart.js",
-                            lineNumber: 37,
+                            lineNumber: 39,
                             columnNumber: 13
                         }, undefined)
                     }, index, false, {
                         fileName: "src/components/cart.js",
-                        lineNumber: 36,
+                        lineNumber: 38,
                         columnNumber: 12
                     }, undefined)
                 }, void 0, false)),
@@ -41031,7 +41097,7 @@ const Cart = ()=>{
         ]
     }, void 0, true);
 };
-_s(Cart, "dNjurOhrgZHv0CN/3KjQz3ZdCaY=", false, function() {
+_s(Cart, "DJf1M9E6ZS16tvMTmdzO7zJPDsg=", false, function() {
     return [
         (0, _reactRedux.useSelector),
         (0, _reactRedux.useDispatch)
@@ -41047,7 +41113,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./utils/constants":"c6vll","./store/cartSlice":"7LL1L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Tqo9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./utils/constants":"c6vll","./store/cartSlice":"7LL1L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"2Tqo9":[function(require,module,exports) {
 module.exports = require("dfc5753827267026")(require("b376609f34e412ea").getBundleURL("lPpKD") + "service.d3d3853b.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;

@@ -28,7 +28,7 @@ const RestaurantCategory=()=>{
     
 
     return (
-        <div>
+        <div className="">
           {categories.map((item) => (
             <div key={item?.card?.card?.title} className="flex flex-col justify-center items-center">
               <div

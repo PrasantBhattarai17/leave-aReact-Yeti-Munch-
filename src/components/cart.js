@@ -2,9 +2,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { CDN } from "./utils/constants";
 import { clearCart } from "./store/cartSlice";
 import { removeItem } from "./store/cartSlice";
+import { useState } from "react";
 
 const Cart=()=>{
     
+    let [numItem,setNumItem]=useState(1);
     const addedItems=useSelector((store)=> store.cart.items);
 
     const dispatch=useDispatch();
@@ -39,9 +41,13 @@ const Cart=()=>{
             <div className="flex justify-between">
             <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">{item?.card?.info?.name}</h1>
                 <div className="flex">
-                <button className="p-1 m-1 text-2xl text-[blueviolet] font-bold">-</button>
-              <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">1 items</h1>
-             <button className="p-1 m-1 text-2xl text-[blueviolet] font-bold">+</button>
+                <button onClick={()=>{
+                    setNumItem(numItem--)
+                }} className="p-1 m-1 text-2xl text-[blueviolet] font-bold">-</button>
+              <h1 className="p-1 m-1 text-2xl text-[blueviolet] font-bold">{numItem}</h1>
+             <button onClick={()=>{
+                setNumItem(numItem++)
+             }} className="p-1 m-1 text-2xl text-[blueviolet] font-bold">+</button>
              </div>
             </div>
             <span className="p-1 m-1text-lg font-bold">{item?.card?.info?.description}</span>

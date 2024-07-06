@@ -679,95 +679,101 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _constants = require("../utils/constants");
 var _shimmer = require("../shimmers/shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _reactRouterDom = require("react-router-dom");
+var _useRestaurantFood = require("../utils/useRestaurantFood");
+var _useRestaurantFoodDefault = parcelHelpers.interopDefault(_useRestaurantFood);
 class Franchisee extends (0, _reactDefault.default).Component {
     render() {
         const { name, location, rating, cuisines, cost42, cloudinaryImgId } = this.props;
         if (rating === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
             fileName: "src/components/navitem.js/franchiseClass.js",
-            lineNumber: 12,
+            lineNumber: 16,
             columnNumber: 25
         }, this);
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "services",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Our services"
-                }, void 0, false, {
-                    fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 16,
-                    columnNumber: 2
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: "The franchisees connected to us :"
-                }, void 0, false, {
-                    fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 17,
-                    columnNumber: 2
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "aboutimg",
-                    src: (0, _constants.CDN) + cloudinaryImgId
-                }, void 0, false, {
-                    fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 18,
-                    columnNumber: 2
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: [
-                        "Name:",
-                        name
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 19,
-                    columnNumber: 2
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: [
-                        "Location:",
-                        location
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 20,
-                    columnNumber: 2
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: [
-                        "Rating:",
-                        rating,
-                        " stars"
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 21,
-                    columnNumber: 2
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: [
-                        "Cuisines:",
-                        cuisines
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 22,
-                    columnNumber: 2
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: [
-                        "cost For Two:",
-                        cost42
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/navitem.js/franchiseClass.js",
-                    lineNumber: 23,
-                    columnNumber: 2
-                }, this)
-            ]
-        }, void 0, true, {
+            className: "flex flex-col items-center",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mx-2 p-4 w-7/12 flex flex-col bg-amber-50 items-center justify-center shadow-xl rounded-xl border-2  min-h-screen space-y-5 ",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-4xl font-bold text-[blueviolet] font-sans",
+                        children: "Our services"
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/franchiseClass.js",
+                        lineNumber: 21,
+                        columnNumber: 2
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "text-xl font-bold text-[blueviolet] font-sans",
+                        children: "The franchisees connected to us :"
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/franchiseClass.js",
+                        lineNumber: 22,
+                        columnNumber: 2
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "w-4/12  rounded-lg border-2 border-black",
+                        src: (0, _constants.CDN) + cloudinaryImgId
+                    }, void 0, false, {
+                        fileName: "src/components/navitem.js/franchiseClass.js",
+                        lineNumber: 23,
+                        columnNumber: 2
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        className: "text-3xl font-bold text-[blueviolet] font-sans",
+                        children: [
+                            "Name:",
+                            name
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/navitem.js/franchiseClass.js",
+                        lineNumber: 24,
+                        columnNumber: 2
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        className: "text-2xl font-bold text-[blueviolet] font-sans",
+                        children: [
+                            "Location:",
+                            location
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/navitem.js/franchiseClass.js",
+                        lineNumber: 25,
+                        columnNumber: 2
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        className: "text-2xl font-bold text-[blueviolet] font-sans",
+                        children: [
+                            "Cuisines:",
+                            cuisines
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/navitem.js/franchiseClass.js",
+                        lineNumber: 26,
+                        columnNumber: 2
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        className: "text-2xl font-bold text-[blueviolet] font-sans",
+                        children: [
+                            "Rating:",
+                            rating,
+                            " stars"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/navitem.js/franchiseClass.js",
+                        lineNumber: 27,
+                        columnNumber: 2
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/navitem.js/franchiseClass.js",
+                lineNumber: 19,
+                columnNumber: 5
+            }, this)
+        }, void 0, false, {
             fileName: "src/components/navitem.js/franchiseClass.js",
-            lineNumber: 14,
-            columnNumber: 5
+            lineNumber: 18,
+            columnNumber: 3
         }, this);
     }
 }
@@ -778,6 +784,6 @@ exports.default = Franchisee;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"c6vll","../shimmers/shimmer":"7uMHb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["fDftC","1xC6H"], null, "parcelRequireb17e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"c6vll","../shimmers/shimmer":"7uMHb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","../utils/useRestaurantFood":"62Wb5"}]},["fDftC","1xC6H"], null, "parcelRequireb17e")
 
 //# sourceMappingURL=service.d3d3853b.js.map
